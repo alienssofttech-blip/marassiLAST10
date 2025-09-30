@@ -27,13 +27,13 @@ class WebsiteOptimizer {
 
   async optimizeHTML() {
     console.log('📄 Optimizing HTML files...');
-    const htmlFiles = this.getFiles('.', '.html');
-    
+    const htmlFiles = this.getFiles('.', '.html').filter(file => !file.includes('.min.html'));
+
     for (const file of htmlFiles) {
       try {
         const content = fs.readFileSync(file, 'utf8');
         const originalSize = Buffer.byteLength(content, 'utf8');
-        
+
         const minified = minifyHTML(content, {
           removeComments: true,
           removeRedundantAttributes: true,
@@ -46,17 +46,17 @@ class WebsiteOptimizer {
           minifyCSS: true,
           minifyJS: true
         });
-        
+
         const newSize = Buffer.byteLength(minified, 'utf8');
         const savings = originalSize - newSize;
-        
+
         // Create optimized version
         const optimizedPath = file.replace('.html', '.min.html');
         fs.writeFileSync(optimizedPath, minified);
-        
+
         this.stats.htmlFiles++;
         this.stats.totalSavings += savings;
-        
+
         console.log(`  ✓ ${file}: ${this.formatBytes(savings)} saved`);
       } catch (error) {
         console.log(`  ✗ ${file}: Error - ${error.message}`);
