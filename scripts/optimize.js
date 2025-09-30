@@ -3,6 +3,7 @@ const path = require('path');
 const { minify: minifyHTML } = require('html-minifier');
 const CleanCSS = require('clean-css');
 const { minify: minifyJS } = require('terser');
+const zlib = require('zlib');
 
 class WebsiteOptimizer {
   constructor() {
@@ -67,29 +68,35 @@ class WebsiteOptimizer {
   async optimizeCSS() {
     console.log('\n🎨 Optimizing CSS files...');
     const cssFiles = this.getFiles('assets/css', '.css');
-    
+
     for (const file of cssFiles) {
       if (file.includes('.min.css')) continue;
-      
+
       try {
         const content = fs.readFileSync(file, 'utf8');
         const originalSize = Buffer.byteLength(content, 'utf8');
-        
-        const result = new CleanCSS({
-          level: 2,
-          returnPromise: true
+
+        // CleanCSS.minify() returns a promise when returnPromise is true
+        const result = await new CleanCSS({
+          level: 2
         }).minify(content);
-        
+
+        // Check for errors
+        if (result.errors && result.errors.length > 0) {
+          console.log(`  ✗ ${file}: ${result.errors.join(', ')}`);
+          continue;
+        }
+
         const newSize = Buffer.byteLength(result.styles, 'utf8');
         const savings = originalSize - newSize;
-        
+
         // Create minified version
         const minifiedPath = file.replace('.css', '.min.css');
         fs.writeFileSync(minifiedPath, result.styles);
-        
+
         this.stats.cssFiles++;
         this.stats.totalSavings += savings;
-        
+
         console.log(`  ✓ ${file}: ${this.formatBytes(savings)} saved`);
       } catch (error) {
         console.log(`  ✗ ${file}: Error - ${error.message}`);

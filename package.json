@@ -9,7 +9,8 @@
     "build": "npm run optimize",
     "optimize": "node scripts/optimize.js",
     "test": "node scripts/test.js",
-    "validate": "node scripts/validate.js"
+    "validate": "node scripts/validate.js",
+    "analyze": "node scripts/analyze-bundle.js"
   },
   "keywords": [
     "logistics",
@@ -22,12 +23,13 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
-    "gsap": "^3.13.0",
-    "nodemailer": "^7.0.6"
+    "gsap": "^3.13.0"
   },
   "devDependencies": {
     "clean-css": "^5.3.2",
     "html-minifier": "^4.0.0",
-    "terser": "^5.19.4"
+    "source-map-explorer": "^2.5.3",
+    "terser": "^5.19.4",
+    "webpack-bundle-analyzer": "^4.10.2"
   }
 }

@@ -1,0 +1,203 @@
+{
+  "timestamp": "2025-09-30T23:46:23.471Z",
+  "bundles": {
+    "vendor": [
+      {
+        "name": "jquery-3.7.1.min.js",
+        "size": 85480,
+        "priority": "high",
+        "loadStrategy": "immediate"
+      },
+      {
+        "name": "bootstrap.bundle.min.js",
+        "size": 78610,
+        "priority": "high",
+        "loadStrategy": "immediate"
+      },
+      {
+        "name": "gsap.min.js",
+        "size": 70580,
+        "priority": "medium",
+        "loadStrategy": "defer"
+      },
+      {
+        "name": "ScrollTrigger.min.js",
+        "size": 0,
+        "priority": "medium",
+        "loadStrategy": "defer"
+      },
+      {
+        "name": "SplitText.min.js",
+        "size": 0,
+        "priority": "low",
+        "loadStrategy": "lazy"
+      },
+      {
+        "name": "swiper-bundle.min.js",
+        "size": 148150,
+        "priority": "medium",
+        "loadStrategy": "defer"
+      },
+      {
+        "name": "aos.min.js",
+        "size": 13480,
+        "priority": "low",
+        "loadStrategy": "defer"
+      },
+      {
+        "name": "counterup.min.js",
+        "size": 1880,
+        "priority": "low",
+        "loadStrategy": "defer"
+      },
+      {
+        "name": "magnific-popup.min.js",
+        "size": 20250,
+        "priority": "low",
+        "loadStrategy": "lazy"
+      },
+      {
+        "name": "phosphor-icon.min.js",
+        "size": 353,
+        "priority": "low",
+        "loadStrategy": "defer"
+      },
+      {
+        "name": "jquery.marquee.min.js",
+        "size": 0,
+        "priority": "low",
+        "loadStrategy": "lazy"
+      }
+    ],
+    "main": [],
+    "pageSpecific": {
+      "index.html": [
+        {
+          "name": "custom-gsap.js",
+          "loadStrategy": "defer",
+          "critical": false
+        },
+        {
+          "name": "swiper-bundle.min.js",
+          "loadStrategy": "defer",
+          "critical": false
+        }
+      ],
+      "contact.html": [
+        {
+          "name": "form-handler.min.js",
+          "loadStrategy": "defer",
+          "critical": true
+        }
+      ],
+      "about.html": [
+        {
+          "name": "aos.min.js",
+          "loadStrategy": "defer",
+          "critical": false
+        },
+        {
+          "name": "counterup.min.js",
+          "loadStrategy": "defer",
+          "critical": false
+        }
+      ],
+      "service.html": [
+        {
+          "name": "aos.min.js",
+          "loadStrategy": "defer",
+          "critical": false
+        }
+      ],
+      "project.html": [
+        {
+          "name": "magnific-popup.min.js",
+          "loadStrategy": "lazy",
+          "critical": false
+        }
+      ],
+      "all-pages": [
+        {
+          "name": "main.min.js",
+          "loadStrategy": "defer",
+          "critical": true
+        },
+        {
+          "name": "accessibility.min.js",
+          "loadStrategy": "defer",
+          "critical": true
+        },
+        {
+          "name": "cookie-consent.min.js",
+          "loadStrategy": "defer",
+          "critical": false
+        },
+        {
+          "name": "security.min.js",
+          "loadStrategy": "defer",
+          "critical": true
+        },
+        {
+          "name": "seo-enhancements.min.js",
+          "loadStrategy": "defer",
+          "critical": false
+        },
+        {
+          "name": "performance.min.js",
+          "loadStrategy": "defer",
+          "critical": false
+        },
+        {
+          "name": "analytics.min.js",
+          "loadStrategy": "defer",
+          "critical": false
+        }
+      ]
+    }
+  },
+  "loadingStrategy": {
+    "critical": {
+      "description": "Load immediately (blocking)",
+      "scripts": [
+        "jquery-3.7.1.min.js",
+        "bootstrap.bundle.min.js"
+      ],
+      "implementation": "<script src=\"assets/js/[script]\"></script>"
+    },
+    "deferred": {
+      "description": "Load after page render (defer)",
+      "scripts": [
+        "main.min.js",
+        "accessibility.min.js",
+        "security.min.js",
+        "gsap.min.js",
+        "custom-gsap.js",
+        "swiper-bundle.min.js",
+        "aos.min.js",
+        "counterup.min.js",
+        "phosphor-icon.min.js",
+        "cookie-consent.min.js",
+        "seo-enhancements.min.js",
+        "performance.min.js",
+        "analytics.min.js",
+        "form-handler.min.js"
+      ],
+      "implementation": "<script src=\"assets/js/[script]\" defer></script>"
+    },
+    "lazy": {
+      "description": "Load on-demand (dynamic import)",
+      "scripts": [
+        "magnific-popup.min.js",
+        "jquery.marquee.min.js",
+        "SplitText.min.js"
+      ],
+      "implementation": "// Load on demand\nif (document.querySelector('.popup-gallery')) {\n  const script = document.createElement('script');\n  script.src = 'assets/js/magnific-popup.min.js';\n  document.head.appendChild(script);\n}"
+    }
+  },
+  "estimatedImprovement": {
+    "currentLoad": 418783,
+    "optimizedLoad": 164090,
+    "reduction": 254693,
+    "percentage": "60.8"
+  }
+}

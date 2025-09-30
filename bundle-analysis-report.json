@@ -1,0 +1,2946 @@
+{
+  "totalSize": 2176778,
+  "files": [
+    {
+      "path": "404.html",
+      "name": "404.html",
+      "size": 4316,
+      "category": "html",
+      "type": ".html"
+    },
+    {
+      "path": "404.min.html",
+      "name": "404.min.html",
+      "size": 3143,
+      "category": "html",
+      "type": ".html"
+    },
+    {
+      "path": "500.html",
+      "name": "500.html",
+      "size": 4681,
+      "category": "html",
+      "type": ".html"
+    },
+    {
+      "path": "500.min.html",
+      "name": "500.min.html",
+      "size": 3352,
+      "category": "html",
+      "type": ".html"
+    },
+    {
+      "path": "about.html",
+      "name": "about.html",
+      "size": 85125,
+      "category": "html",
+      "type": ".html"
+    },
+    {
+      "path": "about.min.html",
+      "name": "about.min.html",
+      "size": 45745,
+      "category": "html",
+      "type": ".html"
+    },
+    {
+      "path": "contact.html",
+      "name": "contact.html",
+      "size": 35864,
+      "category": "html",
+      "type": ".html"
+    },
+    {
+      "path": "contact.min.html",
+      "name": "contact.min.html",
+      "size": 22734,
+      "category": "html",
+      "type": ".html"
+    },
+    {
+      "path": "footer.html",
+      "name": "footer.html",
+      "size": 17878,
+      "category": "html",
+      "type": ".html"
+    },
+    {
+      "path": "footer.min.html",
+      "name": "footer.min.html",
+      "size": 6162,
+      "category": "html",
+      "type": ".html"
+    },
+    {
+      "path": "index.html",
+      "name": "index.html",
+      "size": 98195,
+      "category": "html",
+      "type": ".html"
+    },
+    {
+      "path": "index.min.html",
+      "name": "index.min.html",
+      "size": 51035,
+      "category": "html",
+      "type": ".html"
+    },
+    {
+      "path": "privacy-policy.html",
+      "name": "privacy-policy.html",
+      "size": 7367,
+      "category": "html",
+      "type": ".html"
+    },
+    {
+      "path": "privacy-policy.min.html",
+      "name": "privacy-policy.min.html",
+      "size": 5575,
+      "category": "html",
+      "type": ".html"
+    },
+    {
+      "path": "project.html",
+      "name": "project.html",
+      "size": 14647,
+      "category": "html",
+      "type": ".html"
+    },
+    {
+      "path": "project.min.html",
+      "name": "project.min.html",
+      "size": 10994,
+      "category": "html",
+      "type": ".html"
+    },
+    {
+      "path": "service.html",
+      "name": "service.html",
+      "size": 114391,
+      "category": "html",
+      "type": ".html"
+    },
+    {
+      "path": "service.min.html",
+      "name": "service.min.html",
+      "size": 42304,
+      "category": "html",
+      "type": ".html"
+    },
+    {
+      "path": "terms-of-service.html",
+      "name": "terms-of-service.html",
+      "size": 7000,
+      "category": "html",
+      "type": ".html"
+    },
+    {
+      "path": "terms-of-service.min.html",
+      "name": "terms-of-service.min.html",
+      "size": 5292,
+      "category": "html",
+      "type": ".html"
+    },
+    {
+      "path": "assets/css/animated-radial-progress.css",
+      "name": "animated-radial-progress.css",
+      "size": 490,
+      "category": "css",
+      "type": ".css"
+    },
+    {
+      "path": "assets/css/aos.css",
+      "name": "aos.css",
+      "size": 28765,
+      "category": "css",
+      "type": ".css"
+    },
+    {
+      "path": "assets/css/bootstrap.min.css",
+      "name": "bootstrap.min.css",
+      "size": 232785,
+      "category": "css",
+      "type": ".css"
+    },
+    {
+      "path": "assets/css/bootstrap.rtl.min.css",
+      "name": "bootstrap.rtl.min.css",
+      "size": 155949,
+      "category": "css",
+      "type": ".css"
+    },
+    {
+      "path": "assets/css/magnific-popup.css",
+      "name": "magnific-popup.css",
+      "size": 8663,
+      "category": "css",
+      "type": ".css"
+    },
+    {
+      "path": "assets/css/rtl2.css",
+      "name": "rtl2.css",
+      "size": 173321,
+      "category": "css",
+      "type": ".css"
+    },
+    {
+      "path": "assets/css/satoshi.css",
+      "name": "satoshi.css",
+      "size": 3102,
+      "category": "css",
+      "type": ".css"
+    },
+    {
+      "path": "assets/css/swiper-bundle.min.css",
+      "name": "swiper-bundle.min.css",
+      "size": 18461,
+      "category": "css",
+      "type": ".css"
+    },
+    {
+      "path": "assets/js/ScrollTrigger.min.js",
+      "name": "ScrollTrigger.min.js",
+      "size": 43380,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/SplitText.min.js",
+      "name": "SplitText.min.js",
+      "size": 15588,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/accessibility.js",
+      "name": "accessibility.js",
+      "size": 10204,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/accessibility.min.js",
+      "name": "accessibility.min.js",
+      "size": 5514,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/analytics.js",
+      "name": "analytics.js",
+      "size": 5803,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/analytics.min.js",
+      "name": "analytics.min.js",
+      "size": 2549,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/animated-radial-progress.js",
+      "name": "animated-radial-progress.js",
+      "size": 1076,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/animated-radial-progress.min.js",
+      "name": "animated-radial-progress.min.js",
+      "size": 507,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/aos.js",
+      "name": "aos.js",
+      "size": 13799,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/aos.min.js",
+      "name": "aos.min.js",
+      "size": 13491,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/bootstrap.bundle.min.js",
+      "name": "bootstrap.bundle.min.js",
+      "size": 80496,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/cookie-consent.js",
+      "name": "cookie-consent.js",
+      "size": 14165,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/cookie-consent.min.js",
+      "name": "cookie-consent.min.js",
+      "size": 9198,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/counterup.min.js",
+      "name": "counterup.min.js",
+      "size": 1928,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/custom-gsap.js",
+      "name": "custom-gsap.js",
+      "size": 18581,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/form-handler.js",
+      "name": "form-handler.js",
+      "size": 10414,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/form-handler.min.js",
+      "name": "form-handler.min.js",
+      "size": 5215,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/gsap.min.js",
+      "name": "gsap.min.js",
+      "size": 72270,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/jquery-3.7.1.min.js",
+      "name": "jquery-3.7.1.min.js",
+      "size": 87532,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/jquery.marquee.min.js",
+      "name": "jquery.marquee.min.js",
+      "size": 9029,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/magnific-popup.min.js",
+      "name": "magnific-popup.min.js",
+      "size": 20736,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/main.js",
+      "name": "main.js",
+      "size": 31372,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/main.min.js",
+      "name": "main.min.js",
+      "size": 13662,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/performance.js",
+      "name": "performance.js",
+      "size": 4947,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/performance.min.js",
+      "name": "performance.min.js",
+      "size": 1825,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/phosphor-icon.js",
+      "name": "phosphor-icon.js",
+      "size": 353,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/phosphor-icon.min.js",
+      "name": "phosphor-icon.min.js",
+      "size": 298,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/security.js",
+      "name": "security.js",
+      "size": 5426,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/security.min.js",
+      "name": "security.min.js",
+      "size": 2272,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/seo-enhancements.js",
+      "name": "seo-enhancements.js",
+      "size": 6776,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/seo-enhancements.min.js",
+      "name": "seo-enhancements.min.js",
+      "size": 3014,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/swiper-bundle.min.js",
+      "name": "swiper-bundle.min.js",
+      "size": 151701,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/images/icons/about-icon1.svg",
+      "name": "about-icon1.svg",
+      "size": 1932,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/about-icon2.svg",
+      "name": "about-icon2.svg",
+      "size": 719,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/arrow-long.svg",
+      "name": "arrow-long.svg",
+      "size": 534,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/arrow-right.svg",
+      "name": "arrow-right.svg",
+      "size": 973,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/bars-two.svg",
+      "name": "bars-two.svg",
+      "size": 520,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/bars.svg",
+      "name": "bars.svg",
+      "size": 789,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/box-checkmark.svg",
+      "name": "box-checkmark.svg",
+      "size": 2457,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/cart-icon.svg",
+      "name": "cart-icon.svg",
+      "size": 1812,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/conact-us-icon1.svg",
+      "name": "conact-us-icon1.svg",
+      "size": 4797,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/conact-us-icon2.svg",
+      "name": "conact-us-icon2.svg",
+      "size": 4211,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/counter-three-icon1.svg",
+      "name": "counter-three-icon1.svg",
+      "size": 1852,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/counter-three-icon2.svg",
+      "name": "counter-three-icon2.svg",
+      "size": 2627,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/counter-three-icon3.svg",
+      "name": "counter-three-icon3.svg",
+      "size": 6670,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/counter-three-icon4.svg",
+      "name": "counter-three-icon4.svg",
+      "size": 4592,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/earth-pin.svg",
+      "name": "earth-pin.svg",
+      "size": 1934,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/envelop.svg",
+      "name": "envelop.svg",
+      "size": 797,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/facility-icon1.svg",
+      "name": "facility-icon1.svg",
+      "size": 3137,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/facility-icon2.svg",
+      "name": "facility-icon2.svg",
+      "size": 3194,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/facility-icon3.svg",
+      "name": "facility-icon3.svg",
+      "size": 4623,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/features-icon1.svg",
+      "name": "features-icon1.svg",
+      "size": 1932,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/features-icon2.svg",
+      "name": "features-icon2.svg",
+      "size": 4399,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/features-icon3.svg",
+      "name": "features-icon3.svg",
+      "size": 5032,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/features-icon4.svg",
+      "name": "features-icon4.svg",
+      "size": 3569,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/hand-love.svg",
+      "name": "hand-love.svg",
+      "size": 3666,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/key-features-icon1.svg",
+      "name": "key-features-icon1.svg",
+      "size": 2999,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/key-features-icon2.svg",
+      "name": "key-features-icon2.svg",
+      "size": 2917,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/key-features-icon3.svg",
+      "name": "key-features-icon3.svg",
+      "size": 2202,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/key-features-icon4.svg",
+      "name": "key-features-icon4.svg",
+      "size": 6886,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/key-features-icon5.svg",
+      "name": "key-features-icon5.svg",
+      "size": 3257,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/key-features-icon6.svg",
+      "name": "key-features-icon6.svg",
+      "size": 5113,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/message-double.svg",
+      "name": "message-double.svg",
+      "size": 2968,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/message-icon.svg",
+      "name": "message-icon.svg",
+      "size": 1934,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/order-icon1.svg",
+      "name": "order-icon1.svg",
+      "size": 2808,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/order-icon2.svg",
+      "name": "order-icon2.svg",
+      "size": 6007,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/order-icon3.svg",
+      "name": "order-icon3.svg",
+      "size": 2212,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/order-icon4.svg",
+      "name": "order-icon4.svg",
+      "size": 4217,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/papper.svg",
+      "name": "papper.svg",
+      "size": 797,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/phone.svg",
+      "name": "phone.svg",
+      "size": 5820,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/play-bar.svg",
+      "name": "play-bar.svg",
+      "size": 1530,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/process-icon1.svg",
+      "name": "process-icon1.svg",
+      "size": 5155,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/process-icon2.svg",
+      "name": "process-icon2.svg",
+      "size": 3560,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/process-icon3.svg",
+      "name": "process-icon3.svg",
+      "size": 5334,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/quate-blog.svg",
+      "name": "quate-blog.svg",
+      "size": 416,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/quate-icon.svg",
+      "name": "quate-icon.svg",
+      "size": 1005,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/quote-three-icon.svg",
+      "name": "quote-three-icon.svg",
+      "size": 943,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/quote-two-icon.svg",
+      "name": "quote-two-icon.svg",
+      "size": 1816,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/reply.svg",
+      "name": "reply.svg",
+      "size": 955,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/rocket.svg",
+      "name": "rocket.svg",
+      "size": 1770,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/service-icon1.svg",
+      "name": "service-icon1.svg",
+      "size": 6412,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/service-icon2.svg",
+      "name": "service-icon2.svg",
+      "size": 11985,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/service-icon3.svg",
+      "name": "service-icon3.svg",
+      "size": 9389,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/service-icon4.svg",
+      "name": "service-icon4.svg",
+      "size": 4703,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/service-icon5.svg",
+      "name": "service-icon5.svg",
+      "size": 4935,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/service-icon6.svg",
+      "name": "service-icon6.svg",
+      "size": 9811,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/service-icon7.svg",
+      "name": "service-icon7.svg",
+      "size": 10009,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/service-three-icon1.svg",
+      "name": "service-three-icon1.svg",
+      "size": 6784,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/service-three-icon2.svg",
+      "name": "service-three-icon2.svg",
+      "size": 3835,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/service-three-icon3.svg",
+      "name": "service-three-icon3.svg",
+      "size": 4003,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/signature.svg",
+      "name": "signature.svg",
+      "size": 38659,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/spy-icon.svg",
+      "name": "spy-icon.svg",
+      "size": 2189,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/star-icon.svg",
+      "name": "star-icon.svg",
+      "size": 261,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/tag-icon.svg",
+      "name": "tag-icon.svg",
+      "size": 363,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/testi-img1.svg",
+      "name": "testi-img1.svg",
+      "size": 5138,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/tranport-way-icon1.svg",
+      "name": "tranport-way-icon1.svg",
+      "size": 4994,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/tranport-way-icon2.svg",
+      "name": "tranport-way-icon2.svg",
+      "size": 1871,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/tranport-way-icon3.svg",
+      "name": "tranport-way-icon3.svg",
+      "size": 4792,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/tranport-way-icon33.svg",
+      "name": "tranport-way-icon33.svg",
+      "size": 4823,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/transport-way-icon1.svg",
+      "name": "transport-way-icon1.svg",
+      "size": 1850,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/transport-way-icon2.svg",
+      "name": "transport-way-icon2.svg",
+      "size": 3971,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/transport-way-icon3.svg",
+      "name": "transport-way-icon3.svg",
+      "size": 6638,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/transport-way-icon4.svg",
+      "name": "transport-way-icon4.svg",
+      "size": 4556,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/truck-delivery.svg",
+      "name": "truck-delivery.svg",
+      "size": 1527,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/tv-icon.svg",
+      "name": "tv-icon.svg",
+      "size": 4310,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/warehouse.svg",
+      "name": "warehouse.svg",
+      "size": 1612,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/watch.svg",
+      "name": "watch.svg",
+      "size": 485,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/icons/wifi-router.svg",
+      "name": "wifi-router.svg",
+      "size": 2007,
+      "category": "images",
+      "type": ".svg"
+    },
+    {
+      "path": "assets/images/logo/Marassi_logo.png",
+      "name": "Marassi_logo.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/logo/favicon.png",
+      "name": "favicon.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/logo/logo.png",
+      "name": "logo.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/logo/logo2.png",
+      "name": "logo2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/logo/logo3.png",
+      "name": "logo3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/logo/logo4.png",
+      "name": "logo4.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/Food-Delivery.png",
+      "name": "Food-Delivery.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/Parcel-Delivery.png",
+      "name": "Parcel-Delivery.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/Rectangle.png",
+      "name": "Rectangle.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/Refrigerated-Transport.png",
+      "name": "Refrigerated-Transport.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/Shape-box.png",
+      "name": "Shape-box.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/about-five-shape3.png",
+      "name": "about-five-shape3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/about-four-check.png",
+      "name": "about-four-check.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/about-four-details-shape.png",
+      "name": "about-four-details-shape.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/about-four-shape2.png",
+      "name": "about-four-shape2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/about-plane.png",
+      "name": "about-plane.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/banner--three-plane.png",
+      "name": "banner--three-plane.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/bg-pattern.png",
+      "name": "bg-pattern.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/biman-line.png",
+      "name": "biman-line.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/blog-three-bg.png",
+      "name": "blog-three-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/brand-five-bg.png",
+      "name": "brand-five-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/brand-four-thumb5.png",
+      "name": "brand-four-thumb5.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/breadcrumb-bg.png",
+      "name": "breadcrumb-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/call-to-action-shape.png",
+      "name": "call-to-action-shape.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/chooseus-five-icon1.png",
+      "name": "chooseus-five-icon1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/chooseus-five-icon2.png",
+      "name": "chooseus-five-icon2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/chooseus-five-icon3.png",
+      "name": "chooseus-five-icon3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/chooseus-five-icon4.png",
+      "name": "chooseus-five-icon4.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/chooseus-four-1.png",
+      "name": "chooseus-four-1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/chooseus-four-2.png",
+      "name": "chooseus-four-2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/chooseus-four-icon1.png",
+      "name": "chooseus-four-icon1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/chooseus-four-icon2.png",
+      "name": "chooseus-four-icon2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/chooseus-four-icon3.png",
+      "name": "chooseus-four-icon3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/circle.png",
+      "name": "circle.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/contact-box-shape.png",
+      "name": "contact-box-shape.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/contact-us-three-plane.png",
+      "name": "contact-us-three-plane.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/counter-bg.png",
+      "name": "counter-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/counter-shape.png",
+      "name": "counter-shape.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/curve-arrow-left.png",
+      "name": "curve-arrow-left.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/curve-arrow-right.png",
+      "name": "curve-arrow-right.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/curve-road.png",
+      "name": "curve-road.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/dotted-shape.png",
+      "name": "dotted-shape.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/faq-bg-shape.png",
+      "name": "faq-bg-shape.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/feature-four-icon1.png",
+      "name": "feature-four-icon1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/feature-four-icon2.png",
+      "name": "feature-four-icon2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/feature-four-icon3.png",
+      "name": "feature-four-icon3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/features-bg.png",
+      "name": "features-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/how-it-work-bg.png",
+      "name": "how-it-work-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/idea.png",
+      "name": "idea.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/key-features-dotted.png",
+      "name": "key-features-dotted.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/key-features-shape.png",
+      "name": "key-features-shape.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/line-shape.png",
+      "name": "line-shape.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/line-shape2.png",
+      "name": "line-shape2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/logo-shape.png",
+      "name": "logo-shape.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/map-img.png",
+      "name": "map-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/moon-shape.png",
+      "name": "moon-shape.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/pattern-bg-two.png",
+      "name": "pattern-bg-two.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/pattern-bg.png",
+      "name": "pattern-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/plan-location.png",
+      "name": "plan-location.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/plane-down.png",
+      "name": "plane-down.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/plane-small.png",
+      "name": "plane-small.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/pricing-bg.png",
+      "name": "pricing-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/project-three-bg.png",
+      "name": "project-three-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/quate-bg-img.png",
+      "name": "quate-bg-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/quate-shape-two.png",
+      "name": "quate-shape-two.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/quate-shape.png",
+      "name": "quate-shape.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/quote-three-bg.png",
+      "name": "quote-three-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/quote-two-bg.png",
+      "name": "quote-two-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/request-five-icon1.png",
+      "name": "request-five-icon1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/request-five-icon2.png",
+      "name": "request-five-icon2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/support-small-plane.png",
+      "name": "support-small-plane.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/support.png",
+      "name": "support.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/testimonials-brand-bg.png",
+      "name": "testimonials-brand-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/testimonials-two-pattern.png",
+      "name": "testimonials-two-pattern.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/thrree-sections-bg.png",
+      "name": "thrree-sections-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/track-order-bg.png",
+      "name": "track-order-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/triangle-shape.png",
+      "name": "triangle-shape.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/shapes/warehouse-service.png",
+      "name": "warehouse-service.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/Delivery-Person.png",
+      "name": "Delivery-Person.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/Jahez_logo.png",
+      "name": "Jahez_logo.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/To_you_logo.png",
+      "name": "To_you_logo.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/about-advisor.png",
+      "name": "about-advisor.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/about-five-thumb1.png",
+      "name": "about-five-thumb1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/about-five-thumb2.png",
+      "name": "about-five-thumb2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/about-four-img.png",
+      "name": "about-four-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/about-four-thumb1.png",
+      "name": "about-four-thumb1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/about-four-thumb2.png",
+      "name": "about-four-thumb2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/about-img.png",
+      "name": "about-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/about-three-img1.png",
+      "name": "about-three-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/about-three-img2.png",
+      "name": "about-three-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/about-two-img1.jpg",
+      "name": "about-two-img1.jpg",
+      "size": 20,
+      "category": "images",
+      "type": ".jpg"
+    },
+    {
+      "path": "assets/images/thumbs/about-two-img2.png",
+      "name": "about-two-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/about-two-img3.png",
+      "name": "about-two-img3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/banner-five-bg1.png",
+      "name": "banner-five-bg1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/banner-five-bg2.png",
+      "name": "banner-five-bg2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/banner-five-bg3.jpg",
+      "name": "banner-five-bg3.jpg",
+      "size": 20,
+      "category": "images",
+      "type": ".jpg"
+    },
+    {
+      "path": "assets/images/thumbs/banner-four-bg1.png",
+      "name": "banner-four-bg1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/banner-four-bg2.jpg",
+      "name": "banner-four-bg2.jpg",
+      "size": 20,
+      "category": "images",
+      "type": ".jpg"
+    },
+    {
+      "path": "assets/images/thumbs/banner-img1.png",
+      "name": "banner-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/banner-img3.png",
+      "name": "banner-img3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/banner-three-img.png",
+      "name": "banner-three-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/banner-two-bg-1.png",
+      "name": "banner-two-bg-1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/banner-two-bg-2.png",
+      "name": "banner-two-bg-2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/banner-two-bg-3.png",
+      "name": "banner-two-bg-3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/banner-two-man-img.png",
+      "name": "banner-two-man-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/biman-blue.png",
+      "name": "biman-blue.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/blog-details-img1.png",
+      "name": "blog-details-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/blog-details-img2.png",
+      "name": "blog-details-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/blog-five-thumb1.jpg",
+      "name": "blog-five-thumb1.jpg",
+      "size": 20,
+      "category": "images",
+      "type": ".jpg"
+    },
+    {
+      "path": "assets/images/thumbs/blog-five-thumb2.jpg",
+      "name": "blog-five-thumb2.jpg",
+      "size": 20,
+      "category": "images",
+      "type": ".jpg"
+    },
+    {
+      "path": "assets/images/thumbs/blog-five-thumb3.jpg",
+      "name": "blog-five-thumb3.jpg",
+      "size": 20,
+      "category": "images",
+      "type": ".jpg"
+    },
+    {
+      "path": "assets/images/thumbs/blog-four-thumb1.png",
+      "name": "blog-four-thumb1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/blog-four-thumb2.png",
+      "name": "blog-four-thumb2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/blog-four-thumb3.png",
+      "name": "blog-four-thumb3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/blog-img1.png",
+      "name": "blog-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/blog-img2.png",
+      "name": "blog-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/blog-img3.png",
+      "name": "blog-img3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/blog-page-img1.png",
+      "name": "blog-page-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/blog-page-img2.png",
+      "name": "blog-page-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/blog-page-img3.png",
+      "name": "blog-page-img3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/blog-three-img1.png",
+      "name": "blog-three-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/blog-three-img2.png",
+      "name": "blog-three-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/blog-two-img1.png",
+      "name": "blog-two-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/blog-two-img2.png",
+      "name": "blog-two-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/blog-two-img3.png",
+      "name": "blog-two-img3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/blogger.png",
+      "name": "blogger.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-five-bg.png",
+      "name": "brand-five-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-four-thumb1.png",
+      "name": "brand-four-thumb1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-four-thumb2.png",
+      "name": "brand-four-thumb2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-four-thumb3.png",
+      "name": "brand-four-thumb3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-four-thumb4.png",
+      "name": "brand-four-thumb4.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-four-thumb5.png",
+      "name": "brand-four-thumb5.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-four-thumb6.png",
+      "name": "brand-four-thumb6.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-img1.png",
+      "name": "brand-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-img2.png",
+      "name": "brand-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-img3.png",
+      "name": "brand-img3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-img4.png",
+      "name": "brand-img4.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-img5.png",
+      "name": "brand-img5.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-three-img1.png",
+      "name": "brand-three-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-three-img2.png",
+      "name": "brand-three-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-three-img3.png",
+      "name": "brand-three-img3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-three-img4.png",
+      "name": "brand-three-img4.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-three-img5.png",
+      "name": "brand-three-img5.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-two-img1.png",
+      "name": "brand-two-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-two-img2.png",
+      "name": "brand-two-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-two-img3.png",
+      "name": "brand-two-img3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-two-img4.png",
+      "name": "brand-two-img4.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-two-img5.png",
+      "name": "brand-two-img5.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-two-img6.png",
+      "name": "brand-two-img6.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/brand-two-img7.png",
+      "name": "brand-two-img7.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/breadcrumb-bg.png",
+      "name": "breadcrumb-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/call-to-action-four-bg.png",
+      "name": "call-to-action-four-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/chooseus-five-bg.png",
+      "name": "chooseus-five-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/chooseus-five-thumb.png",
+      "name": "chooseus-five-thumb.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/chooseus-four-bg.png",
+      "name": "chooseus-four-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/chooseus-four-thumb.png",
+      "name": "chooseus-four-thumb.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/client-img1.png",
+      "name": "client-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/client-img2.png",
+      "name": "client-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/client-img3.png",
+      "name": "client-img3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/client-img4.png",
+      "name": "client-img4.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/comment-img1.jpg",
+      "name": "comment-img1.jpg",
+      "size": 20,
+      "category": "images",
+      "type": ".jpg"
+    },
+    {
+      "path": "assets/images/thumbs/comment-img2.png",
+      "name": "comment-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/contact-us-img1.png",
+      "name": "contact-us-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/contact-us-img2.png",
+      "name": "contact-us-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/contact-us-three-img1.png",
+      "name": "contact-us-three-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/contact-us-three-img2.png",
+      "name": "contact-us-three-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/counter-bg-img.png",
+      "name": "counter-bg-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/counter-img.png",
+      "name": "counter-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/faq-five-thumb.png",
+      "name": "faq-five-thumb.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/flag1.png",
+      "name": "flag1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/flag2.png",
+      "name": "flag2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/flag3.png",
+      "name": "flag3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/flag4.png",
+      "name": "flag4.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/flag5.png",
+      "name": "flag5.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/flag6.png",
+      "name": "flag6.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/glob-track.png",
+      "name": "glob-track.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/hungerstation-logo.png",
+      "name": "hungerstation-logo.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/invest-img.png",
+      "name": "invest-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/karen.png",
+      "name": "karen.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/kay-features-img.png",
+      "name": "kay-features-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/latest-post-img1.png",
+      "name": "latest-post-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/latest-post-img2.png",
+      "name": "latest-post-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/map-img1.png",
+      "name": "map-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/ninja_app_logo.png",
+      "name": "ninja_app_logo.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/only-track.png",
+      "name": "only-track.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/order-right-img.png",
+      "name": "order-right-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/plane-track-img.png",
+      "name": "plane-track-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/portfolio-four-bg.png",
+      "name": "portfolio-four-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/portfolio-four-thumb1.png",
+      "name": "portfolio-four-thumb1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/portfolio-four-thumb2.png",
+      "name": "portfolio-four-thumb2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/portfolio-four-thumb3.png",
+      "name": "portfolio-four-thumb3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/pricing-card-img.png",
+      "name": "pricing-card-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/process-bg-img.png",
+      "name": "process-bg-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/project-details-img1.png",
+      "name": "project-details-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/project-details-img2.png",
+      "name": "project-details-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/project-details-img3.png",
+      "name": "project-details-img3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/project-details-img4.png",
+      "name": "project-details-img4.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/project-img1.png",
+      "name": "project-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/project-img2.png",
+      "name": "project-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/project-img3.png",
+      "name": "project-img3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/project-img4.png",
+      "name": "project-img4.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/project-two-img1.png",
+      "name": "project-two-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/project-two-img2.png",
+      "name": "project-two-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/project-two-img3.png",
+      "name": "project-two-img3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/project-two-img4.png",
+      "name": "project-two-img4.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/project-two-img5.png",
+      "name": "project-two-img5.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/project-two-img6.png",
+      "name": "project-two-img6.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/projects-shape-img.png",
+      "name": "projects-shape-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/quate-img.png",
+      "name": "quate-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/quote-three-img.png",
+      "name": "quote-three-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/recent-post-img1.png",
+      "name": "recent-post-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/recent-post-img2.png",
+      "name": "recent-post-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/recent-post-img3.png",
+      "name": "recent-post-img3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/rect-img.png",
+      "name": "rect-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/service-bg-img.png",
+      "name": "service-bg-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/service-details-img.png",
+      "name": "service-details-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/service-details-img1.jpg",
+      "name": "service-details-img1.jpg",
+      "size": 20,
+      "category": "images",
+      "type": ".jpg"
+    },
+    {
+      "path": "assets/images/thumbs/service-details-img2.jpg",
+      "name": "service-details-img2.jpg",
+      "size": 20,
+      "category": "images",
+      "type": ".jpg"
+    },
+    {
+      "path": "assets/images/thumbs/service-details-img3.jpg",
+      "name": "service-details-img3.jpg",
+      "size": 20,
+      "category": "images",
+      "type": ".jpg"
+    },
+    {
+      "path": "assets/images/thumbs/service-details-img4.jpg",
+      "name": "service-details-img4.jpg",
+      "size": 20,
+      "category": "images",
+      "type": ".jpg"
+    },
+    {
+      "path": "assets/images/thumbs/service-details-video-img.jpg",
+      "name": "service-details-video-img.jpg",
+      "size": 20,
+      "category": "images",
+      "type": ".jpg"
+    },
+    {
+      "path": "assets/images/thumbs/service-four-thumb.png",
+      "name": "service-four-thumb.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/service-img.png",
+      "name": "service-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/service-three-img1.png",
+      "name": "service-three-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/service-three-img2.png",
+      "name": "service-three-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/service-three-img3.png",
+      "name": "service-three-img3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/ship-big.png",
+      "name": "ship-big.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/ship.png",
+      "name": "ship.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/signature.png",
+      "name": "signature.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/support-three-bg.png",
+      "name": "support-three-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/team-details-img.jpg",
+      "name": "team-details-img.jpg",
+      "size": 20,
+      "category": "images",
+      "type": ".jpg"
+    },
+    {
+      "path": "assets/images/thumbs/team-img1.png",
+      "name": "team-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/team-img2.png",
+      "name": "team-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/team-img3.png",
+      "name": "team-img3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/team-img4.png",
+      "name": "team-img4.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/team-img5.png",
+      "name": "team-img5.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/team-img6.png",
+      "name": "team-img6.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/team-img7.png",
+      "name": "team-img7.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/team-img8.png",
+      "name": "team-img8.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/testi-img1.png",
+      "name": "testi-img1.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/testi-img11.png",
+      "name": "testi-img11.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/testi-img2.png",
+      "name": "testi-img2.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/testi-img3.png",
+      "name": "testi-img3.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/testi-img4.png",
+      "name": "testi-img4.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/testimonails-two-img.png",
+      "name": "testimonails-two-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/track-order-img.png",
+      "name": "track-order-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/truck-head.png",
+      "name": "truck-head.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/truck-light.png",
+      "name": "truck-light.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/user-img.png",
+      "name": "user-img.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/video-five-bg.png",
+      "name": "video-five-bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    },
+    {
+      "path": "assets/images/thumbs/video_bg.png",
+      "name": "video_bg.png",
+      "size": 20,
+      "category": "images",
+      "type": ".png"
+    }
+  ],
+  "categories": {
+    "html": {
+      "count": 20,
+      "size": 585800
+    },
+    "css": {
+      "count": 8,
+      "size": 621536
+    },
+    "js": {
+      "count": 32,
+      "size": 663121
+    },
+    "images": {
+      "count": 327,
+      "size": 306321
+    },
+    "fonts": {
+      "count": 0,
+      "size": 0
+    },
+    "other": {
+      "count": 0,
+      "size": 0
+    }
+  },
+  "vendorLibraries": [
+    {
+      "name": "jQuery",
+      "pattern": {},
+      "file": "jquery-3.7.1.min.js",
+      "size": 87532
+    },
+    {
+      "name": "Bootstrap",
+      "pattern": {},
+      "file": "bootstrap.bundle.min.js",
+      "size": 80496
+    },
+    {
+      "name": "GSAP",
+      "pattern": {},
+      "file": "custom-gsap.js",
+      "size": 18581
+    },
+    {
+      "name": "Swiper",
+      "pattern": {},
+      "file": "swiper-bundle.min.js",
+      "size": 151701
+    },
+    {
+      "name": "AOS",
+      "pattern": {},
+      "file": "aos.js",
+      "size": 13799
+    },
+    {
+      "name": "Counterup",
+      "pattern": {},
+      "file": "counterup.min.js",
+      "size": 1928
+    },
+    {
+      "name": "Magnific Popup",
+      "pattern": {},
+      "file": "magnific-popup.min.js",
+      "size": 20736
+    },
+    {
+      "name": "Phosphor Icons",
+      "pattern": {},
+      "file": "phosphor-icon.js",
+      "size": 353
+    }
+  ],
+  "customCode": [
+    {
+      "path": "assets/js/accessibility.js",
+      "name": "accessibility.js",
+      "size": 10204,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/analytics.js",
+      "name": "analytics.js",
+      "size": 5803,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/animated-radial-progress.js",
+      "name": "animated-radial-progress.js",
+      "size": 1076,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/cookie-consent.js",
+      "name": "cookie-consent.js",
+      "size": 14165,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/form-handler.js",
+      "name": "form-handler.js",
+      "size": 10414,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/main.js",
+      "name": "main.js",
+      "size": 31372,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/performance.js",
+      "name": "performance.js",
+      "size": 4947,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/security.js",
+      "name": "security.js",
+      "size": 5426,
+      "category": "js",
+      "type": ".js"
+    },
+    {
+      "path": "assets/js/seo-enhancements.js",
+      "name": "seo-enhancements.js",
+      "size": 6776,
+      "category": "js",
+      "type": ".js"
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "type": "Large Files",
+      "message": "Found 5 files larger than 100KB",
+      "files": [
+        "service.html (111.71 KB)",
+        "bootstrap.min.css (227.33 KB)",
+        "bootstrap.rtl.min.css (152.29 KB)",
+        "rtl2.css (169.26 KB)",
+        "swiper-bundle.min.js (148.15 KB)"
+      ],
+      "action": "Consider code splitting, lazy loading, or compression"
+    },
+    {
+      "priority": "MEDIUM",
+      "type": "Minification",
+      "message": "Found 17 non-minified JS/CSS files",
+      "files": [
+        "animated-radial-progress.css",
+        "aos.css",
+        "magnific-popup.css",
+        "rtl2.css",
+        "satoshi.css",
+        "accessibility.js",
+        "analytics.js",
+        "animated-radial-progress.js",
+        "aos.js",
+        "cookie-consent.js",
+        "custom-gsap.js",
+        "form-handler.js",
+        "main.js",
+        "performance.js",
+        "phosphor-icon.js",
+        "security.js",
+        "seo-enhancements.js"
+      ],
+      "action": "Ensure build process minifies all production assets"
+    },
+    {
+      "priority": "LOW",
+      "type": "Dependency Review",
+      "message": "jQuery is a large dependency (87KB minified)",
+      "action": "Consider modern vanilla JS alternatives for new features"
+    },
+    {
+      "priority": "HIGH",
+      "type": "Duplicate Files",
+      "message": "Found 25 potential duplicate files",
+      "files": [
+        "404.html / 404.min.html",
+        "500.html / 500.min.html",
+        "about.html / about.min.html",
+        "contact.html / contact.min.html",
+        "footer.html / footer.min.html",
+        "index.html / index.min.html",
+        "privacy-policy.html / privacy-policy.min.html",
+        "project.html / project.min.html",
+        "service.html / service.min.html",
+        "terms-of-service.html / terms-of-service.min.html",
+        "accessibility.js / accessibility.min.js",
+        "analytics.js / analytics.min.js",
+        "animated-radial-progress.css / animated-radial-progress.js",
+        "animated-radial-progress.css / animated-radial-progress.min.js",
+        "aos.css / aos.js",
+        "aos.css / aos.min.js",
+        "cookie-consent.js / cookie-consent.min.js",
+        "form-handler.js / form-handler.min.js",
+        "magnific-popup.css / magnific-popup.min.js",
+        "main.js / main.min.js",
+        "performance.js / performance.min.js",
+        "phosphor-icon.js / phosphor-icon.min.js",
+        "security.js / security.min.js",
+        "seo-enhancements.js / seo-enhancements.min.js",
+        "swiper-bundle.min.css / swiper-bundle.min.js"
+      ],
+      "action": "Use only minified versions in production"
+    },
+    {
+      "priority": "HIGH",
+      "type": "Bundle Size",
+      "message": "Total JavaScript size is 647.58 KB",
+      "action": "Implement code splitting and lazy loading for non-critical scripts"
+    },
+    {
+      "priority": "MEDIUM",
+      "type": "Image Optimization",
+      "message": "No WebP images found",
+      "action": "Convert images to WebP format for better compression"
+    }
+  ]
+}
