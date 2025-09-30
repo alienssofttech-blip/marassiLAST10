@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Disallow admin or sensitive areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.log$
+
+# Allow all assets
+Allow: /assets/
+
+# Sitemap location
+Sitemap: https://marassi.com/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1

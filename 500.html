@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Server Error - MARASSI Transport & Logistics">
+    <meta name="robots" content="NOINDEX,NOFOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 - Server Error | MARASSI Transport & Logistics</title>
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/satoshi.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <section class="py-140 min-vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="text-center max-w-600-px mx-auto">
+                <div class="tw-mb-12">
+                    <h1 class="display-1 text-main-600 fw-bold cursor-big">500</h1>
+                    <h2 class="tw-mb-6 cursor-big" data-i18n="error_pages.500.title"></h2>
+                    <p class="text-neutral-900 cursor-small tw-mb-8" data-i18n="error_pages.500.description"></p>
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-center tw-gap-4 tw-mb-12">
+                    <a href="index.html" class="cursor-small btn btn-main hover-style-one button--stroke d-inline-flex align-items-center justify-content-center tw-gap-3 group active--translate-y-2">
+                        <span class="button__flair"></span>
+                        <span class="button__label" data-i18n="error_pages.500.go_home"></span>
+                        <span class="text-white tw-text-sm d-flex">
+                            <i class="ph-bold ph-house"></i>
+                        </span>
+                    </a>
+                    <button onclick="window.location.reload()" class="cursor-small btn btn-outline-main hover-style-two d-inline-flex align-items-center justify-content-center tw-gap-3 group active--translate-y-2">
+                        <span class="button__label" data-i18n="error_pages.500.try_again"></span>
+                        <span class="text-main-600 tw-text-sm d-flex">
+                            <i class="ph-bold ph-arrow-clockwise"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="bg-neutral-50 tw-p-6 tw-rounded-lg">
+                    <h4 class="tw-mb-4 cursor-big" data-i18n="error_pages.500.need_assistance"></h4>
+                    <p class="text-neutral-900 cursor-small tw-mb-4" data-i18n="error_pages.500.contact_support"></p>
+                    <div class="d-flex flex-wrap justify-content-center tw-gap-6">
+                        <a href="tel:+966555134448" class="text-main-600 hover-text-main-700 cursor-small d-flex align-items-center tw-gap-2">
+                            <i class="ph-bold ph-phone"></i>
+                            <span data-i18n="header_top.phone"></span>
+                        </a>
+                        <a href="mailto:support@marassi.com" class="text-main-600 hover-text-main-700 cursor-small d-flex align-items-center tw-gap-2">
+                            <i class="ph-bold ph-envelope"></i>
+                            <span>support@marassi.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+                // Initialize header-dependent elements after header is loaded
+                if (typeof window.initHeaderDependentElements === 'function') {
+                    window.initHeaderDependentElements();
+                }
+                if (typeof window.initCustomGsapElements === 'function') {
+                    window.initCustomGsapElements();
+                }
+            })
+            .catch(error => console.error('Error loading header:', error));
+    </script>
+
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/phosphor-icon.js"></script>
+    <script src="assets/js/boostrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

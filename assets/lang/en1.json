@@ -1,0 +1,467 @@
+{
+  "navigation": {
+    "home": "Home",
+    "projects": "Projects",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "header_top": {
+    "address": "KSA, Al-Qassim - Unaizah - Al-Fakhriah District",
+    "phone": "+966 0555134448",
+    "email": "info@marassi.com",
+    "slogan": "Professional Logistics Services Across KSA"
+  },
+  "languages": {
+    "english": "English",
+    "arabic": "Arabic"
+  },
+  "home": {
+    "title": "Marasi Delivery",
+    "banner": {
+      "slide_1_title": "Express Certification with Outstanding Service",
+      "slide_2_title": "Accelerated Certification & Global-Class Service",
+      "slide_3_title": "Rapid Approval & Elite Global Assistance",
+      "description": "Professionally strategize stand-alone functionalities and cooperative total linkage. Objectively predominate virtual quality vectors orthogonal.",
+      "explore_services": "Explore The Services",
+      "contact_us": "Contact Us"
+      },
+      "banner_new": {
+        "headline_1": "Flexible logistics Fast Delivery & secure package",
+        "headline_2": "Adaptable planned operations Quick Conveyance",
+        "headline_3": "Adaptable coordinated factors Quick Conveyance",
+        "subtitle": "Safe Transportation & Logistics",
+        "button_services": "View services",
+        "button_about": "Who we are",
+        "desc": "Temperate ocean-bass sea chub unicorn fish treefish eulachon tidewater goby. Flier, bighe carp Devario shortnose sucker platy smalleye"
+    },
+    "about": {
+      "label": "About Us",
+      "headline": "Marasi Delivery Smarter, Faster, Closer Logistics",
+      "description": "At Marasi Logistics Delivery, we bring you comprehensive expertise in transportation and distribution, powered by a qualified team and advanced technology to ensure fast and accurate deliveries.",
+      "feature_1": "Unlimited Revisions & Best Solutions",
+      "feature_2": "24/7 Support For Any Clients",
+      "view_services": "View services",
+      "watch_video": "Watch The Video",
+      "years_experience_label": "YEARS EXPERIENCE"
+    },
+    "counters": {
+      "main_warehouses": "Main Warehouses",
+      "delivery_trucks": "Delivery Trucks",
+      "all_cities_covered": "All Cities Covered",
+      "total_services": "Total Services"
+    },
+    "services_section": {
+      "label": "Services",
+      "heading": "Our Service For You",
+      "view_all_services": "View All Services",
+      "item_1_title": "Food Delivery",
+      "item_1_desc": "Hot, fresh, and on-time deliveries for restaurants and catering services. Ensuring quality and customer satisfaction every step of the way.",
+      "item_2_title": "Parcel Delivery",
+      "item_2_desc": "Secure and efficient parcel delivery across Saudi Arabia. Fast, reliable, and tailored for both individuals and businesses.",
+      "item_3_title": "Refrigerated Transport",
+      "item_3_desc": "Safe transport for temperature-sensitive goods like food and medicine. Maintaining freshness and quality with advanced cooling systems.",
+      "item_4_title": "Warehouse & Inventory Management",
+      "item_4_desc": "Professional storage and inventory tracking for maximum efficiency.",
+      "read_more": "Read More"
+    },
+    "choose_us": {
+      "label": "Why Choose Us",
+      "heading": "Why Choose Marasi?",
+      "description": "At Marasi Delivery Services, we deliver reliable, customer-focused logistics backed by quality, innovation, and nationwide coverage.",
+      "feature_1_title": "Reliable, high-quality, Fast",
+      "feature_1_desc": "Reliable, high-quality service with continuous performance evaluation.",
+      "feature_2_title": "Strategic partnerships",
+      "feature_2_desc": "Strategic partnerships with leading platforms like HungerStation, Jahez, and Chefz",
+      "feature_3_title": "24/7 Online Support",
+      "feature_3_desc": "24/7 customer support to ensure smooth operations at all times.",
+      "feature_4_title": "Full nationwide coverage",
+      "feature_4_desc": "Nationwide coverage across all regions of Saudi Arabia"
+    },
+    "testimonials": {
+      "label": "Safe Transportation & Logistics",
+      "heading": "What our client's says about our services",
+      "view_services": "View services",
+      "slide_1_content": "are so beguiled and demoralized by the charms of pleasure of the moment. Dislike men who are so beguiled and demoralized by the charms of",
+      "slide_1_name": "Robiul Hasan",
+      "slide_1_role": "Front End Developer",
+      "slide_2_content": "Professional and reliable service — punctual and efficient. Their team handled our logistics with care and attention to detail.",
+      "slide_2_name": "Mehedi Hasan",
+      "slide_2_role": "CEO & Founder",
+      "slide_3_content": "Exceptional logistics support and strong communication. We saw clear improvements in delivery times and customer satisfaction.",
+      "slide_3_name": "Alex",
+      "slide_3_role": "CEO & Founder",
+      "slide_4_content": "Consistent, fast, and secure — the preferred logistics partner for our business across several regions.",
+      "slide_4_name": "Cameron Williamson",
+      "slide_4_role": "CEO & Founder"
+    },
+    "cta": {
+      "label": "Let’s Talk",
+      "heading": "Let’s Talk You Need Any Help?",
+      "have_question": "Have Any Question",
+      "contact_button": "Contact Us"
+    },
+    "latest_blog": {
+      "label": "Latest Blog",
+      "heading": "Latest News & Articles",
+      "description": "Dramatically Enhance Interactive Metrics For Reliable Services. Proactively Unleash Fully Researched E-commerce."
+    }
+  },
+  "service_page": {
+    "hero": {
+      "label": "Safe Transportation & Logistics",
+      "heading": "Fastest & Secured Logistics Solution & Services",
+      "intro": "For each project we establish relationships with partners who we know will help us create added value for"
+    },
+    "tabs": {
+      "air": "Air Transportation",
+      "train": "Train Transportation",
+      "cargo": "Cargo Ship Freight",
+      "maritime": "Maritime Transportation",
+      "flight": "Flight Transportation"
+    },
+    "features": {
+      "item_1": "Fast Delivery",
+      "item_2": "Safety",
+      "item_3": "Good Package",
+      "item_4": "Privacy",
+      "extra_1": "Dedicated Transport wise",
+      "extra_2": "Domestics & Logistics"
+    },
+    "services_two": {
+      "label": "Safe Transportation & Logistics",
+      "heading": "We Provide Full Assistance Freight & Warehousing",
+      "description": "A full administration printing background. Print shirts for yourself or your online business Beautiful, customizable template,",
+      "view_services": "View services"
+    },
+    "cards": {
+      "card_1": {
+        "title": "Cargo Ship Freight",
+        "desc": "Sed ut perspiciatis unde is voluptatem accusant",
+        "li_1": "Fast Delivery & secure package",
+        "li_2": "Safety & Privacy Security",
+        "button": "View service details"
+      },
+      "card_2": {
+        "title": "Train Transportation",
+        "desc": "Sed ut perspiciatis unde is voluptatem accusant",
+        "li_1": "Fast Delivery & secure package",
+        "li_2": "Safety & Privacy Security",
+        "button": "View service details"
+      },
+      "card_3": {
+        "title": "Flight Transportation",
+        "desc": "Sed ut perspiciatis unde is voluptatem accusant",
+        "li_1": "Fast Delivery & secure package",
+        "li_2": "Safety & Privacy Security",
+        "button": "View service details"
+      },
+      "card_4": {
+        "title": "Maritime Transportation",
+        "desc": "Sed ut perspiciatis unde is voluptatem accusant",
+        "li_1": "Fast Delivery & secure package",
+        "li_2": "Safety & Privacy Security",
+        "button": "View service details"
+      }
+    }
+  },
+  "about_page": {
+    "breadcrumb": {
+      "label": "About Us",
+      "heading": "About Us"
+    },
+        "about_page_extras": {
+      "features": {
+        "01": { "title": "Warehouse Facility", "desc": "Temperate ocean-bass sea chub unicorn treefish eulachon tidewater goby." },
+        "02": { "title": "Cost Effective Pricing", "desc": "Temperate ocean-bass sea chub unicorn treefish eulachon tidewater goby." },
+        "03": { "title": "Air Freight Facility", "desc": "Temperate ocean-bass sea chub unicorn treefish eulachon tidewater goby." },
+        "04": { "title": "Container Delivery", "desc": "Temperate ocean-bass sea chub unicorn treefish eulachon tidewater goby." }
+      },
+      "contact": {
+        "need_services": "Need Our Services?",
+        "contact_with_us": "Contact With us",
+        "discuss_with_agents": "Discuss With Agents"
+      },
+      "get_in_touch": {
+        "label": "Safe Transportation & Logistics",
+        "heading": "Get In Touch",
+        "lead": "Temperate ocean-bass sea chub unicorn fish treefish eulachon Flier, bighe carp Devario shortnose sucker platy smalleye",
+        "support_label": "24/7 Support center",
+        "headquarter_label": "Headquater -",
+        "headquarter": "4517 Washington Ave. Manchester, Kentucky 39495",
+        "email_label": "Email Us -",
+        "email": "4517 Washington Ave. Manchester, Kentucky 39495"
+      }
+    },
+        "features": {
+          "01": { "title": "Warehouse Facility", "desc": "Temperate ocean-bass sea chub unicorn treefish eulachon tidewater goby." },
+          "02": { "title": "Cost Effective Pricing", "desc": "Temperate ocean-bass sea chub unicorntreefish eulachon tidewater goby." },
+          "03": { "title": "Air Freight Facility", "desc": "Temperate ocean-bass sea chub unicorn treefish eulachon tidewater goby." },
+          "04": { "title": "Container Delivery", "desc": "Temperate ocean-bass sea chub unicorn treefish eulachon tidewater goby." }
+        },
+        "contact": {
+          "need_services": "Need Our Services?",
+          "contact_with_us": "Contact With us",
+          "discuss_with_agents": "Discuss With Agents"
+        },
+        "get_in_touch": {
+          "label": "Safe Transportation & Logistics",
+          "heading": "Get In Touch",
+          "lead": "Temperate ocean-bass sea chub unicorn fish treefish eulachon Flier, bighe carp Devario shortnose sucker platy smalleye",
+          "support_label": "24/7 Support center",
+          "headquarter_label": "Headquater -",
+          "headquarter": "4517 Washington Ave. Manchester, Kentucky 39495",
+          "email_label": "Email Us -",
+          "email": "4517 Washington Ave. Manchester, Kentucky 39495"
+        },
+    "hero": {
+      "label": "Safe Transportation & Logistics",
+      "heading": "Modern transport system & secure packaging",
+      "lead": "Temperate ocean-bass sea chub unicorn fish treefish eulachon tidewater goby. Flier, bighe carp Devario shortnose sucker platy smalleye"
+    },
+    "features_block": {
+      "item_1_title": "Air Freight Transportation",
+      "item_1_desc": "Temperate ocean-bass sea chub bass sea chub treefish eulachon tidewater goby.",
+      "item_2_title": "Ocean Freight Transportation",
+      "item_2_desc": "Temperate ocean-bass sea chub bass sea chub treefish eulachon tidewater goby.",
+      "list_1": "We approached WiaTech with complex project deliver",
+      "list_2": "Awards Winning IT Solutions Company",
+      "view_services": "View services"
+    },
+    "stats": {
+      "years_experience": "25+",
+      "years_label": "Years Of Experience",
+      "rating": "4.9"
+    },
+    "team": {
+      "label": "Safe Transportation & Logistics",
+      "heading": "Behind the scene who help us lot of",
+      "view_services": "View services"
+    },
+    "transport_way": {
+      "label": "Safe Transportation & Logistics",
+      "heading": "Introducing The most Modern way of Transportation",
+      "wp_1": "Main Warehouses",
+      "wp_2": "Supply Engineers",
+      "wp_3": "Countries Covered",
+      "wp_4": "Total Services"
+    },
+    "contact_block": {
+      "need_services": "Need Our Services?",
+      "contact_with_us": "Contact With us",
+      "discuss_with_agents": "Discuss With Agents"
+    }
+  },
+  "footer": {
+    "tagline": "We ensure safe transportation & quality delivery",
+    "contact_us_at": "Contact us at",
+    "marassi_email": "@MARASSI.com",
+    "subscribe_newsletter": "Subscribe Newsletter",
+    "newsletter_description": "We understand that every challenge is an opportunity",
+    "signup_text": "Sign Up",
+    "privacy_acceptance": "By subscribing, you're accept",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service",
+    "company": "Company",
+    "support": "Support",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "copyright_text": "Logistic Service. All rights reserved.",
+    "services_section": "Services",
+    "location_label": "Location",
+    "contact_label": "Contact",
+    "social_label": "Social",
+    "address_full": "55 Main street, 2nd block Malborne, Australia",
+    "phone_primary": "+1 (368) 567 89 54",
+    "phone_secondary": "+236 (456) 896 22",
+    "email_primary": "wiatechinfo@gmail.com",
+    "website": "www.wiatech.com",
+    "footer_services": {
+      "request_freight": "Request A Freight",
+      "our_services": "Our Services",
+      "what_we_do": "What We Do",
+      "abandonment_cart": "Abandonment Cart",
+      "shipments": "Shipments",
+      "pricing_flexibility": "Pricing Flexibility"
+    }
+  },
+  "sidebar": {
+    "about_us": "About Us",
+    "about_us_description": "Temperate ocean-bass sea chub unicorn fish treefish eulachon tidewater goby. Flier, bighe carp Devario shortnose sucker platy smalleye",
+    "contact_us": "Contact Us",
+    "phone_number": "+880 (123) 456 88",
+    "email_address": "support@gmail.com",
+    "location_address": "55 Main Street, 2nd block Malborne, Australia"
+  },
+  "breadcrumb": {
+    "contact": "Contact",
+    "contact_us": "Contact Us",
+    "projects": "Projects",
+    "legal": "Legal",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service"
+  },
+  "contact_page": {
+    "get_in_touch": "Get In Touch",
+    "contact_us": "Contact Us",
+    "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque inventore",
+    "location": "Location",
+    "phone": "Phone",
+    "email": "Email",
+    "social": "Social",
+    "fill_form": "Fill Up The Form",
+    "form_description": "Your email address will not be published. Required fields are marked *"
+  },
+  "form_messages": {
+    "name_placeholder": "Your Name*",
+    "email_placeholder": "Email Address*",
+    "message_placeholder": "Enter Your Message here",
+    "send_button": "Get In Touch",
+    "required_field": "This field is required",
+    "invalid_email": "Please enter a valid email address",
+    "invalid_phone": "Please enter a valid phone number",
+    "name_min_length": "Name must be at least 2 characters",
+    "message_min_length": "Message must be at least 10 characters",
+    "success": "Thank you! Your message has been sent successfully. We'll get back to you soon.",
+    "newsletter_success": "Successfully subscribed to newsletter!"
+  },
+  "cookie_consent": {
+    "title": "We use cookies",
+    "description": "We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies.",
+    "accept_all": "Accept All",
+    "necessary_only": "Necessary Only",
+    "settings": "Settings",
+    "settings_title": "Cookie Settings",
+    "necessary_cookies_heading": "Necessary Cookies",
+    "necessary_cookies_description": "These cookies are essential for the website to function properly.",
+    "always_active": "Always Active",
+    "analytics_cookies_heading": "Analytics Cookies",
+    "analytics_cookies_description": "These cookies help us understand how visitors interact with our website.",
+    "optional": "Optional",
+    "save_settings": "Save Settings",
+    "close": "Close"
+  },
+  "error_pages": {
+    "404": {
+      "title": "Page Not Found",
+      "description": "The page you're looking for doesn't exist or has been moved. Let's get you back on track.",
+      "go_home": "Go Home",
+      "contact_us": "Contact Us",
+      "quick_links": "Quick Links",
+      "our_services": "Our Services"
+    },
+    "500": {
+      "title": "Server Error",
+      "description": "We're experiencing technical difficulties. Our team has been notified and is working to resolve the issue.",
+      "go_home": "Go Home",
+      "try_again": "Try Again",
+      "need_assistance": "Need Immediate Assistance?",
+      "contact_support": "Contact our support team directly:"
+    }
+  },
+  "privacy_policy": {
+    "title": "Privacy Policy",
+    "last_updated": "Last updated: January 2025",
+    "section_1": {
+      "title": "1. Information We Collect",
+      "description": "We collect information you provide directly to us, such as when you:",
+      "items": [
+        "Fill out our contact forms",
+        "Subscribe to our newsletter",
+        "Request freight services",
+        "Communicate with us via email or phone"
+      ]
+    },
+    "section_2": {
+      "title": "2. How We Use Your Information",
+      "description": "We use the information we collect to:",
+      "items": [
+        "Provide and improve our logistics services",
+        "Respond to your inquiries and requests",
+        "Send you updates about our services",
+        "Comply with legal obligations"
+      ]
+    },
+    "section_3": {
+      "title": "3. Information Sharing",
+      "description": "We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as described in this policy or as required by law."
+    },
+    "section_4": {
+      "title": "4. Data Security",
+      "description": "We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction."
+    },
+    "section_5": {
+      "title": "5. Your Rights",
+      "description": "You have the right to:",
+      "items": [
+        "Access your personal data",
+        "Correct inaccurate data",
+        "Request deletion of your data",
+        "Object to processing of your data",
+        "Data portability"
+      ]
+    },
+    "section_6": {
+      "title": "6. Cookies",
+      "description": "We use cookies to enhance your experience on our website. You can control cookie settings through your browser preferences."
+    },
+    "section_7": {
+      "title": "7. Contact Us",
+      "description": "If you have questions about this Privacy Policy, please contact us:",
+      "email": "privacy@marassi.com",
+      "phone": "+966 0555134448",
+      "address": "KSA, Al-Qassim - Unaizah - Al-Fakhriah District"
+    }
+  },
+  "terms_of_service": {
+    "title": "Terms of Service",
+    "last_updated": "Last updated: January 2025",
+    "section_1": {
+      "title": "1. Acceptance of Terms",
+      "description": "By accessing and using MARASSI logistics services, you accept and agree to be bound by the terms and provision of this agreement."
+    },
+    "section_2": {
+      "title": "2. Service Description",
+      "description": "MARASSI provides comprehensive logistics and transportation services including:",
+      "items": [
+        "Air transportation and freight",
+        "Maritime shipping services",
+        "Ground transportation",
+        "Warehousing and storage",
+        "Supply chain management"
+      ]
+    },
+    "section_3": {
+      "title": "3. User Responsibilities",
+      "description": "Users agree to:",
+      "items": [
+        "Provide accurate and complete information",
+        "Comply with all applicable laws and regulations",
+        "Not use our services for illegal activities",
+        "Respect intellectual property rights"
+      ]
+    },
+    "section_4": {
+      "title": "4. Limitation of Liability",
+      "description": "MARASSI shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of our services."
+    },
+    "section_5": {
+      "title": "5. Service Availability",
+      "description": "We strive to maintain service availability but do not guarantee uninterrupted access. Services may be temporarily unavailable due to maintenance or technical issues."
+    },
+    "section_6": {
+      "title": "6. Pricing and Payment",
+      "description": "Service pricing is subject to change. Payment terms will be clearly communicated before service commencement. All fees are non-refundable unless otherwise specified."
+    },
+    "section_7": {
+      "title": "7. Termination",
+      "description": "We reserve the right to terminate or suspend access to our services immediately, without prior notice, for conduct that violates these Terms of Service."
+    },
+    "section_8": {
+      "title": "8. Contact Information",
+      "email": "legal@marassi.com",
+      "phone": "+966 0555134448",
+      "address": "KSA, Al-Qassim - Unaizah - Al-Fakhriah District"
+    }
+  }
+}

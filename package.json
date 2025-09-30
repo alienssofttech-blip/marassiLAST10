@@ -1,0 +1,33 @@
+{
+  "name": "marassi-logistics",
+  "version": "1.0.0",
+  "description": "MARASSI Transport & Logistics - Professional logistics website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "npm run optimize",
+    "optimize": "node scripts/optimize.js",
+    "test": "node scripts/test.js",
+    "validate": "node scripts/validate.js"
+  },
+  "keywords": [
+    "logistics",
+    "transportation",
+    "freight",
+    "shipping"
+  ],
+  "author": "MARASSI Logistics",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "gsap": "^3.13.0",
+    "nodemailer": "^7.0.6"
+  },
+  "devDependencies": {
+    "clean-css": "^5.3.2",
+    "html-minifier": "^4.0.0",
+    "terser": "^5.19.4"
+  }
+}
