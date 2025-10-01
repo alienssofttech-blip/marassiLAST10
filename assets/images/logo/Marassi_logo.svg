@@ -1,0 +1,18 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="60" rx="4" fill="#1E40AF"/>
+
+  <!-- Truck Icon -->
+  <g transform="translate(10, 15)">
+    <path d="M25 20H5C4.44772 20 4 20.4477 4 21V27C4 27.5523 4.44772 28 5 28H6C6 30.2091 7.79086 32 10 32C12.2091 32 14 30.2091 14 28H20C20 30.2091 21.7909 32 24 32C26.2091 32 28 30.2091 28 28H29C29.5523 28 30 27.5523 30 27V21C30 20.4477 29.5523 20 29 20H25Z" fill="white" fill-opacity="0.3"/>
+    <rect x="4" y="14" width="21" height="6" rx="1" fill="white" fill-opacity="0.3"/>
+    <circle cx="10" cy="28" r="2" fill="white"/>
+    <circle cx="24" cy="28" r="2" fill="white"/>
+  </g>
+
+  <!-- Text: MARASSI -->
+  <text x="50" y="38" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="white">MARASSI</text>
+
+  <!-- Tagline -->
+  <text x="50" y="50" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="400" fill="white" fill-opacity="0.8">TRANSPORT & LOGISTICS</text>
+</svg>
