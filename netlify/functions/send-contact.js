@@ -121,7 +121,7 @@ async function sendEmailNotification(name, email, message, messageId) {
   try {
     const RESEND_API_KEY = process.env.RESEND_API_KEY;
 
-    if (!RESEND_API_KEY || RESEND_API_KEY === 're_Db7GQtUr_6xfBeDmh1TP6skphGQ83ENPo') {
+    if (!RESEND_API_KEY) {
       console.warn('⚠️ Resend API key not configured. Email notification skipped.');
       console.warn('To enable emails: Add RESEND_API_KEY to Netlify environment variables');
       console.warn('Get your key at: https://resend.com/api-keys');
