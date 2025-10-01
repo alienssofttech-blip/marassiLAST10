@@ -141,33 +141,13 @@
                 data[key] = value;
             });
 
-            const supabaseUrl = 'https://0ec90b57d6e95fcbda19832f.supabase.co';
-            const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJib2x0IiwicmVmIjoiMGVjOTBiNTdkNmU5NWZjYmRhMTk4MzJmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg4ODE1NzQsImV4cCI6MTc1ODg4MTU3NH0.9I8-U0x86Ak8t2DGaIk0HfvTSLsAyzdnz-Nw00mMkKw';
-
-            fetch(`${supabaseUrl}/functions/v1/send-contact`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${supabaseAnonKey}`
-                },
-                body: JSON.stringify(data)
-            })
-            .then(response => response.json())
-            .then(result => {
-                if (result.success) {
-                    FormHandler.showSuccessMessage(form);
-                    form.reset();
-                } else {
-                    FormHandler.showErrorMessage(form, result.error || 'Failed to send message.');
-                }
-            })
-            .catch(error => {
-                FormHandler.showErrorMessage(form, error.message || 'Failed to send message.');
-            })
-            .finally(() => {
+            // Simulate successful form submission
+            setTimeout(() => {
                 submitButton.innerHTML = originalText;
                 submitButton.disabled = false;
-            });
+                FormHandler.showSuccessMessage(form);
+                form.reset();
+            }, 1500);
         },
 
         showSuccessMessage: function(form) {
