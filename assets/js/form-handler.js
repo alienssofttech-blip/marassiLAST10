@@ -124,56 +124,91 @@
             field.classList.remove('is-invalid');
         },
 
-        submitForm: function(form) {
+        submitForm: async function(form) {
             const submitButton = form.querySelector('button[type="submit"]');
             const originalText = submitButton.innerHTML;
-            // Show loading state
+
             submitButton.innerHTML = `
                 <span class="spinner-border spinner-border-sm me-2" role="status"></span>
                 Sending...
             `;
             submitButton.disabled = true;
 
-            // Prepare form data
             const formData = new FormData(form);
             const data = {};
             formData.forEach((value, key) => {
                 data[key] = value;
             });
 
-            // Simulate successful form submission
-            setTimeout(() => {
+            const SUPABASE_URL = 'https://0ec90b57d6e95fcbda19832f.supabase.co';
+            const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJib2x0IiwicmVmIjoiMGVjOTBiNTdkNmU5NWZjYmRhMTk4MzJmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg4ODE1NzQsImV4cCI6MTc1ODg4MTU3NH0.9I8-U0x86Ak8t2DGaIk0HfvTSLsAyzdnz-Nw00mMkKw';
+
+            try {
+                const response = await fetch(`${SUPABASE_URL}/functions/v1/send-contact`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                const result = await response.json();
+
+                if (response.ok && result.success) {
+                    FormHandler.showSuccessMessage(form, result.message);
+                    form.reset();
+                } else {
+                    FormHandler.showErrorMessage(form, result.error || 'Failed to send message. Please try again.');
+                }
+            } catch (error) {
+                console.error('Form submission error:', error);
+                FormHandler.showErrorMessage(form, 'Network error. Please check your connection and try again.');
+            } finally {
                 submitButton.innerHTML = originalText;
                 submitButton.disabled = false;
-                FormHandler.showSuccessMessage(form);
-                form.reset();
-            }, 1500);
+            }
         },
 
-        showSuccessMessage: function(form) {
+        showSuccessMessage: function(form, message) {
+            const existingAlert = form.querySelector('.alert');
+            if (existingAlert) existingAlert.remove();
+
             const successDiv = document.createElement('div');
             successDiv.className = 'alert alert-success';
-            const successMessage = window.getTranslation ? window.getTranslation('form_messages.success') : 'Thank you! Your message has been sent successfully. We\'ll get back to you soon.';
-            successDiv.innerHTML = `<i class="ph-bold ph-check-circle me-2"></i>${successMessage}`;
+            const displayMessage = message || (window.getTranslation ? window.getTranslation('form_messages.success') : 'Thank you! Your message has been sent successfully. We\'ll get back to you soon.');
+            successDiv.innerHTML = `<i class="ph-bold ph-check-circle me-2"></i>${displayMessage}`;
             successDiv.style.cssText = `
                 margin-top: 20px;
+                padding: 15px 20px;
+                border-radius: 8px;
+                background-color: #d4edda;
+                border-color: #c3e6cb;
+                color: #155724;
                 animation: slideDown 0.5s ease;
             `;
-            
+
             form.appendChild(successDiv);
-            
-            // Remove success message after 5 seconds
+
             setTimeout(() => {
                 successDiv.remove();
             }, 5000);
         },
 
         showErrorMessage: function(form, error) {
+            const existingAlert = form.querySelector('.alert');
+            if (existingAlert) existingAlert.remove();
+
             const errorDiv = document.createElement('div');
             errorDiv.className = 'alert alert-danger';
             errorDiv.innerHTML = `<i class="ph-bold ph-x-circle me-2"></i>${error}`;
             errorDiv.style.cssText = `
                 margin-top: 20px;
+                padding: 15px 20px;
+                border-radius: 8px;
+                background-color: #f8d7da;
+                border-color: #f5c6cb;
+                color: #721c24;
                 animation: slideDown 0.5s ease;
             `;
             form.appendChild(errorDiv);
