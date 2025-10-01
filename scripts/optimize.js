@@ -67,6 +67,12 @@ class WebsiteOptimizer {
 
   async optimizeCSS() {
     console.log('\n🎨 Optimizing CSS files...');
+
+    if (!fs.existsSync('assets/css')) {
+      console.log('  ℹ️  CSS directory not found, skipping...');
+      return;
+    }
+
     const cssFiles = this.getFiles('assets/css', '.css');
 
     for (const file of cssFiles) {
@@ -106,6 +112,12 @@ class WebsiteOptimizer {
 
   async optimizeJS() {
     console.log('\n⚡ Optimizing JavaScript files...');
+
+    if (!fs.existsSync('assets/js')) {
+      console.log('  ℹ️  JS directory not found, skipping...');
+      return;
+    }
+
     const jsFiles = this.getFiles('assets/js', '.js').filter(file => 
       !file.includes('.min.js') && 
       !file.includes('jquery') && 
@@ -146,22 +158,37 @@ class WebsiteOptimizer {
 
   getFiles(dir, extension) {
     const files = [];
-    
+
     function scanDirectory(directory) {
-      const items = fs.readdirSync(directory);
-      
-      for (const item of items) {
-        const fullPath = path.join(directory, item);
-        const stat = fs.statSync(fullPath);
-        
-        if (stat.isDirectory()) {
-          scanDirectory(fullPath);
-        } else if (item.endsWith(extension)) {
-          files.push(fullPath);
+      try {
+        if (!fs.existsSync(directory)) {
+          return;
         }
+
+        const items = fs.readdirSync(directory);
+
+        for (const item of items) {
+          const fullPath = path.join(directory, item);
+
+          try {
+            const stat = fs.statSync(fullPath);
+
+            if (stat.isDirectory()) {
+              scanDirectory(fullPath);
+            } else if (item.endsWith(extension)) {
+              files.push(fullPath);
+            }
+          } catch (err) {
+            // Skip files that can't be accessed
+            continue;
+          }
+        }
+      } catch (err) {
+        // Skip directories that can't be accessed
+        return;
       }
     }
-    
+
     scanDirectory(dir);
     return files;
   }
