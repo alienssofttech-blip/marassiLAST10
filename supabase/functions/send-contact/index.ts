@@ -14,7 +14,7 @@ interface ContactFormData {
 }
 
 const RESEND_API_KEY = "lQbyJfvIWW8M3atM:57802454:7282847";
-const ADMIN_EMAIL = "admin@marassi.com"; // TODO: Replace with actual admin email
+const ADMIN_EMAIL = "alienssoft.tech@gmail.com";
 const FROM_EMAIL = "noreply@marassi.com";
 
 async function sendEmailNotification(name: string, email: string, message: string, messageId: string) {
