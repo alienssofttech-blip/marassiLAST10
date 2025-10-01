@@ -5,6 +5,10 @@ const CleanCSS = require('clean-css');
 const { minify: minifyJS } = require('terser');
 const zlib = require('zlib');
 
+// Ensure we're in the project root directory
+const projectRoot = path.resolve(__dirname, '..');
+process.chdir(projectRoot);
+
 class WebsiteOptimizer {
   constructor() {
     this.stats = {

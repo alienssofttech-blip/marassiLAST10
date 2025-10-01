@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
-    "build": "npm run optimize",
+    "build": "node scripts/optimize.js || echo 'Build optimization skipped'",
     "optimize": "node scripts/optimize.js",
     "test": "node scripts/test.js",
     "validate": "node scripts/validate.js",

@@ -1,6 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 
+// Ensure we're in the project root directory
+const projectRoot = path.resolve(__dirname, '..');
+process.chdir(projectRoot);
+
 class WebsiteTester {
   constructor() {
     this.testResults = {
