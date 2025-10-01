@@ -97,8 +97,8 @@
     * counter three
     * blog three
 ============================ CSS table of contents and Scss Indexing ================================ */
-/* Font Family*/
-@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap");
+/* Font Family */
+/* Google Fonts now loaded in HTML <link> for better performance and reliability */
 /* ========================= Variable Css Start ======================== */
 /*
     Design Tokens & Scales
