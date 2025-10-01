@@ -61,7 +61,7 @@ class WebsiteValidator {
     
     // Check if critical assets exist
     const criticalAssets = [
-      'assets/css/main.css',
+      'assets/css/rtl2.css',
       'assets/js/main.js',
       'assets/images/logo/Marassi_logo.png',
       'header.html',
