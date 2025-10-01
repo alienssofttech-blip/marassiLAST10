@@ -1,79 +1,56 @@
-# Email Form Setup Guide
+# EMAIL NOTIFICATION SETUP - RESEND API
 
-## Overview
-The contact form on your MARASSI Logistics website uses a Supabase Edge Function to send emails via Resend.com email service.
+## 🎉 Good News!
+Your contact form is working and saving messages to the database! Now let's get email notifications working.
 
-## Current Setup
+---
 
-### 1. Edge Function
-- **Location**: `supabase/functions/send-contact/index.ts`
-- **Endpoint**: `https://0ec90b57d6e95fcbda19832f.supabase.co/functions/v1/send-contact`
-- **Method**: POST
-- **Authentication**: Public (no JWT verification required)
+## ⚠️ The Problem
+The Resend API key in the code is **invalid**. You need a real Resend API key.
 
-### 2. Form Handler
-- **Location**: `assets/js/form-handler.js`
-- **Configured to**: Send form data to Supabase Edge Function
-- **Features**:
-  - Real-time validation
-  - Loading states
-  - Success/error messages
-  - Email validation
+---
 
-## Deployment Steps
+## ✅ SOLUTION: Get a FREE Resend API Key (2 minutes)
 
-### Step 1: Get a Resend API Key
+### **Step 1: Sign Up for Resend (FREE)**
 
-1. Sign up at [resend.com](https://resend.com)
-2. Navigate to API Keys section
-3. Create a new API key
-4. Copy the API key (starts with `re_`)
+1. Go to: **https://resend.com**
+2. Click **"Start Building"** or **"Sign Up"**
+3. Sign up with your email or GitHub account
+4. Verify your email address
 
-### Step 2: Deploy the Edge Function
+### **Step 2: Get Your API Key**
 
-You have two options to deploy:
+1. After logging in, you'll be on the Dashboard
+2. Click **"API Keys"** in the left sidebar
+3. Click **"Create API Key"**
+4. Give it a name: `MARASSI Contact Form`
+5. Select permissions: **"Sending access"**
+6. Click **"Create"**
+7. **COPY THE API KEY** - it looks like: `re_xxxxxxxxxxxxxxxxxxxxxxxxxxxx`
+   - ⚠️ **IMPORTANT**: Save it now! You can only see it once!
 
-#### Option A: Using Supabase Dashboard (Recommended)
+### **Step 3: Add API Key to Netlify**
 
-1. Go to your Supabase project dashboard
-2. Navigate to **Edge Functions** in the left sidebar
-3. Click **Create a new function** or **Deploy existing function**
-4. Name it: `send-contact`
-5. Copy the content from `supabase/functions/send-contact/index.ts`
-6. Paste it into the function editor
-7. Click **Deploy**
+1. Go to: **Netlify Dashboard** → **Site settings** → **Environment variables**
+2. Click **"Add a variable"**
+3. Add this variable:
 
-#### Option B: Using Supabase CLI
-
-```bash
-# Install Supabase CLI (if not already installed)
-npm install -g supabase
-
-# Login to Supabase
-supabase login
-
-# Link your project
-supabase link --project-ref 0ec90b57d6e95fcbda19832f
-
-# Deploy the function
-supabase functions deploy send-contact
+```
+Key: RESEND_API_KEY
+Value: re_xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+(paste your actual Resend API key)
 ```
 
-### Step 3: Configure Environment Variables
+4. Click **"Save"**
+5. Go to **Deploys** tab → Click **"Trigger deploy"**
 
-1. In your Supabase dashboard, go to **Project Settings** → **Edge Functions**
-2. Under **Secrets**, add a new secret:
-   - Name: `RESEND_API_KEY`
-   - Value: Your Resend API key from Step 1
-3. Save the secret
+### **Step 4: Test the Form**
 
-### Step 4: Test the Form
-
-1. Open your website: `https://your-domain.com/contact.html`
-2. Fill out the contact form with test data
-3. Submit the form
-4. Check your email inbox (alienssoft.tech@gmail.com) for the message
-5. Verify the success message appears on the form
+1. Wait for deployment to complete (2-3 minutes)
+2. Go to your contact page
+3. Fill out and submit the form
+4. Check `alienssoft.tech@gmail.com` for the email notification!
 
 ## How It Works
 

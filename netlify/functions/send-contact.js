@@ -119,14 +119,23 @@ exports.handler = async (event, context) => {
 
 async function sendEmailNotification(name, email, message, messageId) {
   try {
-    const RESEND_API_KEY = process.env.RESEND_API_KEY || 'lQbyJfvIWW8M3atM:57802454:7282847';
+    const RESEND_API_KEY = process.env.RESEND_API_KEY;
+
+    if (!RESEND_API_KEY || RESEND_API_KEY === 'lQbyJfvIWW8M3atM:57802454:7282847') {
+      console.warn('⚠️ Resend API key not configured. Email notification skipped.');
+      console.warn('To enable emails: Add RESEND_API_KEY to Netlify environment variables');
+      console.warn('Get your key at: https://resend.com/api-keys');
+      return false;
+    }
+
     const ADMIN_EMAIL = 'alienssoft.tech@gmail.com';
-    const FROM_EMAIL = 'noreply@marassi.com';
+    const FROM_EMAIL = process.env.RESEND_FROM_EMAIL || 'MARASSI Logistics <onboarding@resend.dev>';
 
     const emailBody = {
       from: FROM_EMAIL,
       to: ADMIN_EMAIL,
       subject: `New Contact Form Message from ${name}`,
+      reply_to: email,
       html: `
         <!DOCTYPE html>
         <html>
