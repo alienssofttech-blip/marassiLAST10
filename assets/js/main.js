@@ -81,7 +81,7 @@
           rtlLink = document.createElement('link');
           rtlLink.id = rtlStylesheetId;
           rtlLink.rel = 'stylesheet';
-          rtlLink.href = 'assets/css/rtl2.css';
+          rtlLink.href = 'assets/css/main.css';
           document.head.appendChild(rtlLink);
         }
       } else {
