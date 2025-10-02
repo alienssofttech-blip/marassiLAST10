@@ -189,7 +189,7 @@ Deno.serve(async (req: Request) => {
     return new Response(
       JSON.stringify({
         success: true,
-        message: "Message sent successfully! We will get back to you soon.",
+        message: "تم إرسال الرسالة بنجاح! سنعاود الاتصال بك قريباً.",
         id: data.id,
       }),
       {
