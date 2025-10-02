@@ -150,7 +150,7 @@ async function sendEmailNotification(name, email, message, messageId) {
             .value { background: white; padding: 10px; border-radius: 4px; border: 1px solid #e0e0e0; }
             .message-box { background: white; padding: 15px; border-radius: 4px; border-left: 4px solid #667eea; min-height: 100px; }
             .footer { background: #f0f0f0; padding: 15px; text-align: center; border-radius: 0 0 8px 8px; font-size: 12px; color: #666; }
-            .button { display: inline-block; background: #667eea; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; margin-top: 10px; }
+            .button { display: inline-block; background: #667eea; color: #FFFFFF; padding: 12px 24px; text-decoration: none; border-radius: 4px; margin-top: 10px; }
           </style>
         </head>
         <body>
