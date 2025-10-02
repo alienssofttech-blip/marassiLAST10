@@ -10,11 +10,18 @@
     "start": "node server.js",
     "build": "echo 'Build complete'"
   },
-  "keywords": ["logistics"],
+  "keywords": [
+    "logistics"
+  ],
   "author": "MARASSI",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.21.2",
-    "@supabase/supabase-js": "^2.39.0"
+    "@supabase/supabase-js": "^2.39.0",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "compression": "^1.8.1",
+    "du-cli": "^1.0.0",
+    "webpack-bundle-analyzer": "^4.10.2"
   }
 }

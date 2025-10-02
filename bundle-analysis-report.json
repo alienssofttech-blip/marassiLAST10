@@ -1,17 +1,17 @@
 {
-  "totalSize": 2176778,
+  "totalSize": 2352514,
   "files": [
     {
       "path": "404.html",
       "name": "404.html",
-      "size": 4316,
+      "size": 4320,
       "category": "html",
       "type": ".html"
     },
     {
       "path": "404.min.html",
       "name": "404.min.html",
-      "size": 3143,
+      "size": 3147,
       "category": "html",
       "type": ".html"
     },
@@ -25,35 +25,35 @@
     {
       "path": "500.min.html",
       "name": "500.min.html",
-      "size": 3352,
+      "size": 3356,
       "category": "html",
       "type": ".html"
     },
     {
       "path": "about.html",
       "name": "about.html",
-      "size": 85125,
+      "size": 85145,
       "category": "html",
       "type": ".html"
     },
     {
       "path": "about.min.html",
       "name": "about.min.html",
-      "size": 45745,
+      "size": 45765,
       "category": "html",
       "type": ".html"
     },
     {
       "path": "contact.html",
       "name": "contact.html",
-      "size": 35864,
+      "size": 36296,
       "category": "html",
       "type": ".html"
     },
     {
       "path": "contact.min.html",
       "name": "contact.min.html",
-      "size": 22734,
+      "size": 23072,
       "category": "html",
       "type": ".html"
     },
@@ -72,72 +72,86 @@
       "type": ".html"
     },
     {
+      "path": "header.html",
+      "name": "header.html",
+      "size": 5390,
+      "category": "html",
+      "type": ".html"
+    },
+    {
+      "path": "header.min.html",
+      "name": "header.min.html",
+      "size": 3484,
+      "category": "html",
+      "type": ".html"
+    },
+    {
       "path": "index.html",
       "name": "index.html",
-      "size": 98195,
+      "size": 98592,
       "category": "html",
       "type": ".html"
     },
     {
       "path": "index.min.html",
       "name": "index.min.html",
-      "size": 51035,
+      "size": 51354,
       "category": "html",
       "type": ".html"
     },
     {
       "path": "privacy-policy.html",
       "name": "privacy-policy.html",
-      "size": 7367,
+      "size": 7371,
       "category": "html",
       "type": ".html"
     },
     {
       "path": "privacy-policy.min.html",
       "name": "privacy-policy.min.html",
-      "size": 5575,
+      "size": 5579,
       "category": "html",
       "type": ".html"
     },
     {
       "path": "project.html",
       "name": "project.html",
-      "size": 14647,
+      "size": 14679,
       "category": "html",
       "type": ".html"
     },
     {
       "path": "project.min.html",
       "name": "project.min.html",
-      "size": 10994,
+      "size": 11026,
       "category": "html",
       "type": ".html"
     },
     {
       "path": "service.html",
       "name": "service.html",
-      "size": 114391,
+      "size": 114419,
       "category": "html",
       "type": ".html"
     },
     {
       "path": "service.min.html",
       "name": "service.min.html",
-      "size": 42304,
+      "size": 42332,
       "category": "html",
       "type": ".html"
     },
     {
       "path": "terms-of-service.html",
       "name": "terms-of-service.html",
-      "size": 7000,
+      "size": 7004,
       "category": "html",
       "type": ".html"
     },
     {
       "path": "terms-of-service.min.html",
       "name": "terms-of-service.min.html",
-      "size": 5292,
+      "size": 5296,
       "category": "html",
       "type": ".html"
     },
@@ -149,9 +163,23 @@
       "type": ".css"
     },
     {
+      "path": "assets/css/animated-radial-progress.min.css",
+      "name": "animated-radial-progress.min.css",
+      "size": 375,
+      "category": "css",
+      "type": ".css"
+    },
+    {
       "path": "assets/css/aos.css",
       "name": "aos.css",
       "size": 28765,
+      "category": "css",
+      "type": ".css"
+    },
+    {
+      "path": "assets/css/aos.min.css",
+      "name": "aos.min.css",
+      "size": 28111,
       "category": "css",
       "type": ".css"
     },
@@ -177,9 +205,23 @@
       "type": ".css"
     },
     {
-      "path": "assets/css/rtl2.css",
-      "name": "rtl2.css",
-      "size": 173321,
+      "path": "assets/css/magnific-popup.min.css",
+      "name": "magnific-popup.min.css",
+      "size": 5739,
+      "category": "css",
+      "type": ".css"
+    },
+    {
+      "path": "assets/css/main.css",
+      "name": "main.css",
+      "size": 173245,
+      "category": "css",
+      "type": ".css"
+    },
+    {
+      "path": "assets/css/main.min.css",
+      "name": "main.min.css",
+      "size": 121822,
       "category": "css",
       "type": ".css"
     },
@@ -187,6 +229,13 @@
       "path": "assets/css/satoshi.css",
       "name": "satoshi.css",
       "size": 3102,
+      "category": "css",
+      "type": ".css"
+    },
+    {
+      "path": "assets/css/satoshi.min.css",
+      "name": "satoshi.min.css",
+      "size": 2785,
       "category": "css",
       "type": ".css"
     },
@@ -298,21 +347,21 @@
     {
       "path": "assets/js/custom-gsap.js",
       "name": "custom-gsap.js",
-      "size": 18581,
+      "size": 19342,
       "category": "js",
       "type": ".js"
     },
     {
       "path": "assets/js/form-handler.js",
       "name": "form-handler.js",
-      "size": 10414,
+      "size": 10650,
       "category": "js",
       "type": ".js"
     },
     {
       "path": "assets/js/form-handler.min.js",
       "name": "form-handler.min.js",
-      "size": 5215,
+      "size": 10650,
       "category": "js",
       "type": ".js"
     },
@@ -2713,16 +2762,16 @@
   ],
   "categories": {
     "html": {
-      "count": 20,
-      "size": 585800
+      "count": 22,
+      "size": 596348
     },
     "css": {
-      "count": 8,
-      "size": 621536
+      "count": 13,
+      "size": 780292
     },
     "js": {
       "count": 32,
-      "size": 663121
+      "size": 669553
     },
     "images": {
       "count": 327,
@@ -2754,7 +2803,7 @@
       "name": "GSAP",
       "pattern": {},
       "file": "custom-gsap.js",
-      "size": 18581
+      "size": 19342
     },
     {
       "name": "Swiper",
@@ -2819,7 +2868,7 @@
     {
       "path": "assets/js/form-handler.js",
       "name": "form-handler.js",
-      "size": 10414,
+      "size": 10650,
       "category": "js",
       "type": ".js"
     },
@@ -2856,12 +2905,13 @@
     {
       "priority": "HIGH",
       "type": "Large Files",
-      "message": "Found 5 files larger than 100KB",
+      "message": "Found 6 files larger than 100KB",
       "files": [
-        "service.html (111.71 KB)",
+        "service.html (111.74 KB)",
         "bootstrap.min.css (227.33 KB)",
         "bootstrap.rtl.min.css (152.29 KB)",
-        "rtl2.css (169.26 KB)",
+        "main.css (169.18 KB)",
+        "main.min.css (118.97 KB)",
         "swiper-bundle.min.js (148.15 KB)"
       ],
       "action": "Consider code splitting, lazy loading, or compression"
@@ -2874,7 +2924,7 @@
         "animated-radial-progress.css",
         "aos.css",
         "magnific-popup.css",
-        "rtl2.css",
+        "main.css",
         "satoshi.css",
         "accessibility.js",
         "analytics.js",
@@ -2900,18 +2950,24 @@
     {
       "priority": "HIGH",
       "type": "Duplicate Files",
-      "message": "Found 25 potential duplicate files",
+      "message": "Found 32 potential duplicate files",
       "files": [
         "404.html / 404.min.html",
         "500.html / 500.min.html",
         "about.html / about.min.html",
         "contact.html / contact.min.html",
         "footer.html / footer.min.html",
+        "header.html / header.min.html",
         "index.html / index.min.html",
         "privacy-policy.html / privacy-policy.min.html",
         "project.html / project.min.html",
         "service.html / service.min.html",
         "terms-of-service.html / terms-of-service.min.html",
+        "animated-radial-progress.css / animated-radial-progress.min.css",
+        "aos.css / aos.min.css",
+        "magnific-popup.css / magnific-popup.min.css",
+        "main.css / main.min.css",
+        "satoshi.css / satoshi.min.css",
         "accessibility.js / accessibility.min.js",
         "analytics.js / analytics.min.js",
         "animated-radial-progress.css / animated-radial-progress.js",
@@ -2921,7 +2977,8 @@
         "cookie-consent.js / cookie-consent.min.js",
         "form-handler.js / form-handler.min.js",
         "magnific-popup.css / magnific-popup.min.js",
-        "main.js / main.min.js",
+        "main.css / main.js",
+        "main.css / main.min.js",
         "performance.js / performance.min.js",
         "phosphor-icon.js / phosphor-icon.min.js",
         "security.js / security.min.js",
@@ -2933,7 +2990,7 @@
     {
       "priority": "HIGH",
       "type": "Bundle Size",
-      "message": "Total JavaScript size is 647.58 KB",
+      "message": "Total JavaScript size is 653.86 KB",
       "action": "Implement code splitting and lazy loading for non-critical scripts"
     },
     {

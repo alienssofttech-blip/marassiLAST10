@@ -21,12 +21,13 @@ class WebsiteOptimizer {
 
   async optimize() {
     console.log('🚀 Starting website optimization...\n');
-    
+
     await this.optimizeHTML();
     await this.optimizeCSS();
     await this.optimizeJS();
+    await this.compressAssets();
     await this.generateReport();
-    
+
     console.log('✅ Optimization complete!');
   }
 
@@ -158,6 +159,42 @@ class WebsiteOptimizer {
         console.log(`  ✗ ${file}: Error - ${error.message}`);
       }
     }
+  }
+
+  async compressAssets() {
+    console.log('\n🗜️  Compressing assets with Brotli...');
+
+    // Compress minified files
+    const filesToCompress = [
+      ...this.getFiles('.', '.min.html'),
+      ...this.getFiles('assets/css', '.min.css'),
+      ...this.getFiles('assets/js', '.min.js')
+    ];
+
+    let compressed = 0;
+    for (const file of filesToCompress) {
+      try {
+        const content = fs.readFileSync(file);
+        const brotliCompressed = zlib.brotliCompressSync(content, {
+          params: {
+            [zlib.constants.BROTLI_PARAM_QUALITY]: 11
+          }
+        });
+
+        // Save .br file
+        fs.writeFileSync(file + '.br', brotliCompressed);
+
+        // Also create gzip for broader compatibility
+        const gzipCompressed = zlib.gzipSync(content, { level: 9 });
+        fs.writeFileSync(file + '.gz', gzipCompressed);
+
+        compressed++;
+      } catch (error) {
+        console.log(`  ✗ ${file}: ${error.message}`);
+      }
+    }
+
+    console.log(`  ✓ Compressed ${compressed} files (Brotli + Gzip)`);
   }
 
   getFiles(dir, extension) {
