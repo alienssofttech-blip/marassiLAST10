@@ -36,76 +36,82 @@ var dot = document.querySelector('.dot');
 var cursorSmalls = document.querySelectorAll('.cursor-small');
 var cursorBigs = document.querySelectorAll('.cursor-big');
 
-body.addEventListener('mousemove', function (event) {
-    gsap.to(cursor, {
-        x: event.x,
-        y: event.y,
-        duration: 2, 
-        delay: 0.1,
-        visibility: 'visible',
-        ease: "expo.out",
-    });
-});
+if (cursor && dot) {
+  body.addEventListener('mousemove', function (event) {
+      gsap.to(cursor, {
+          x: event.x,
+          y: event.y,
+          duration: 2,
+          delay: 0.1,
+          visibility: 'visible',
+          ease: "expo.out",
+      });
+  });
 
-body.addEventListener('mousemove', function (event) {
-    gsap.to(dot, {
-        x: event.x,
-        y: event.y,
-        duration: 1.5,
-        visibility: 'visible',
-        ease: "expo.out",
-    });
-});
+  body.addEventListener('mousemove', function (event) {
+      gsap.to(dot, {
+          x: event.x,
+          y: event.y,
+          duration: 1.5,
+          visibility: 'visible',
+          ease: "expo.out",
+      });
+  });
+}
 
 // Small Cursor
-cursorSmalls.forEach(cursorSmall => {
-  cursorSmall.addEventListener('mouseenter', function () {
-      gsap.to(dot, {
-          scale: 8,
-          backgroundColor: '#fff',
-      });
-      gsap.to(cursor, {
-          visibility: 'hidden',
-          opacity: 0
-      });
+if (cursor && dot && cursorSmalls.length > 0) {
+  cursorSmalls.forEach(cursorSmall => {
+    cursorSmall.addEventListener('mouseenter', function () {
+        gsap.to(dot, {
+            scale: 8,
+            backgroundColor: '#fff',
+        });
+        gsap.to(cursor, {
+            visibility: 'hidden',
+            opacity: 0
+        });
+    });
+
+    cursorSmall.addEventListener('mouseleave', function () {
+        gsap.to(dot, {
+            scale: 1,
+            backgroundColor: '#fff',
+        });
+        gsap.to(cursor, {
+          visibility: 'visible',
+          opacity: 1
+        });
+    });
   });
-  
-  cursorSmall.addEventListener('mouseleave', function () {
-      gsap.to(dot, {
-          scale: 1,
-          backgroundColor: '#fff',
-      });
-      gsap.to(cursor, {
-        visibility: 'visible',
-        opacity: 1
-      });
-  });
-});
+}
 
 // Big Cursor
-cursorBigs.forEach(cursorBig => {
-  cursorBig.addEventListener('mouseenter', function () {
-      gsap.to(dot, {
-          scale: 16,
-          backgroundColor: '#fff',
-      });
-      gsap.to(cursor, {
-          visibility: 'hidden',
-          opacity: 0
-      });
+if (cursor && dot && cursorBigs.length > 0) {
+  cursorBigs.forEach(cursorBig => {
+    cursorBig.addEventListener('mouseenter', function () {
+        gsap.to(dot, {
+            scale: 16,
+            backgroundColor: '#fff',
+        });
+        gsap.to(cursor, {
+            visibility: 'hidden',
+            opacity: 0
+        });
+    });
+
+    cursorBig.addEventListener('mouseleave', function () {
+        gsap.to(dot, {
+            scale: 1,
+            backgroundColor: '#fff',
+        });
+        gsap.to(cursor, {
+          visibility: 'visible',
+          opacity: 1
+        });
+    });
   });
-  
-  cursorBig.addEventListener('mouseleave', function () {
-      gsap.to(dot, {
-          scale: 1,
-          backgroundColor: '#fff',
-      });
-      gsap.to(cursor, {
-        visibility: 'visible',
-        opacity: 1
-      });
-  });
-});
+}
 // =================================== Custom Cursor Js End =====================================
 
 
@@ -117,47 +123,49 @@ const toggleMobileMenu = document.querySelector('.toggle-mobileMenu');
 const closeButton = document.querySelector('.close-button');
 const mobileSideOverlay = document.querySelector('.side-overlay');
 
-mmm.add("(max-width: 991px)", () => {
-  
-  mtl.to('.side-overlay', {
-    opacity: 1,
-    visibility: 'visible',
-    duration: .3, 
-  });
-  
-  mtl.to('.mobile-menu', {
-    x: 0,
-  });
-  
-  mtl.from('.nav-menu__item', {
-    opacity: 0,
-    duration: .3,
-    x: -60,
-    stagger: .12,
-  });
+if (toggleMobileMenu && closeButton && mobileSideOverlay) {
+  mmm.add("(max-width: 991px)", () => {
 
-  mtl.from('.close-button', {
-    opacity: 0,
-    scale: 0,
-    duration: .2,
-  });
+    mtl.to('.side-overlay', {
+      opacity: 1,
+      visibility: 'visible',
+      duration: .3,
+    });
 
-  toggleMobileMenu.addEventListener('click', function () {
-    mtl.play();
-    document.body.style.overflow = 'hidden'
-  });
+    mtl.to('.mobile-menu', {
+      x: 0,
+    });
 
-  closeButton.addEventListener('click', function () {
-    mtl.reverse();
-    document.body.style.overflow = ''
-  });
+    mtl.from('.nav-menu__item', {
+      opacity: 0,
+      duration: .3,
+      x: -60,
+      stagger: .12,
+    });
 
-  mobileSideOverlay.addEventListener('click', function () {
-    mtl.reverse();
-    document.body.style.overflow = ''
-  });
+    mtl.from('.close-button', {
+      opacity: 0,
+      scale: 0,
+      duration: .2,
+    });
 
-});
+    toggleMobileMenu.addEventListener('click', function () {
+      mtl.play();
+      document.body.style.overflow = 'hidden'
+    });
+
+    closeButton.addEventListener('click', function () {
+      mtl.reverse();
+      document.body.style.overflow = ''
+    });
+
+    mobileSideOverlay.addEventListener('click', function () {
+      mtl.reverse();
+      document.body.style.overflow = ''
+    });
+
+  });
+}
 // **************************** Mobile Menu js End ****************************
 
 
@@ -171,98 +179,104 @@ var offcanvasBarIcon = document.querySelector('.offcanvas-bar-icon');
 var closeBtn = document.querySelector('.offcanvas-sidebar__close');
 var sideOverlay = document.querySelector('.side-overlay');
 
-stl.to('.side-overlay', {
-  duration: .3, 
-  visibility: 'visible',
-  opacity: 1
-});
-
-stl.to('.offcanvas-sidebar', {
-  x: 0,
-  duration: .3, 
-  delay: .2
-});
-
-stl.from('.animate-item', {
-  x: 80,
-  opacity: 0,
-  stagger: .12,
-  duration: .3,
-}); 
-
-stl.from('.offcanvas-sidebar__close', {
-  scale: .4,
-  opacity: 0,
-  duration: 0.4,
-  delay: 0.1,
-});
-
-mmm.add("(min-width: 992px)", () => {
-  offcanvasBarIcon.addEventListener('click', function () {
-    document.body.style.overflow = 'hidden';
-    document.body.style.paddingInlineEnd = '18px';
+if (offcanvasBarIcon && closeBtn && sideOverlay) {
+  stl.to('.side-overlay', {
+    duration: .3,
+    visibility: 'visible',
+    opacity: 1
   });
-});
 
-// Mobile device scroll hide
-mmm.add("(max-width: 991px)", () => {
-  offcanvasBarIcon.addEventListener('click', function () {
-    document.body.style.overflow = 'hidden';
+  stl.to('.offcanvas-sidebar', {
+    x: 0,
+    duration: .3,
+    delay: .2
   });
-  
+
+  stl.from('.animate-item', {
+    x: 80,
+    opacity: 0,
+    stagger: .12,
+    duration: .3,
+  });
+
+  stl.from('.offcanvas-sidebar__close', {
+    scale: .4,
+    opacity: 0,
+    duration: 0.4,
+    delay: 0.1,
+  });
+
+  mmm.add("(min-width: 992px)", () => {
+    offcanvasBarIcon.addEventListener('click', function () {
+      document.body.style.overflow = 'hidden';
+      document.body.style.paddingInlineEnd = '18px';
+    });
+  });
+
+  // Mobile device scroll hide
+  mmm.add("(max-width: 991px)", () => {
+    offcanvasBarIcon.addEventListener('click', function () {
+      document.body.style.overflow = 'hidden';
+    });
+
+    closeBtn.addEventListener('click', function () {
+      document.body.style.overflow = '';
+      document.body.style.paddingInlineEnd = '';
+    });
+
+    sideOverlay.addEventListener('click', function () {
+      document.body.style.overflow = '';
+      document.body.style.paddingInlineEnd = '';
+    });
+  });
+
+  offcanvasBarIcon.addEventListener('click', function () {
+    stl.play();
+  });
+
   closeBtn.addEventListener('click', function () {
-    document.body.style.overflow = '';
-    document.body.style.paddingInlineEnd = '';
+    stl.reverse();
+     document.body.style.overflow = '';
+     document.body.style.paddingInlineEnd = '';
   });
-  
+
   sideOverlay.addEventListener('click', function () {
-    document.body.style.overflow = '';
-    document.body.style.paddingInlineEnd = '';
+    stl.reverse();
+    document.body.style.overflow = ''
   });
-});
-
-offcanvasBarIcon.addEventListener('click', function () {
-  stl.play();
-});
-
-closeBtn.addEventListener('click', function () {
-  stl.reverse();
-   document.body.style.overflow = '';
-   document.body.style.paddingInlineEnd = '';
-});
-
-sideOverlay.addEventListener('click', function () {
-  stl.reverse();
-  document.body.style.overflow = ''
-});
+}
 // **************************** offcanvas sidebar js End ****************************
 
 // =================================== Custom Split text Js Start =====================================
 if ($(".splitTextStyleOne").length > 0) {
   let character = gsap.utils.toArray(".splitTextStyleOne");
   character.forEach((character) => {
-    let split_char = new SplitText(character, {
-      type: "chars, words",
-      lineThreshold: 0.5,
-    });
-    const tl2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: character,
-        start: "top 90%",
-        end: "bottom 60%",
-        scrub: false,
-        markers: false,
-        toggleActions: "play none none none",
-      },
-    });
-    tl2.from(split_char.chars, {
-      autoAlpha: 0,
-      y: 40,
-      duration: 0.5,
-      opacity: 0,
-      stagger: 0.05,
-      ease: "back.out(1.7)"
-    });
+    if (character && character.textContent && character.textContent.trim().length > 0) {
+      let split_char = new SplitText(character, {
+        type: "chars, words",
+        lineThreshold: 0.5,
+      });
+      if (split_char.chars && split_char.chars.length > 0) {
+        const tl2 = gsap.timeline({
+          scrollTrigger: {
+            trigger: character,
+            start: "top 90%",
+            end: "bottom 60%",
+            scrub: false,
+            markers: false,
+            toggleActions: "play none none none",
+          },
+        });
+        tl2.from(split_char.chars, {
+          autoAlpha: 0,
+          y: 40,
+          duration: 0.5,
+          opacity: 0,
+          stagger: 0.05,
+          ease: "back.out(1.7)"
+        });
+      }
+    }
   });
 }
 // =================================== Custom Split text Js End =====================================
