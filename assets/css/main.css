@@ -6597,42 +6597,51 @@ input[type=number] {
 }
 
 /* -------------------------------------------------------------
-   Banner Five (Hero Slider) Height System
-   Replaces hard-coded tw-h-1120-px + large spacer margins with a
-   fluid clamp-based min-height that:
-     - Won't shrink below 420px (small landscape phones)
-     - Fills ~70vh for typical devices
-     - Caps at 760px to avoid excessive vertical whitespace
-   The wrapper (.banner-five-area) establishes the hero height; each
-   .swiper-slide > .banner-five-height is flex-centered for content.
+   Banner Five (Hero Slider) Height System - FIXED
+   Uses clamp(420px, 70vh, 760px):
+     - Min 420px for small screens
+     - Pref ~70% of viewport
+     - Max 760px to avoid tall heroes on big monitors
 -------------------------------------------------------------- */
-/* .banner-five-area {
-    min-height: clamp(420px, 70vh, 760px);
-    position: relative;
-} */
 
+/* Option A: control at the area level (recommended) */
+.banner-five-area {
+  min-height: clamp(420px, 70vh, 760px);
+  position: relative;
+}
+
+/* Center content inside each slide */
 .banner-five-area .swiper-slide .banner-five-height {
-    min-height: clamp(140vh, 100vh, 760px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-block: 6rem; /* replaces very large top padding + bottom gap */
+  min-height: inherit;              /* inherits clamp from area */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 6rem;              /* replace giant top/bottom gaps */
 }
 
-/* Remove legacy explicit tall utility if present (tw-h-1120-px) influence */
-.banner-five-area .swiper-slide .banner-five-height.tw-h-1120-px {
-    height: auto !important;
+/* Kill legacy tall utility and any fixed heights */
+.banner-five-area .swiper-slide .banner-five-height.tw-h-1120-px,
+.banner-five-area .swiper-slide .banner-five-height {
+  height: auto !important;
 }
 
-/* Tighten extra top offset if previously used for animation staging */
+/* Tighten extra top offset if used for animation staging */
 .banner-five-area .banner-five-content.tw-mt-134-px {
-    margin-top: 50px !important;
+  margin-top: 50px !important;
 }
 
-/* Optional: ensure background covers fully within new clamp height */
+/* Background should cover neatly */
 .banner-five-area .banner-five-bg {
-    background-size: cover;
-    background-position: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* If Swiper is constraining height, let slides size themselves */
+.banner-five-active,
+.banner-five-active .swiper-wrapper,
+.banner-five-active .swiper-slide {
+  height: auto !important;
 }
 
 /* Banner Style Four */
