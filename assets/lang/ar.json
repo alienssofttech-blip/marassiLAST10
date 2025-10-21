@@ -374,6 +374,7 @@
   "name_placeholder": "اسمك*",
   "email_placeholder": "عنوان البريد الإلكتروني*",
   "message_placeholder": "أدخل رسالتك هنا",
+  "message_placeholder2": "عرّف بنفسك بإيجاز ولماذا ترغب بالانضمام إلى مراسي.",
   "send_button": "تواصل معنا",
   "send_button2": "إرسال طلب الانضمام",
   "required_field": "هذا الحقل مطلوب",
