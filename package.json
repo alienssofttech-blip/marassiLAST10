@@ -20,8 +20,11 @@
     "express": "^4.21.2"
   },
   "devDependencies": {
+    "clean-css": "^5.3.3",
     "compression": "^1.8.1",
     "du-cli": "^1.0.0",
+    "html-minifier": "^4.0.0",
+    "terser": "^5.44.0",
     "webpack-bundle-analyzer": "^4.10.2"
   }
 }

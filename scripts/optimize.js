@@ -25,7 +25,7 @@ class WebsiteOptimizer {
     await this.optimizeHTML();
     await this.optimizeCSS();
     await this.optimizeJS();
-    await this.compressAssets();
+    // await this.compressAssets();
     await this.generateReport();
 
     console.log('✅ Optimization complete!');
