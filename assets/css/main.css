@@ -7634,6 +7634,14 @@ html[dir="rtl"] .offcanvas-sidebar { transform: translateX(-100%); }
     mix-blend-mode: difference;
 }
 
+/* Hide custom cursor on tablet and mobile devices */
+@media (max-width: 1024px) {
+    .cursor, .dot {
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
 /* Custom Cursor Css End */
 /* gradient css start */
 .bg-main-100-gradient-one {
