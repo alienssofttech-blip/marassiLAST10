@@ -275,6 +275,20 @@
     "label": "Safe Transportation & Logistics",
     "heading": "Behind the scene who help us lot of",
     "view_services": "View services"
+    ,"members": {
+      "m1": { "name": "Leslie Alexander", "role": "Graphic Designer" },
+      "m2": { "name": "Mehedi Hasan", "role": "UX/UI Designer" },
+      "m3": { "name": "Robiul Hasan", "role": "Front-end Developer" },
+      "m4": { "name": "Riad Hasan", "role": "UX/UI Designer" },
+      "m5": { "name": "Alex", "role": "Graphic Designer" },
+      "m6": { "name": "Robiul Hasan", "role": "Front-end Developer" },
+      "m7": { "name": "Riad Hasan", "role": "UX/UI Designer" },
+      "m8": { "name": "Robiul Hasan", "role": "Front-end Developer" }
+    }
+  },
+  "video": {
+    "watch_heading": "Watch Video",
+    "play_button": "Play video"
   },
   "transport_way": {
   "label": "Safe Transport & Logistics",
