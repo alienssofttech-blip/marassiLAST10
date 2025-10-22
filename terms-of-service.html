@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <div id="header"></div>
+    <div id="he"></div>
 
     <section class="breadcrumb py-140 tw-pt-206-px mb-0 bg-img" data-background-image="assets/images/thumbs/breadcrumb-bg.png">
         <div class="container">
@@ -99,7 +99,7 @@
         fetch('header.html')
             .then(response => response.text())
             .then(data => {
-                document.getElementById('header').innerHTML = data;
+                document.getElementById('he').innerHTML = data;
                 // Initialize header-dependent elements after header is loaded
                 if (typeof window.initHeaderDependentElements === 'function') {
                     window.initHeaderDependentElements();
@@ -107,6 +107,7 @@
                 if (typeof window.initCustomGsapElements === 'function') {
                     window.initCustomGsapElements();
                 }
+                
             })
             .catch(error => console.error('Error loading header:', error));
     </script>

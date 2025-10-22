@@ -53,7 +53,7 @@
 <body>
     
 <!--==================== Preloader Start ====================-->
- <div id="header"></div>
+ <div id="he"></div>
 <!-- ==================== Header End Here ==================== -->
 
     <!-- ==================== Breadcrumb Start Here ==================== -->
@@ -182,7 +182,7 @@
         fetch('header.html')
             .then(response => response.text())
             .then(data => {
-                document.getElementById('header').innerHTML = data;
+                document.getElementById('he').innerHTML = data;
                 // Initialize header-dependent elements after header is loaded
                 if (typeof window.initHeaderDependentElements === 'function') {
                     window.initHeaderDependentElements();
@@ -190,6 +190,7 @@
                 if (typeof window.initCustomGsapElements === 'function') {
                     window.initCustomGsapElements();
                 }
+                
             })
             .catch(error => console.error('Error loading header:', error));
     </script>
