@@ -248,7 +248,7 @@
             }
 
             try {
-                const response = await fetch('/.netlify/functions/send-contact', {
+                const response = await fetch('/.netlify/functions/register-driver', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -259,7 +259,7 @@
                 const result = await response.json();
 
                 if (response.ok && result.success) {
-                    this.showSuccessMessage(form, result.message || this.getTranslation('form_messages.driver_success') || 'تم إرسال طلبك بنجاح! سنتواصل معك قريباً.');
+                    this.showSuccessMessage(form, result.message || this.getTranslation('form_messages.driver_success') || 'تم إرسال طلب الانضمام بنجاح! سنتواصل معك قريباً.');
                     form.reset();
                 } else {
                     this.showErrorMessage(form, result.error || 'حدث خطأ أثناء إرسال الطلب. يرجى المحاولة مرة أخرى.');
