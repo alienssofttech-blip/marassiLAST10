@@ -5,7 +5,7 @@
         saudiPhoneRegex: /^(\+966|966|00966|0)?5[0-9]{8}$/,
 
         init: function() {
-            const driverForm = document.querySelector('form[action="/send-contact"]');
+            const driverForm = document.querySelector('form[action="/driver-form-handler"]');
             if (!driverForm || !window.location.pathname.includes('registerdriver')) {
                 return;
             }
