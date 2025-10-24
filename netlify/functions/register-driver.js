@@ -107,10 +107,7 @@ exports.handler = async (event, context) => {
       };
     }
 
-  // Prefer the phone value saved in the database (in case any DB trigger/normalization changed it).
-  const savedPhone = (data && data.phone) ? data.phone : (phone || '');
-  console.log('Register-driver: sending notification email. name=', name, 'phone=', savedPhone, 'email=', email);
-  await sendDriverEmailNotification(name, savedPhone, email, message, data.id);
+    await sendDriverEmailNotification(name, phone, email, message, data.id);
 
     return {
       statusCode: 200,
@@ -133,10 +130,6 @@ exports.handler = async (event, context) => {
 
 async function sendDriverEmailNotification(name, phone, email, message, registrationId) {
   try {
-    // Ensure we have a usable phone string for display and links.
-    const displayPhone = phone && String(phone).trim() ? String(phone).trim() : 'غير متوفر';
-    const telHref = phone && String(phone).trim() ? `tel:${String(phone).trim()}` : '#';
-
     const RESEND_API_KEY = process.env.RESEND_API_KEY;
 
     if (!RESEND_API_KEY) {
@@ -185,7 +178,7 @@ async function sendDriverEmailNotification(name, phone, email, message, registra
               </div>
               <div class="field">
                 <div class="label">Phone Number:</div>
-                <div class="value"><a href="${telHref}" style="color: #13164f;">${displayPhone}</a></div>
+                <div class="value"><a href="tel:${phone}" style="color: #13164f;">${phone}</a></div>
               </div>
               <div class="field">
                 <div class="label">Email Address:</div>
@@ -200,7 +193,7 @@ async function sendDriverEmailNotification(name, phone, email, message, registra
                 <p style="margin: 0 0 10px 0; color: #666;"><strong>Submitted:</strong> ${new Date().toLocaleString('en-US', { timeZone: 'Asia/Riyadh' })} (Riyadh Time)</p>
                 <div style="margin-top: 15px;">
                   <a href="mailto:${email}?subject=Re: Your driver application with MARASSI Logistics" class="button">Contact ${name}</a>
-                  <a href="${telHref}" class="button" style="background: #059669; margin-left: 10px;">Call Driver</a>
+                  <a href="tel:${phone}" class="button" style="background: #059669; margin-left: 10px;">Call Driver</a>
                 </div>
               </div>
             </div>

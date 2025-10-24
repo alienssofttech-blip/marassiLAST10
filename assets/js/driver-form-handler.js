@@ -5,13 +5,8 @@
         saudiPhoneRegex: /^(\+966|966|00966|0)?5[0-9]{8}$/,
 
         init: function() {
-            // Prefer selecting the form by ID. Fall back to known action paths used in this project.
-            const driverForm = document.querySelector('#driver-registration-form')
-                || document.querySelector('form[action="/.netlify/functions/register-driver"]')
-                || document.querySelector('form[action="/driver-form-handler"]');
-
-            // If the form isn't present on the current page, do nothing.
-            if (!driverForm) {
+            const driverForm = document.querySelector('form[action="/driver-form-handler"]');
+            if (!driverForm || !window.location.pathname.includes('registerdriver')) {
                 return;
             }
 
