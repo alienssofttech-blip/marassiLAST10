@@ -2,10 +2,13 @@
     'use strict';
 
     const DriverFormHandler = {
-        saudiPhoneRegex: /^(\+966|966|00966|0)?5[0-9]{8}$/,
+    // regex to validate normalized Saudi local mobile numbers (starts with 5 and 9 digits total)
+    saudiPhoneRegex: /^5[0-9]{8}$/,
 
         init: function() {
-            const driverForm = document.querySelector('form[action="/driver-form-handler"]');
+            // select the driver registration form by id used in registerdriver.html
+            const driverForm = document.querySelector('#driver-registration-form');
+            console.log('DriverFormHandler: init called, found form ->', !!driverForm);
             if (!driverForm || !window.location.pathname.includes('registerdriver')) {
                 return;
             }
@@ -18,9 +21,9 @@
         setupDriverFormValidation: function(form) {
             form.addEventListener('submit', async (e) => {
                 e.preventDefault();
-
+               const nameInput = form.querySelector('input[name="name"]');
                 const phoneInput = form.querySelector('input[name="phone"]');
-                const nameInput = form.querySelector('input[name="name"]');
+               
                 const emailInput = form.querySelector('input[name="email"]');
                 const messageInput = form.querySelector('textarea[name="message"]');
 
@@ -44,9 +47,10 @@
                     isValid = false;
                 }
 
-                if (isValid) {
-                    await this.submitDriverForm(form);
-                }
+                    console.log('DriverFormHandler: form validation result ->', isValid);
+                    if (isValid) {
+                        await this.submitDriverForm(form);
+                    }
             });
         },
 
@@ -165,6 +169,11 @@
         normalizeSaudiPhone: function(phone) {
             let normalized = phone.replace(/[\s\-\(\)]/g, '');
 
+            // debug: show normalization steps
+            // (will print in browser console when called)
+            // Example: input '+966555123456' -> '555123456'
+            console.log('DriverFormHandler: normalizeSaudiPhone input ->', phone);
+
             if (normalized.startsWith('+966')) {
                 normalized = normalized.substring(4);
             } else if (normalized.startsWith('966')) {
@@ -187,7 +196,7 @@
             this.clearFieldError(field);
 
             const errorDiv = document.createElement('div');
-            errorDiv.className = 'field-error-message';
+            errorDiv.className = 'field-error';
             errorDiv.textContent = message;
             errorDiv.style.cssText = `
                 color: #dc3545;
@@ -201,26 +210,26 @@
 
             field.parentNode.appendChild(errorDiv);
             field.style.borderColor = '#dc3545';
-            field.classList.add('is-invalid-field');
+            field.classList.add('is-invalid');
         },
 
         clearFieldError: function(field) {
-            const existingError = field.parentNode.querySelector('.field-error-message');
+            const existingError = field.parentNode.querySelector('.field-error');
             if (existingError) {
                 existingError.remove();
             }
             field.style.borderColor = '';
-            field.classList.remove('is-invalid-field');
+            field.classList.remove('is-invalid');
         },
 
         clearAllErrors: function(form) {
-            const allErrors = form.querySelectorAll('.field-error-message');
+            const allErrors = form.querySelectorAll('.field-error');
             allErrors.forEach(error => error.remove());
 
             const allFields = form.querySelectorAll('input, textarea');
             allFields.forEach(field => {
                 field.style.borderColor = '';
-                field.classList.remove('is-invalid-field');
+                field.classList.remove('is-invalid');
             });
         },
 
@@ -257,6 +266,7 @@
                 });
 
                 const result = await response.json();
+                console.log('DriverFormHandler: submission response ->', result);
 
                 if (response.ok && result.success) {
                     this.showSuccessMessage(form, result.message || this.getTranslation('form_messages.driver_success') || 'تم إرسال طلب الانضمام بنجاح! سنتواصل معك قريباً.');
@@ -381,17 +391,23 @@
             to { transform: rotate(360deg); }
         }
 
-        .is-invalid-field {
+        .is-invalid {
             border-color: #dc3545 !important;
         }
 
-        .is-invalid-field:focus {
+        .is-invalid:focus {
             border-color: #dc3545 !important;
             box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
         }
 
-        .field-error-message {
+        .field-error {
             animation: fadeInError 0.3s ease;
+            color: #dc3545;
+            font-size: 13px;
+            margin-top: 8px;
+            margin-right: 36px;
+            direction: rtl;
+            text-align: right;
         }
     `;
     document.head.appendChild(style);
