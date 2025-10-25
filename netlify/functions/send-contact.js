@@ -175,7 +175,7 @@ async function sendEmailNotification(name, email, message, messageId) {
               <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd;">
                 <p style="margin: 0 0 10px 0; color: #666;"><strong>Message ID:</strong> ${messageId}</p>
                 <p style="margin: 0 0 10px 0; color: #666;"><strong>Received:</strong> ${new Date().toLocaleString()}</p>
-                <a href="mailto:${email}?subject=Re: Your inquiry to MARASSI Logistics" class="button">Reply to ${name}</a>
+                <a href="mailto:${email}?subject=Re: Your inquiry to MARASSI Logistics" style="color: #fffefeff; " class="button">Reply to ${name}</a>
               </div>
             </div>
             <div class="footer">
