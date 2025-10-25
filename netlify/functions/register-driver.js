@@ -192,7 +192,7 @@ async function sendDriverEmailNotification(name, phone, email, message, registra
                 <p style="margin: 0 0 10px 0; color: #666;"><strong>Registration ID:</strong> <span class="highlight">${registrationId}</span></p>
                 <p style="margin: 0 0 10px 0; color: #666;"><strong>Submitted:</strong> ${new Date().toLocaleString('en-US', { timeZone: 'Asia/Riyadh' })} (Riyadh Time)</p>
                 <div style="margin-top: 15px;">
-                  <a href="mailto:${email}?subject=Re: Your driver application with MARASSI Logistics" style="color: #fffefeff; " class="button">Contact ${name}</a>
+                  <a href="mailto:${email}?subject=Re: Your driver application with MARASSI Logistics" style="color: #fffefeff; " class="button">Replay To ${name}</a>
                   <a href="tel:${phone}" class="button" style="background: #059669; margin-left: 10px; color: #fffefeff;">Call Driver</a>
                 </div>
               </div>
