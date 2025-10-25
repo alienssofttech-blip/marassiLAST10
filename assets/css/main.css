@@ -8329,7 +8329,7 @@ html[dir="rtl"] .offcanvas-sidebar { transform: translateX(-100%); }
     background-color: #F5F6F8 !important;
 }
 
-.left-right-line::before {
+/* .left-right-line::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -8340,7 +8340,7 @@ html[dir="rtl"] .offcanvas-sidebar { transform: translateX(-100%); }
     inset-inline-end: 0;
     inset-block-start: 50%;
     transform: translateY(-50%);
-}
+} */
 
 /* ============================ Testimonials brand section css End ============================ */
 /* Map Css Start */

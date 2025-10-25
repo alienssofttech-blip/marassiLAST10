@@ -10,7 +10,7 @@ Disallow: /*.log$
 Allow: /assets/
 
 # Sitemap location
-Sitemap: https://marassi.com/sitemap.xml
+Sitemap: https://marassidelivery.com/sitemap.xml
 
 # Crawl delay (optional)
 Crawl-delay: 1

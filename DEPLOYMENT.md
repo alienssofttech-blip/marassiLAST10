@@ -114,7 +114,7 @@ Replace placeholder values in:
 ## Production URLs to Update
 
 Before going live, update these placeholder URLs:
-1. `sitemap.xml` - Replace `https://marassi.com` with your actual domain
+1. `sitemap.xml` - Replace `https://marassidelivery.com` with your actual domain
 2. `manifest.json` - Update start_url if needed
 3. `.htaccess` - Verify domain redirects
 4. All canonical URLs in meta tags

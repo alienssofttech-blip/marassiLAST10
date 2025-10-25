@@ -64,8 +64,8 @@
                     "@context": "https://schema.org",
                     "@type": "Organization",
                     "name": "MARASSI Transport & Logistics",
-                    "url": "https://marassi.com",
-                    "logo": "https://marassi.com/assets/images/logo/Marassi_logo.png",
+                    "url": "https://marassidelivery.com",
+                    "logo": "https://marassidelivery.com/assets/images/logo/Marassi_logo.png",
                     "contactPoint": {
                         "@type": "ContactPoint",
                         "telephone": "+966-555-134-448",
@@ -98,17 +98,17 @@
         generateBreadcrumbs: function() {
             const path = window.location.pathname;
             const breadcrumbs = [
-                { name: 'Home', url: 'https://marassi.com/' }
+                { name: 'Home', url: 'https://marassidelivery.com/' }
             ];
             
             if (path.includes('about')) {
-                breadcrumbs.push({ name: 'About', url: 'https://marassi.com/about.html' });
+                breadcrumbs.push({ name: 'About', url: 'https://marassidelivery.com/about.html' });
             } else if (path.includes('service')) {
-                breadcrumbs.push({ name: 'Services', url: 'https://marassi.com/service.html' });
+                breadcrumbs.push({ name: 'Services', url: 'https://marassidelivery.com/service.html' });
             } else if (path.includes('project')) {
-                breadcrumbs.push({ name: 'Projects', url: 'https://marassi.com/project.html' });
+                breadcrumbs.push({ name: 'Projects', url: 'https://marassidelivery.com/project.html' });
             } else if (path.includes('contact')) {
-                breadcrumbs.push({ name: 'Contact', url: 'https://marassi.com/contact.html' });
+                breadcrumbs.push({ name: 'Contact', url: 'https://marassidelivery.com/contact.html' });
             }
             
             return breadcrumbs;
