@@ -78,9 +78,9 @@
                         "addressLocality": "Unaizah"
                     },
                     "sameAs": [
-                        "https://www.facebook.com/marassi",
+                        "https://www.facebook.com/share/1A2Z5n1Zj6/marassi",
                         "https://www.twitter.com/marassi",
-                        "https://www.instagram.com/marassi"
+                        "https://www.instagram.com/marassi.delivery/marassi"
                     ]
                 };
                 
