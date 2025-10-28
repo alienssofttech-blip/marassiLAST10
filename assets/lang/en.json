@@ -48,14 +48,19 @@
       "feature_2": "24/7 Support For Any Clients",
       "view_services": "View services",
       "watch_video": "Watch The Video",
+      "years_experience_NO": " +3",
       "years_experience_label": "YEARS EXPERIENCE"
     },
     "counters": {
-      "main_warehouses": "Main Warehouses",
-      "delivery_trucks": "Delivery Trucks",
-      "all_cities_covered": "All Cities Covered",
-      "total_services": "Total Services"
-    },
+  "number_warehouses": "20+",
+  "number_delivery_trucks": "200+",
+  "number_cities": "46+",
+  "number_services": "10+",
+  "main_warehouses": "Main Warehouses",
+  "delivery_trucks": "Delivery Trucks",
+  "all_cities_covered": "All Cities Covered",
+  "total_services": "Total Services"
+},
     "services_section": {
       "label": "Services",
       "heading": "Our Service For You",
@@ -84,22 +89,30 @@
       "feature_4_desc": "Nationwide coverage across all regions of Saudi Arabia"
     },
     "testimonials": {
-      "label": "Safe Transportation & Logistics",
-      "heading": "What our client's says about our services",
-      "view_services": "View services",
-      "slide_1_content": "are so beguiled and demoralized by the charms of pleasure of the moment. Dislike men who are so beguiled and demoralized by the charms of",
-      "slide_1_name": "Robiul Hasan",
-      "slide_1_role": "Front End Developer",
-      "slide_2_content": "Professional and reliable service — punctual and efficient. Their team handled our logistics with care and attention to detail.",
-      "slide_2_name": "Mehedi Hasan",
-      "slide_2_role": "CEO & Founder",
-      "slide_3_content": "Exceptional logistics support and strong communication. We saw clear improvements in delivery times and customer satisfaction.",
-      "slide_3_name": "Alex",
-      "slide_3_role": "CEO & Founder",
-      "slide_4_content": "Consistent, fast, and secure — the preferred logistics partner for our business across several regions.",
-      "slide_4_name": "Cameron Williamson",
-      "slide_4_role": "CEO & Founder"
-    },
+  "label": "Client Testimonials",
+  "experience_years_number": "3+",
+  "experience_years_text": "Years of Experience",
+  "rating_value": "4.9",
+  "heading": "What Our Partners Say About Our Services",
+  "view_services": "View Services",
+
+  "slide_1_content": "Marasi helped us improve delivery efficiency and significantly reduce waiting times. A partner we can always rely on.",
+  "slide_1_name": "HungerStation",
+  "slide_1_role": "Leading Delivery Platform",
+
+  "slide_2_content": "With Marasi, order tracking became easier and clearer for our customers. A premium experience that supports continuous growth.",
+  "slide_2_name": "ToYou",
+  "slide_2_role": "Technology Company",
+
+  "slide_3_content": "Collaborating with Marasi enhanced our operational flexibility and accelerated our daily processes remarkably.",
+  "slide_3_name": "Jahez",
+  "slide_3_role": "Ordering Platform",
+
+  "slide_4_content": "Marasi is a trusted strategic partner providing innovative delivery solutions tailored to our diverse needs.",
+  "slide_4_name": "Ningga",
+  "slide_4_role": "Logistics Company"
+}
+,
     "cta": {
       "label": "Let’s Talk",
       "heading": "Let’s Talk You Need Any Help?",
@@ -205,23 +218,23 @@
   },
   "about_page_extras": {
     "features": {
-      "01": {
-        "title": "Warehouse Facility",
-        "desc": "Temperate ocean-bass sea chub unicorn treefish eulachon tidewater goby."
-      },
-      "02": {
-        "title": "Cost Effective Pricing",
-        "desc": "Temperate ocean-bass sea chub unicorn treefish eulachon tidewater goby."
-      },
-      "03": {
-        "title": "Air Freight Facility",
-        "desc": "Temperate ocean-bass sea chub unicorn treefish eulachon tidewater goby."
-      },
-      "04": {
-        "title": "Container Delivery",
-        "desc": "Temperate ocean-bass sea chub unicorn treefish eulachon tidewater goby."
-      }
-    },
+  "01": {
+    "title": "Trusted Partnerships",
+    "desc": "Strong contractual collaborations with leading companies and brands to ensure service quality and wide coverage."
+  },
+  "02": {
+    "title": "Professional Delivery Network",
+    "desc": "A trained and distributed rider network across cities ensuring high speed and responsiveness at all times."
+  },
+  "03": {
+    "title": "24/7 Customer Support",
+    "desc": "Continuous support ensuring a smooth, fast, and reliable delivery experience for all our partners and clients."
+  },
+  "04": {
+    "title": "Smart Tracking & Management System",
+    "desc": "Advanced technological solutions that enable real-time tracking, performance analysis, and operational efficiency."
+  }
+},
     "contact": {
       "need_services": "Need Our Services?",
       "contact_with_us": "Contact With us",
@@ -238,24 +251,24 @@
       "email": "4517 Washington Ave. Manchester, Kentucky 39495"
     }
   },
-  "features": {
-    "01": {
-      "title": "Warehouse Facility",
-      "desc": "Temperate ocean-bass sea chub unicorn treefish eulachon tidewater goby."
-    },
-    "02": {
-      "title": "Cost Effective Pricing",
-      "desc": "Temperate ocean-bass sea chub unicorntreefish eulachon tidewater goby."
-    },
-    "03": {
-      "title": "Air Freight Facility",
-      "desc": "Temperate ocean-bass sea chub unicorn treefish eulachon tidewater goby."
-    },
-    "04": {
-      "title": "Container Delivery",
-      "desc": "Temperate ocean-bass sea chub unicorn treefish eulachon tidewater goby."
-    }
+ "features": {
+  "01": {
+    "title": "Trusted Partnerships",
+    "desc": "Strong contractual collaborations with leading companies and brands to ensure service quality and wide coverage."
   },
+  "02": {
+    "title": "Professional Delivery Network",
+    "desc": "A trained and distributed rider network across cities ensuring high speed and responsiveness at all times."
+  },
+  "03": {
+    "title": "24/7 Customer Support",
+    "desc": "Continuous support ensuring a smooth, fast, and reliable delivery experience for all our partners and clients."
+  },
+  "04": {
+    "title": "Smart Tracking & Management System",
+    "desc": "Advanced technological solutions that enable real-time tracking, performance analysis, and operational efficiency."
+  }
+},
   "contact": {
     "need_services": "Need Our Services?",
     "contact_with_us": "Contact With us",
@@ -271,21 +284,21 @@
     "email_label": "Email Us -",
     "email": "4517 Washington Ave. Manchester, Kentucky 39495"
   },
-  "team": {
-    "label": "Safe Transportation & Logistics",
-    "heading": "Behind the scene who help us lot of",
-    "view_services": "View services"
-    ,"members": {
-      "m1": { "name": "Leslie Alexander", "role": "Graphic Designer" },
-      "m2": { "name": "Mehedi Hasan", "role": "UX/UI Designer" },
-      "m3": { "name": "Robiul Hasan", "role": "Front-end Developer" },
-      "m4": { "name": "Riad Hasan", "role": "UX/UI Designer" },
-      "m5": { "name": "Alex", "role": "Graphic Designer" },
-      "m6": { "name": "Robiul Hasan", "role": "Front-end Developer" },
-      "m7": { "name": "Riad Hasan", "role": "UX/UI Designer" },
-      "m8": { "name": "Robiul Hasan", "role": "Front-end Developer" }
-    }
-  },
+"team": {
+  "label": "Our People Are the Foundation of Success",
+  "heading": "Our Distinguished Team",
+  "view_services": "View Services",
+  "members": {
+    "m2": { "name": "Ahmed Hamad Al-Mizani", "role": "Chairman of the Board" },
+    "m3": { "name": "Hamad Mohammed Al-Mizani", "role": "General Manager" },
+    "m1": { "name": "Marwan Al-Shabi", "role": "Executive Director" },
+    "m4": { "name": "Mohammed Ahmed", "role": "Technical Support" },
+    "m5": { "name": "Ali Mohammed", "role": "Relations Officer" },
+    "m6": { "name": "Al-Zubair", "role": "Finance Officer" },
+    "m7": { "name": "Mohammed Ahmed", "role": "Delivery Supervisors Lead" },
+    "m8": { "name": "Mohammed Ahmed", "role": "Developer" }
+  }
+},
   "video": {
     "watch_heading": "Watch Video",
     "play_button": "Play video"

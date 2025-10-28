@@ -1,11 +1,11 @@
-<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="2.17391" cy="2.17391" r="2.17391" fill="#F7931E"/>
-<circle cx="2.17391" cy="10.5218" r="2.17391" fill="#2E3192"/>
-<circle cx="2.17391" cy="18.8696" r="2.17391" fill="#2E3192"/>
-<circle cx="10.5217" cy="2.17391" r="2.17391" fill="#2E3192"/>
-<circle cx="10.5217" cy="10.5218" r="2.17391" fill="#F7931E"/>
-<circle cx="10.5217" cy="18.8696" r="2.17391" fill="#2E3192"/>
-<circle cx="18.8695" cy="2.17391" r="2.17391" fill="#2E3192"/>
-<circle cx="18.8695" cy="10.5218" r="2.17391" fill="#2E3192"/>
-<circle cx="18.8695" cy="18.8696" r="2.17391" fill="#F7931E"/>
+<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="2.08781" cy="2.08779" rx="2.08781" ry="2.08779" fill="#F7931E"/>
+<ellipse cx="2.08781" cy="11.2634" rx="2.08781" ry="2.08779" fill="#2E3192"/>
+<ellipse cx="2.08781" cy="20.439" rx="2.08781" ry="2.08779" fill="#2E3192"/>
+<ellipse cx="11.2635" cy="2.08779" rx="2.08781" ry="2.08779" fill="#2E3192"/>
+<ellipse cx="11.2635" cy="11.2634" rx="2.08781" ry="2.08779" fill="#F7931E"/>
+<ellipse cx="11.2635" cy="20.439" rx="2.08781" ry="2.08779" fill="#2E3192"/>
+<ellipse cx="20.4391" cy="2.08779" rx="2.08781" ry="2.08779" fill="#2E3192"/>
+<ellipse cx="20.4391" cy="11.2634" rx="2.08781" ry="2.08779" fill="#2E3192"/>
+<ellipse cx="20.4391" cy="20.439" rx="2.08781" ry="2.08779" fill="#F7931E"/>
 </svg>

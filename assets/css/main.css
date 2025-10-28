@@ -7645,19 +7645,19 @@ html[dir="rtl"] .offcanvas-sidebar { transform: translateX(-100%); }
 /* Custom Cursor Css End */
 /* gradient css start */
 .bg-main-100-gradient-one {
-    background: linear-gradient(107.49deg, rgba(223, 17, 25, 0.12) 38.02%, rgba(251, 226, 227, 0.12) 89.08%);
+    background: linear-gradient(145.27deg, rgba(18, 44, 237, 0.236) 15.55%, rgba(223, 17, 25, 0) 86.81%);
 }
 
 .bg-main-100-gradient-two {
-    background: linear-gradient(145.27deg, rgba(223, 17, 25, 0.14) 15.55%, rgba(223, 17, 25, 0) 86.81%);
+    background: linear-gradient(145.27deg, rgba(18, 44, 237, 0.236) 15.55%, rgba(223, 17, 25, 0) 86.81%);
 }
 
 .bg-main-100-gradient-three {
-    background: linear-gradient(145.27deg, rgba(223, 17, 25, 0.14) 15.55%, rgba(223, 17, 25, 0) 86.81%);
+    background: linear-gradient(145.27deg, rgba(18, 44, 237, 0.236) 15.55%, rgba(223, 17, 25, 0) 86.81%);
 }
 
 .bg-main-100-gradient-four {
-    background: linear-gradient(145.27deg, rgba(223, 17, 25, 0.14) 15.55%, rgba(223, 17, 25, 0.0308) 86.81%);
+    background: linear-gradient(145.27deg, rgba(18, 44, 237, 0.236) 15.55%, rgba(223, 17, 25, 0) 86.81%);
 }
 
 /* gradient css end */
