@@ -49,6 +49,19 @@ exports.handler = async (event, context) => {
     };
   }
 
+  // Temporary debug logs: method and content-type to help diagnose 4xx/5xx
+  try {
+    const incomingCT = event.headers['content-type'] || event.headers['Content-Type'] || null;
+    console.log('register-driver invoked', {
+      method: event.httpMethod,
+      contentType: incomingCT,
+      isBase64Encoded: !!event.isBase64Encoded,
+      path: event.path || null
+    });
+  } catch (e) {
+    console.warn('Failed to log incoming request metadata', e && e.message);
+  }
+
   if (event.httpMethod !== 'POST') {
     return {
       statusCode: 405,
@@ -77,10 +90,12 @@ exports.handler = async (event, context) => {
     const contentType = event.headers['content-type'] || event.headers['Content-Type'] || '';
     if (contentType.includes('multipart/form-data')) {
       ({ fields, files } = await parseMultipart(event));
+      console.log('Parsed multipart request', { fieldCount: Object.keys(fields).length, fileCount: files.length });
     } else {
       // Expect JSON body
       try {
         fields = JSON.parse(event.body || '{}');
+        console.log('Parsed JSON body', { fieldCount: Object.keys(fields).length });
       } catch (err) {
         return { statusCode: 400, headers, body: JSON.stringify({ error: 'Invalid JSON body' }) };
       }
@@ -187,7 +202,8 @@ exports.handler = async (event, context) => {
       return { statusCode: 500, headers, body: JSON.stringify({ error: 'Failed to save registration. Please try again.' }) };
     }
 
-    await sendDriverEmailNotification(name, phoneRaw, email, message, data.id);
+  // Use defined variables: phoneE164 (canonical phone) and notes (message/notes from the form)
+  await sendDriverEmailNotification(name, phoneE164, email, notes, data.id);
 
     return {
       statusCode: 200,
