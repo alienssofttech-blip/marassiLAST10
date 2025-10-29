@@ -184,6 +184,20 @@
             const formData = new FormData(form);
 
             try {
+                // DEBUG: list FormData entries and count files before sending
+                try {
+                    let fdEntries = 0, fdFiles = 0;
+                    for (const pair of formData.entries()) {
+                        fdEntries++;
+                        try {
+                            if (pair[1] instanceof File) fdFiles++;
+                        } catch (e) {}
+                    }
+                    console.log('Driver form: sending FormData', { entries: fdEntries, files: fdFiles });
+                } catch (logErr) {
+                    console.warn('Failed to enumerate FormData entries', logErr && logErr.message);
+                }
+
                 const resp = await fetch('/.netlify/functions/register-driver', {
                     method: 'POST',
                     body: formData

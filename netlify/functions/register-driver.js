@@ -156,14 +156,19 @@ exports.handler = async (event, context) => {
         const upload = await supabase.storage.from(bucket).upload(path, f.content, { contentType: f.mimetype });
         if (upload.error) {
           console.warn('Supabase storage upload error:', upload.error);
+          uploadedUrls[f.fieldname] = null;
           continue;
         }
         const publicUrl = supabase.storage.from(bucket).getPublicUrl(path).data.publicUrl;
         uploadedUrls[f.fieldname] = publicUrl;
+        console.log('Uploaded file to storage', { field: f.fieldname, filename: f.filename, path, publicUrl });
       } catch (err) {
         console.error('Upload error for file', f.filename, err);
       }
     }
+
+    // DEBUG: report uploadedUrls mapping
+    console.log('Uploaded URLs mapping:', uploadedUrls);
 
     // Insert record into DB
     const ipAddress = event.headers['x-forwarded-for'] || event.headers['x-real-ip'] || 'unknown';
