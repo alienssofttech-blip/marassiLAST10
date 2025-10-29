@@ -580,69 +580,58 @@
                                         <i class="ph-bold ph-map-pin"></i>
                                         المدينة <span class="text-danger">*</span>
                                     </label>
-                                    <select name="city" class="form-select" required>
-                                        <option value="" selected disabled>اختر المدينة</option>
-                                        <option>الرياض</option>
-                                        <option>جدة</option>
-                                        <option>مكة</option>
-                                        <option>الدمام</option>
-                                        <option>الخبر</option>
-                                        <option>المدينة المنورة</option>
-                                        <option>تبوك</option>
-                                        <option>أبها</option>
-                                        <option>خميس مشيط</option>
-                                        <option>القصيم</option>
-                                    </select>
+                                    <input type="text" name="city" id="city" class="form-control"
+                                        placeholder="اكتب اسم المدينة" required autocomplete="address-level2">
                                 </div>
 
                                 <!-- نوع المركبة -->
                                 <div class="col-12 col-md-6">
                                     <label class="form-label fw-semibold d-flex align-items-center gap-2">
-                                        <i class="ph-bold ph-car"></i>
-                                        نوع المركبة <span class="text-danger">*</span>
-                                    </label>
+                                            <i class="ph-bold ph-car"></i>
+                                            وسيلة التوصيل <span class="text-danger">*</span>
+                                        </label>
                                     <select name="vehicle_type" class="form-select" required>
                                         <option value="" disabled selected>اختر النوع</option>
                                         <option>سيارة</option>
                                         <option>دراجة نارية</option>
-                                        <option>سكوتر</option>
-                                        <option>دراجة هوائية</option>
-                                        <option>بدون مركبة (سير)</option>
+                                        <!-- <option>سكوتر</option>
+                                        <option>دراجة هوائية</option> -->
+                                        <option>بدون مركبة </option>
                                     </select>
                                 </div>
 
                                 <!-- الماركة/الموديل -->
-                                <div class="col-12 col-md-6">
+                                <!-- <div class="col-12 col-md-6">
                                     <label class="form-label fw-semibold d-flex align-items-center gap-2">
                                         <i class="ph-bold ph-steering-wheel"></i>
                                         الماركة/الموديل
                                     </label>
                                     <input type="text" name="vehicle_model" class="form-control"
                                         placeholder="مثال: Toyota Yaris">
-                                </div>
+                                </div> -->
 
                                 <!-- سنة الصنع -->
-                                <div class="col-12 col-md-6">
+                                <!-- <div class="col-12 col-md-6">
                                     <label class="form-label fw-semibold d-flex align-items-center gap-2">
                                         <i class="ph-bold ph-calendar-blank"></i>
                                         سنة الصنع
                                     </label>
                                     <input type="number" name="vehicle_year" class="form-control" min="1990" max="2035"
                                         placeholder="مثال: 2020">
-                                </div>
+                                </div> -->
 
                                 <!-- رقم الهوية/الإقامة -->
-                                <div class="col-12 col-md-6">
+                                <!-- <div class="col-12 col-md-6">
                                     <label class="form-label fw-semibold d-flex align-items-center gap-2">
                                         <i class="ph-bold ph-identification-card"></i>
                                         رقم الهوية/الإقامة <span class="text-danger">*</span>
                                     </label>
                                     <input type="text" name="id_number" class="form-control" required
                                         placeholder="xxxxxxxxxx">
-                                </div>
+                                </div> -->
 
                                 <!-- فترات التوفر -->
-                                <div class="col-12 col-md-6">
+                                <!-- <div class="col-12 col-md-6">
                                     <label class="form-label fw-semibold d-flex align-items-center gap-2">
                                         <i class="ph-bold ph-clock-afternoon"></i>
                                         فترات التوفر <span class="text-danger">*</span>
@@ -664,7 +653,7 @@
                                             <span class="form-check-label">نهاية الأسبوع</span>
                                         </label>
                                     </div>
-                                </div>
+                                </div> -->
 
                                 <!-- خبرة التوصيل -->
                                 <div class="col-12 col-md-6">
@@ -708,11 +697,11 @@
                                                 value="كيتا">
                                             <span class="form-check-label">كيتا</span>
                                         </label>
-                                        <label class="form-check d-flex align-items-center gap-2">
+                                        <!-- <label class="form-check d-flex align-items-center gap-2">
                                             <input class="form-check-input" type="checkbox" name="platforms[]"
                                                 value="لتوصل">
                                             <span class="form-check-label">لتوصل</span>
-                                        </label>
+                                        </label> -->
                                         <label class="form-check d-flex align-items-center gap-2">
                                             <input class="form-check-input" type="checkbox" name="platforms[]"
                                                 value="أخرى">

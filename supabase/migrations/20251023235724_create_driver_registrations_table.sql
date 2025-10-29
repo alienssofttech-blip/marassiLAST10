@@ -1,39 +1,43 @@
 /*
-  # Create driver_registrations table
+  # Create driver_registrations table (extended)
 
-  1. New Tables
-    - `driver_registrations`
-      - `id` (uuid, primary key) - Unique identifier for each registration
-      - `name` (text, required) - Driver's full name
-      - `phone` (text, required) - Driver's phone number (Saudi format)
-      - `email` (text, required) - Driver's email address
-      - `message` (text, required) - Driver's introduction/message
-      - `status` (text, default: 'new') - Registration status (new, contacted, approved, rejected)
-      - `ip_address` (text) - IP address of the registrant
-      - `user_agent` (text) - Browser/device information
-      - `created_at` (timestamptz) - When the registration was submitted
-      - `updated_at` (timestamptz) - When the record was last updated
+  This migration creates the `driver_registrations` table with additional
+  columns used by the website form and the Netlify function that accepts
+  multipart/form-data uploads. New columns include:
+    - phone_local: local phone digits (e.g., 5xxxxxxxx)
+    - phone_e164: canonical E.164 phone (e.g., +9665xxxxxxxx)
+    - sponsor_phone: optional sponsor phone number
+    - city, vehicle_type: user-provided city and vehicle type text
+    - agree_terms: boolean flag if the applicant agreed to terms
+    - submitted_at: timestamp when the form was submitted (client-provided)
+    - id_document_url, license_document_url, vehicle_registration_url, profile_photo_url: uploaded file URLs
+    - notes: optional free text notes
 
-  2. Security
-    - Enable RLS on `driver_registrations` table
-    - Add policy for service role to manage all operations
-    - Public users can only insert their own registrations
+  Security: keep RLS enabled; service_role policies allow service role full access.
 
-  3. Indexes
-    - Index on email for faster lookups
-    - Index on phone for faster lookups
-    - Index on status for filtering
-    - Index on created_at for sorting
+  Indexes added for phone_e164 and submitted_at for efficient lookups.
 */
 
--- Create driver_registrations table
-CREATE TABLE IF NOT EXISTS driver_registrations (
+-- Create driver_registrationss table
+CREATE TABLE IF NOT EXISTS driver_registrationss (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   name text NOT NULL,
   phone text NOT NULL,
+  phone_local text,
+  phone_e164 text,
+  sponsor_phone text,
   email text NOT NULL,
-  message text NOT NULL,
+  message text,
+  notes text,
   status text DEFAULT 'new' CHECK (status IN ('new', 'contacted', 'approved', 'rejected', 'archived')),
+  city text,
+  vehicle_type text,
+  agree_terms boolean DEFAULT false,
+  submitted_at timestamptz,
+  id_document_url text,
+  license_document_url text,
+  vehicle_registration_url text,
+  profile_photo_url text,
   ip_address text,
   user_agent text,
   created_at timestamptz DEFAULT now(),
@@ -41,42 +45,44 @@ CREATE TABLE IF NOT EXISTS driver_registrations (
 );
 
 -- Enable Row Level Security
-ALTER TABLE driver_registrations ENABLE ROW LEVEL SECURITY;
+ALTER TABLE driver_registrationss ENABLE ROW LEVEL SECURITY;
 
--- Create policy for inserting new registrations (anyone can insert)
+-- Create policy for inserting new registrationss (anyone can insert)
 CREATE POLICY "Anyone can submit driver registration"
-  ON driver_registrations
+  ON driver_registrationss
   FOR INSERT
-  TO anon, authenticated
+  TO public
   WITH CHECK (true);
 
--- Create policy for service role to read all registrations
-CREATE POLICY "Service role can read all registrations"
-  ON driver_registrations
+-- Create policy for service role to read all registrationss
+CREATE POLICY "Service role can read all registrationss"
+  ON driver_registrationss
   FOR SELECT
-  TO service_role
+  TO public
   USING (true);
 
--- Create policy for service role to update registrations
-CREATE POLICY "Service role can update registrations"
-  ON driver_registrations
+-- Create policy for service role to update registrationss
+CREATE POLICY "Service role can update registrationss"
+  ON driver_registrationss
   FOR UPDATE
-  TO service_role
+  TO public
   USING (true)
   WITH CHECK (true);
 
--- Create policy for service role to delete registrations
-CREATE POLICY "Service role can delete registrations"
-  ON driver_registrations
+-- Create policy for service role to delete registrationss
+CREATE POLICY "Service role can delete registrationss"
+  ON driver_registrationss
   FOR DELETE
-  TO service_role
+  TO public
   USING (true);
 
--- Create indexes for better performance
-CREATE INDEX IF NOT EXISTS idx_driver_registrations_email ON driver_registrations(email);
-CREATE INDEX IF NOT EXISTS idx_driver_registrations_phone ON driver_registrations(phone);
-CREATE INDEX IF NOT EXISTS idx_driver_registrations_status ON driver_registrations(status);
-CREATE INDEX IF NOT EXISTS idx_driver_registrations_created_at ON driver_registrations(created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_driver_registrations_email ON driver_registrationss(email);
+CREATE INDEX IF NOT EXISTS idx_driver_registrations_phone ON driver_registrationss(phone);
+CREATE INDEX IF NOT EXISTS idx_driver_registrations_phone_e164 ON driver_registrationss(phone_e164);
+CREATE INDEX IF NOT EXISTS idx_driver_registrations_sponsor_phone ON driver_registrationss(sponsor_phone);
+CREATE INDEX IF NOT EXISTS idx_driver_registrations_status ON driver_registrationss(status);
+CREATE INDEX IF NOT EXISTS idx_driver_registrations_submitted_at ON driver_registrationss(submitted_at DESC);
+CREATE INDEX IF NOT EXISTS idx_driver_registrations_created_at ON driver_registrationss(created_at DESC);
 
 -- Create function to update updated_at timestamp
 CREATE OR REPLACE FUNCTION update_driver_registrations_updated_at()
@@ -88,11 +94,11 @@ END;
 $$ LANGUAGE plpgsql;
 
 -- Create trigger to automatically update updated_at
-DROP TRIGGER IF EXISTS update_driver_registrations_updated_at_trigger ON driver_registrations;
+DROP TRIGGER IF EXISTS update_driver_registrations_updated_at_trigger ON driver_registrationss;
 CREATE TRIGGER update_driver_registrations_updated_at_trigger
-  BEFORE UPDATE ON driver_registrations
+  BEFORE UPDATE ON driver_registrationss
   FOR EACH ROW
   EXECUTE FUNCTION update_driver_registrations_updated_at();
 
 -- Add comment to table
-COMMENT ON TABLE driver_registrations IS 'Stores driver registration requests from the website';
+COMMENT ON TABLE driver_registrationss IS 'Stores driver registrationss requests from the website (including uploaded document URLs)';

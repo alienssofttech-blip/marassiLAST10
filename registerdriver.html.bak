@@ -74,8 +74,6 @@
         }
     }
     </script>
-
-    
 </head> 
 <body>
   <!--==================== Preloader Start ====================-->
@@ -438,331 +436,132 @@
 <!-- ==================== Breadcrumb End Here ==================== -->
 
     <!-- =============================== Contact Page section start =============================== -->
-    <section class="py-140" dir="rtl">
+    <section class="py-140">
         <div class="container">
-
-            <!-- صف 1: العنوان والنص -->
             <div class="row gy-5">
-                <div class="col-12">
-                    <div>
-                        <span
-                            class="splitTextStyleTwo cursor-small tw-text-xl fw-bold fst-italic text-decoration-underline text-main-600 tw-mb-305">
-                            سجل الآن
-                        </span>
-                        <h1 class="cursor-big tw-mb-4">للانضمام إلى فريقنا</h1>
-                        <p class="cursor-small text-neutral-900">
-                            انضم إلى فريق <strong>مراسي للتوصيل للخدمات اللوجستية</strong> وابدأ مستقبلك المهني معنا!
-                            في مراسي، نؤمن أن النجاح يبدأ من شركائنا على الطريق — <strong>المناديب الذين يصنعون الفرق كل
-                                يوم</strong>.
-                            كن جزءًا من منظومة مراسي وابدأ رحلتك اليوم!
-                        </p>
+                <div class="col-lg-6">
+                    <div class="">
+                        <div class="">
+                            <span class="splitTextStyleTwo cursor-small tw-text-xl fw-bold fst-italic text-decoration-underline text-main-600 tw-mb-305" >سجل الان </span>
+                          <!-- data-i18n="contact_page.get_in_touch" -->
+                            <h1 class=" cursor-big tw-mb-4" >للانضمام  الى فريقنا</h1> 
+                          <!-- data-i18n="contact_page.contact_us" -->
+                            <p class="cursor-small text-neutral-900" > انضم إلى فريق مراسي للتوصيل للخدمات اللوجستية وابدأ مستقبلك المهني معنا!
+
+في مراسي، نؤمن أن النجاح يبدأ من شركائنا على الطريق — المناديب الذين يصنعون الفرق كل يوم.
+                              
+                              كن جزءًا من منظومة مراسي وابدأ رحلتك اليوم!
+
+</p>
+                          <!-- data-i18n="contact_page.description" -->
+                        </div>
+                        <div class="xs-grid-cols-2 d-grid tw-mt-16 tw-gap-74-px">
+                            <div class="d-flex align-items-start tw-gap-6">
+                                <span class="tw-text-3xl text-main-600 d-flex cursor-small">
+                                    <i class="ph-bold ph-map-pin"></i>
+                                </span>
+                                <div class="">
+                                    <h6 class="tw-mb-4 cursor-big" data-i18n="contact_page.location"></h6>
+                                    <p class="text-neutral-1000 cursor-small" data-i18n="footer.address_full"></p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start tw-gap-6">
+                                <span class="tw-text-3xl text-main-600 d-flex cursor-small">
+                                    <i class="ph-bold ph-phone"></i>
+                                </span>
+                                <div class="">
+                                    <h6 class="tw-mb-4 cursor-big" data-i18n="contact_page.phone"></h6>
+                                    <a href="tel:+1(368)5678954" class="text-neutral-1000 hover-text-main-600 cursor-big" data-i18n="footer.phone_primary"></a>
+                                    <a href="tel:+236(456)89622" class="text-neutral-1000 hover-text-main-600 cursor-big tw-mt-1" ></a>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start tw-gap-6">
+                                <span class="tw-text-3xl text-main-600 d-flex cursor-small">
+                                    <i class="ph-bold ph-envelope-simple"></i>
+                                </span>
+                                <div class="">
+                                    <h6 class="tw-mb-4 cursor-big" data-i18n="contact_page.email"></h6>
+                                    <a href="mailto:wiatechinfo@gmail.com" class="text-neutral-1000 hover-text-main-600 cursor-big" data-i18n="footer.email_primary"></a>
+                                    <a href="mailto:www.wiatech.com" class="text-neutral-1000 hover-text-main-600 cursor-big" data-i18n="footer.website"></a>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start tw-gap-6">
+                                <span class="tw-text-3xl text-main-600 d-flex cursor-small">
+                                    <i class="ph-bold ph-share-network"></i>
+                                </span>
+                                <div class="">
+                                    <h6 class="tw-mb-4 cursor-big" data-i18n="contact_page.social"></h6>
+                                    <ul class="cursor-small d-flex align-items-center tw-gap-3 justify-content-center tw-mt-6">
+                                        <li>
+                                            <a href="https://www.facebook.com/share/1A2Z5n1Zj6/" class="tw-w-11 tw-h-11 border border-neutral-200 rounded-circle text-main-two-600 tw-text-xl d-flex justify-content-center align-items-center bg-white hover-bg-main-600 hover-text-white hover-border-main-600 active-scale-09 tw-duration-200">
+                                                <i class="ph ph-facebook-logo"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.twitter.com/" class="tw-w-11 tw-h-11 border border-neutral-200 rounded-circle text-main-two-600 tw-text-xl d-flex justify-content-center align-items-center bg-white hover-bg-main-600 hover-text-white hover-border-main-600 active-scale-09 tw-duration-200">
+                                                <i class="ph ph-x-logo"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/marassi.delivery/" class="tw-w-11 tw-h-11 border border-neutral-200 rounded-circle text-main-two-600 tw-text-xl d-flex justify-content-center align-items-center bg-white hover-bg-main-600 hover-text-white hover-border-main-600 active-scale-09 tw-duration-200">
+                                                <i class="ph ph-instagram-logo"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.youtube.com/" class="tw-w-11 tw-h-11 border border-neutral-200 rounded-circle text-main-two-600 tw-text-xl d-flex justify-content-center align-items-center bg-white hover-bg-main-600 hover-text-white hover-border-main-600 active-scale-09 tw-duration-200">
+                                                <i class="ph ph-youtube-logo"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- صف 2: نموذج التسجيل المحلي -->
-            <div class="row gy-5 tw-mt-10">
-                <div class="col-12">
-                    <div class="bg-neutral-50 py-60 tw-px-54-px tw-rounded-2xl tw-shadow-md">
-                        <h3 class="tw-mb-4 cursor-big">نموذج الانضمام إلى فريق مراسي</h3>
-                        <p class="text-neutral-1000 cursor-small tw-mb-6">
-                            يرجى تعبئة البيانات بدقة وإرفاق الوثائق المطلوبة. الحقول المعلّمة بـ (<span
-                                class="text-danger">*</span>) إلزامية.
-                        </p>
-
-                        <!-- ============ ستايل بسيط للأيقونات داخل الحقول ============ -->
-
-
-
-
-
-                        <form id="driver-registration-form" action="/.netlify/functions/register-driver" method="POST"
-                            enctype="multipart/form-data" class="tw-mt-70-px" dir="rtl" novalidate>
-                            <input type="hidden" id="submitted_at_field" name="submitted_at" value="">
-
-                            <!-- شبكة عمودين: تتحول عمود واحد على الجوال -->
-                            <div class="row g-4">
-
-                                <!-- الاسم الكامل -->
-                                <div class="col-12 col-md-6">
-                                    <label class="form-label fw-semibold d-flex align-items-center gap-2">
-                                        <i class="ph-bold ph-user"></i>
-                                        الاسم الكامل <span class="text-danger">*</span>
-                                    </label>
-                                    <input type="text" name="full_name" class="form-control"
-                                        placeholder="مثال: محمد أحمد العتيبي" required autocomplete="name">
-                                </div>
-
-                                <!-- رقم الجوال (ابدأ بـ 5) -->
-                              
-                                <div class="col-12 col-md-6">
-                                    <label class="form-label fw-semibold d-flex align-items-center gap-2">
-                                        <i class="ph-bold ph-phone"></i>
-                                        رقم الجوال <span class="text-danger">*</span>
-                                    </label>
-                                    <input type="tel" id="phone_local" name="phone_local" class="form-control"
-                                        placeholder="5xxxxxxxx" inputmode="tel" required style="direction:ltr">
-                                    <div class="form-text mt-1">يجب أن يبدأ الرقم بـ 5 ويتبعه 8 أرقام (مثال: 5xxxxxxxx)
-                                    </div>
-                                    <div class="invalid-feedback" id="phone_error">الرقم غير صالح. مثال صحيح: 5xxxxxxxx
-                                    </div>
-                                    <input type="hidden" id="phone_e164" name="phone_e164" value="">
-                                </div>
-
-                                <!-- البريد الإلكتروني -->
-                                <div class="col-12 col-md-6">
-                                    <label class="form-label fw-semibold d-flex align-items-center gap-2">
-                                        <i class="ph-bold ph-envelope-simple"></i>
-                                        البريد الإلكتروني <span class="text-danger">*</span>
-                                    </label>
-                                    <input type="email" name="email" class="form-control" required
-                                        placeholder="example@email.com" autocomplete="email">
-                                </div>
-
-                                <!-- المدينة -->
-                                <div class="col-12 col-md-6">
-                                    <label class="form-label fw-semibold d-flex align-items-center gap-2">
-                                        <i class="ph-bold ph-map-pin"></i>
-                                        المدينة <span class="text-danger">*</span>
-                                    </label>
-                                    <input type="text" name="city" id="city" class="form-control"
-                                        placeholder="اكتب اسم المدينة" required autocomplete="address-level2">
-                                </div>
-
-                                <!-- نوع المركبة -->
-                                <div class="col-12 col-md-6">
-                                    <label class="form-label fw-semibold d-flex align-items-center gap-2">
-                                            <i class="ph-bold ph-car"></i>
-                                            وسيلة التوصيل <span class="text-danger">*</span>
-                                        </label>
-                                    <select name="vehicle_type" class="form-select" required>
-                                        <option value="" disabled selected>اختر النوع</option>
-                                        <option>سيارة</option>
-                                        <option>دراجة نارية</option>
-                                        <!-- <option>سكوتر</option>
-                                        <option>دراجة هوائية</option> -->
-                                        <option>بدون مركبة </option>
-                                    </select>
-                                </div>
-
-                                <!-- الماركة/الموديل -->
-                                <!-- <div class="col-12 col-md-6">
-                                    <label class="form-label fw-semibold d-flex align-items-center gap-2">
-                                        <i class="ph-bold ph-steering-wheel"></i>
-                                        الماركة/الموديل
-                                    </label>
-                                    <input type="text" name="vehicle_model" class="form-control"
-                                        placeholder="مثال: Toyota Yaris">
-                                </div> -->
-
-                                <!-- سنة الصنع -->
-                                <!-- <div class="col-12 col-md-6">
-                                    <label class="form-label fw-semibold d-flex align-items-center gap-2">
-                                        <i class="ph-bold ph-calendar-blank"></i>
-                                        سنة الصنع
-                                    </label>
-                                    <input type="number" name="vehicle_year" class="form-control" min="1990" max="2035"
-                                        placeholder="مثال: 2020">
-                                </div> -->
-
-                                <!-- رقم الهوية/الإقامة -->
-                                <!-- <div class="col-12 col-md-6">
-                                    <label class="form-label fw-semibold d-flex align-items-center gap-2">
-                                        <i class="ph-bold ph-identification-card"></i>
-                                        رقم الهوية/الإقامة <span class="text-danger">*</span>
-                                    </label>
-                                    <input type="text" name="id_number" class="form-control" required
-                                        placeholder="xxxxxxxxxx">
-                                </div> -->
-
-                                <!-- فترات التوفر -->
-                                <!-- <div class="col-12 col-md-6">
-                                    <label class="form-label fw-semibold d-flex align-items-center gap-2">
-                                        <i class="ph-bold ph-clock-afternoon"></i>
-                                        فترات التوفر <span class="text-danger">*</span>
-                                    </label>
-                                    <div class="d-flex flex-wrap gap-3">
-                                        <label class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input" type="checkbox" name="availability[]"
-                                                value="صباحي">
-                                            <span class="form-check-label">صباحي</span>
-                                        </label>
-                                        <label class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input" type="checkbox" name="availability[]"
-                                                value="مسائي">
-                                            <span class="form-check-label">مسائي</span>
-                                        </label>
-                                        <label class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input" type="checkbox" name="availability[]"
-                                                value="نهاية الأسبوع">
-                                            <span class="form-check-label">نهاية الأسبوع</span>
-                                        </label>
-                                    </div>
-                                </div> -->
-
-                                <!-- خبرة التوصيل -->
-                                <div class="col-12 col-md-6">
-                                    <label class="form-label fw-semibold d-flex align-items-center gap-2">
-                                        <i class="ph-bold ph-briefcase"></i>
-                                        هل لديك خبرة توصيل سابقة؟ <span class="text-danger">*</span>
-                                    </label>
-                                    <div class="d-flex align-items-center gap-4">
-                                        <label class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input" type="radio" name="has_experience"
-                                                value="نعم" required>
-                                            <span class="form-check-label">نعم</span>
-                                        </label>
-                                        <label class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input" type="radio" name="has_experience"
-                                                value="لا" required>
-                                            <span class="form-check-label">لا</span>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <!-- منصات عملت معها -->
-                                <div class="col-12">
-                                    <label class="form-label fw-semibold d-flex align-items-center gap-2">
-                                        <i class="ph-bold ph-buildings"></i>
-                                        منصات عملت معها (إن وجدت)
-                                    </label>
-                                    <div class="d-flex flex-wrap gap-3">
-                                        <label class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input" type="checkbox" name="platforms[]"
-                                                value="هنقرستيشن">
-                                            <span class="form-check-label">هنقرستيشن</span>
-                                        </label>
-                                        <label class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input" type="checkbox" name="platforms[]"
-                                                value="جاهز">
-                                            <span class="form-check-label">جاهز</span>
-                                        </label>
-                                        <label class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input" type="checkbox" name="platforms[]"
-                                                value="كيتا">
-                                            <span class="form-check-label">كيتا</span>
-                                        </label>
-                                        <!-- <label class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input" type="checkbox" name="platforms[]"
-                                                value="لتوصل">
-                                            <span class="form-check-label">لتوصل</span>
-                                        </label> -->
-                                        <label class="form-check d-flex align-items-center gap-2">
-                                            <input class="form-check-input" type="checkbox" name="platforms[]"
-                                                value="أخرى">
-                                            <span class="form-check-label">أخرى</span>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <!-- رقم الآيبان -->
-                                <div class="col-12 col-md-6">
-                                    <label class="form-label fw-semibold d-flex align-items-center gap-2">
-                                        <i class="ph-bold ph-bank"></i>
-                                        رقم الآيبان (IBAN)
-                                    </label>
-                                    <input type="text" name="iban" class="form-control"
-                                        placeholder="SAxx xxxx xxxx xxxx xxxx xxxx" pattern="^SA[0-9A-Z]{22}$">
-                                    <div class="form-text">صيغة سعودية تبدأ بـ SA ويتبعها 22 خانة.</div>
-                                </div>
-
-                                <!-- الحي/العنوان -->
-                                <div class="col-12 col-md-6">
-                                    <label class="form-label fw-semibold d-flex align-items-center gap-2">
-                                        <i class="ph-bold ph-house"></i>
-                                        الحي/العنوان
-                                    </label>
-                                    <input type="text" name="address" class="form-control"
-                                        placeholder="مثال: حي النرجس">
-                                </div>
-
-                                <!-- المرفقات: هوية/إقامة -->
-                                <div class="col-12 col-md-6">
-                                    <label class="form-label fw-semibold d-flex align-items-center gap-2">
-                                        <i class="ph-bold ph-identification-badge"></i>
-                                        صورة الهوية/الإقامة (PNG/JPG/PDF) <span class="text-danger">*</span>
-                                    </label>
-                                    <input type="file" name="id_document" class="form-control"
-                                        accept=".png,.jpg,.jpeg,.pdf" required>
-                                </div>
-
-                                <!-- المرفقات: رخصة القيادة -->
-                                <div class="col-12 col-md-6">
-                                    <label class="form-label fw-semibold d-flex align-items-center gap-2">
-                                        <i class="ph-bold ph-traffic-cone"></i>
-                                        رخصة القيادة (PNG/JPG/PDF) <span class="text-danger">*</span>
-                                    </label>
-                                    <input type="file" name="license_document" class="form-control"
-                                        accept=".png,.jpg,.jpeg,.pdf" required>
-                                </div>
-
-                                <!-- المرفقات: استمارة المركبة -->
-                                <div class="col-12 col-md-6">
-                                    <label class="form-label fw-semibold d-flex align-items-center gap-2">
-                                        <i class="ph-bold ph-file-text"></i>
-                                        استمارة المركبة (PNG/JPG/PDF)
-                                    </label>
-                                    <input type="file" name="vehicle_registration" class="form-control"
-                                        accept=".png,.jpg,.jpeg,.pdf">
-                                </div>
-
-                                <!-- المرفقات: صورة شخصية -->
-                                <div class="col-12 col-md-6">
-                                    <label class="form-label fw-semibold d-flex align-items-center gap-2">
-                                        <i class="ph-bold ph-user-circle"></i>
-                                        صورة شخصية
-                                    </label>
-                                    <input type="file" name="profile_photo" class="form-control"
-                                        accept=".png,.jpg,.jpeg">
-                                </div>
-
-                                <!-- نبذة/ملاحظات -->
-                                <div class="col-12">
-                                    <label class="form-label fw-semibold d-flex align-items-center gap-2">
-                                        <i class="ph-bold ph-note-pencil"></i>
-                                        نبذة/ملاحظات
-                                    </label>
-                                    <textarea name="notes" class="form-control" rows="3"
-                                        placeholder="اكتب نبذة مختصرة عنك وخبراتك"></textarea>
-                                </div>
-
-                                <!-- الشروط -->
-                                <div class="col-12 d-flex align-items-start gap-2">
-                                    <input type="checkbox" id="agree" name="agree_terms" required
-                                        class="form-check-input mt-2">
-                                    <label for="agree" class="form-check-label">
-                                        أوافق على <a href="/terms" class="text-main-600 hover-underline">الشروط
-                                            والأحكام</a> وسياسة الخصوصية. <span class="text-danger">*</span>
-                                    </label>
-                                </div>
-
-                                <!-- زر الإرسال (محدّث) -->
-                                <div class="col-12 mt-4">
-                                    <button type="submit"
-                                        class="btn btn-main w-100 d-inline-flex align-items-center justify-content-center tw-gap-3 rounded-1"
-                                        style="height: 46px; font-size: 1.05rem; background-color: var(--main-600, #C9A227); border: none;">
-                                        <i class="ph-bold ph-paper-plane-tilt text-white"
-                                            style="font-size: 1.25rem;"></i>
-                                        <span class="text-white fw-semibold">إرسال الطلب</span>
-                                    </button>
-                                    <div id="form-status" class="tw-mt-3 tw-text-sm"></div>
-                                </div>
-
-
+                <div class="col-lg-6">
+                    <div class="bg-neutral-50 py-60 tw-px-54-px">
+                        <h3 class="tw-mb-4 cursor-big" data-i18n="contact_page.fill_form"></h3>
+                        <p class="text-neutral-1000 cursor-small max-w-444-px" data-i18n="contact_page.form_description2"></p>
+                        <form id="driver-registration-form" action="/.netlify/functions/register-driver" method="POST" class="tw-mt-70-px d-flex flex-column tw-gap-64-px">
+                            <div class="position-relative">
+                                <input type="text" name="name" class="cursor-small focus-outline-0 bg-transparent border-0 tw-pb-5 tw-ps-9 w-100 border-bottom border-neutral-200 focus-border-main-600" data-i18n-placeholder="form_messages.name_placeholder" required autocomplete="name">
+                                <span class="tw-text-xl d-flex text-main-two-600 position-absolute top-0 tw-start-0">
+                                    <i class="ph-bold ph-user"></i>
+                                </span>
+                            </div>
+                            <div class="position-relative">
+                                <input type="tel" name="phone" class="cursor-small focus-outline-0 bg-transparent border-0 tw-pb-5 tw-ps-9 w-100 border-bottom border-neutral-200 focus-border-main-600" data-i18n-placeholder="form_messages.phone_placeholder" required autocomplete="tel" style="direction: ltr" placeholder="05xxxxxxxx" aria-label="رقم الهاتف">
+                                <span class="tw-text-xl d-flex text-main-two-600 position-absolute top-0 tw-start-0">
+                                    <i class="ph-bold ph-phone"></i>
+                                </span>
+                            </div>
+                            <div class="position-relative">
+                                <input type="email" name="email" class="cursor-small focus-outline-0 bg-transparent border-0 tw-pb-5 tw-ps-9 w-100 border-bottom border-neutral-200 focus-border-main-600" data-i18n-placeholder="form_messages.email_placeholder" required autocomplete="email" style="direction: rtl">
+                                <span class="tw-text-xl d-flex text-main-two-600 position-absolute top-0 tw-start-0">
+                                    <i class="ph-bold ph-envelope"></i>
+                                </span>
+                            </div>
+                            <div class="position-relative">
+                                <textarea name="message" class="cursor-small focus-outline-0 bg-transparent border-0 tw-pb-5 tw-ps-9 w-100 border-bottom border-neutral-200 focus-border-main-600 tw-h-108-px" data-i18n-placeholder="form_messages.message_placeholder2" required></textarea>
+                                <span class="tw-text-xl d-flex text-main-two-600 position-absolute top-0 tw-start-0">
+                                    <i class="ph-bold ph-note-pencil"></i>
+                                </span>
+                            </div>
+                            <div class="">
+                                <button type="submit" class="cursor-small btn btn-main hover-style-one button--stroke d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 rounded-0" data-block="button">
+                                    <span class="button__flair"></span>
+                                    <span class="text-white tw-text-2xl group-hover-text-white tw-duration-500 position-relative">
+                                        <i class="ph-bold ph-paper-plane-tilt"></i>
+                                    </span>
+                                    <span class="button__label" data-i18n="form_messages.send_button2"></span>
+                                </button>
                             </div>
                         </form>
                     </div>
-
-
-
                 </div>
             </div>
         </div>
-
-        </div>
     </section>
-
-
     <!-- =============================== Contact Page section End =============================== -->
 
     <!-- ========================== map Start ============================ -->
@@ -798,69 +597,6 @@
             })
             .catch(error => console.error('Error loading header:', error));
     </script>
-
-
- <style>
-        /*  الشكل العام الموحد لكل الحقول */
-        #driver-registration-form .sa-input,
-        #driver-registration-form .sa-select,
-        #driver-registration-form .sa-textarea,
-        #driver-registration-form .sa-file {
-            background-color: #fdfdfd !important;
-            border: 1px solid #d9d9d9 !important;
-            border-radius: 6px !important;
-            height: 46px;
-            font-size: 1rem;
-            padding-inline: 1rem;
-            transition: border-color .2s ease, box-shadow .2s ease;
-        }
-
-        #driver-registration-form .sa-input:focus,
-        #driver-registration-form .sa-select:focus,
-        #driver-registration-form .sa-textarea:focus,
-        #driver-registration-form .sa-file:focus {
-            outline: none !important;
-            border-color: var(--main-600, #C9A227) !important;
-            /* ذهبي هوية مراسي */
-            box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.1);
-            background-color: #fff !important;
-        }
-
-        /*  label أنعم ولون متوازن */
-        #driver-registration-form .form-label {
-            color: #333;
-            font-weight: 500;
-            margin-bottom: 0.4rem;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        /*  توحيد لون جميع الأيقونات داخل النموذج */
-        #driver-registration-form i,
-        #driver-registration-form .ph,
-        #driver-registration-form [class*="ph-"],
-        #driver-registration-form .field-icon i,
-        #driver-registration-form .icon-input i,
-        #driver-registration-form .form-label i {
-            color: var(--main-600, #C9A227) !important;
-            /* ذهبي مراسي */
-        }
-
-        /*  الإرشادي */
-        #driver-registration-form .form-text {
-            color: #6c757d;
-            font-size: .85rem;
-        }
-
-        /*  مظهر الخطأ */
-        #driver-registration-form .is-invalid {
-            border-color: #dc3545 !important;
-        }
-        
-    </style>
-
-
         <!-- Jquery js -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
 
@@ -903,21 +639,7 @@
     <script src="assets/js/analytics.min.js"></script>
     <!-- <script src="assets/js/server.js"></script> -->
 
-      <script>
-        // طابع زمني للإرسال
-        document.getElementById('submitted_at_field').value = new Date().toISOString();
-
-        // تنسيق آيبان تلقائي (اختياري)
-        const iban = document.querySelector('input[name="iban"]');
-        if (iban) {
-            iban.addEventListener('input', () => {
-                iban.value = iban.value.toUpperCase().replace(/\s/g, '');
-            });
-        }
-    </script>
-
-
-    <!-- old inline phone script removed: logic is now handled by assets/js/driver-form-handler.js -->
+    
 
     </body>
 
