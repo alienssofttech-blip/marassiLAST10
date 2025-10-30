@@ -1,13 +1,22 @@
+########################
+# 🔧 Build Settings
+########################
 [build]
   publish = "."
   command = "npm install"
   functions = "netlify/functions"
 
+########################
+# 🔁 Redirects
+########################
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
+########################
+# 🧱 Security Headers
+########################
 [[headers]]
   for = "/*"
   [headers.values]
@@ -20,3 +29,22 @@
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+########################
+# ⚙️ Build Plugins
+########################
+
+[[plugins]]
+  package = "netlify-plugin-minify-html"
+
+[[plugins]]
+  package = "netlify-plugin-inline-critical-css"
+
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+[[plugins]]
+  package = "netlify-plugin-cache"
