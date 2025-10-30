@@ -120,6 +120,23 @@
                 }
             }
 
+            // ID number (optional, but if provided should be 10 digits)
+            const idNumberEl = form.querySelector('input[name="id_number"]');
+            if (idNumberEl && idNumberEl.value.trim()) {
+                const idVal = idNumberEl.value.replace(/\s+/g, '');
+                if (!/^\d{10}$/.test(idVal)) {
+                    this.showFieldError(idNumberEl, 'رقم الإقامة/الهوية يجب أن يكون 10 أرقام');
+                    ok = false;
+                }
+            }
+
+            // Nationality (optional, limit length)
+            const natEl = form.querySelector('input[name="nationality"]');
+            if (natEl && natEl.value.trim() && natEl.value.trim().length > 100) {
+                this.showFieldError(natEl, 'طول قيمة الجنسية يجب ألا يتجاوز 100 حرف');
+                ok = false;
+            }
+
             return ok;
         },
 

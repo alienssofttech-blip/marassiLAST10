@@ -105,6 +105,8 @@ exports.handler = async (event, context) => {
     const name = (fields.full_name || fields.name || fields.fullName || '').trim();
     const rawPhoneField = (fields.phone_e164 || fields.phone || fields.phone_local || '').toString().trim();
   const email = (fields.email || '').trim().toLowerCase();
+  const idNumber = (fields.id_number || '').toString().trim();
+  const nationality = (fields.nationality || '').toString().trim();
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const notes = (fields.notes || fields.message || '').toString().trim();
     const sponsorPhone = (fields.sponsor_phone || '').toString().trim();
@@ -133,6 +135,18 @@ exports.handler = async (event, context) => {
 
     if (!email || !emailRegex.test(email)) {
       return { statusCode: 400, headers, body: JSON.stringify({ error: 'Missing or invalid email' }) };
+    }
+
+    // Server-side validation for id_number and nationality (optional fields)
+    if (idNumber && idNumber.length) {
+      const idNumClean = idNumber.replace(/\s+/g, '');
+      if (!/^\d{10}$/.test(idNumClean)) {
+        return { statusCode: 400, headers, body: JSON.stringify({ error: 'Invalid id_number format. Expected 10 digits.' }) };
+      }
+    }
+
+    if (nationality && nationality.length > 100) {
+      return { statusCode: 400, headers, body: JSON.stringify({ error: 'Invalid nationality: too long (max 100).' }) };
     }
 
     // Normalize phone to local digits then validate
@@ -179,6 +193,8 @@ exports.handler = async (event, context) => {
       phone: phoneE164,                // store canonical E.164
       phone_local: normalizedPhone,
       phone_e164: phoneE164,
+      id_number: idNumber || null,
+      nationality: nationality || null,
       sponsor_phone: sponsorPhone || null,
       email: email || null,
       message: notes || null,

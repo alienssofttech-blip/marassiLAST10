@@ -25,6 +25,8 @@ CREATE TABLE IF NOT EXISTS driver_registrationss (
   phone text NOT NULL,
   phone_local text,
   phone_e164 text,
+  id_number text,
+  nationality text,
   sponsor_phone text,
   email text NOT NULL,
   message text,
