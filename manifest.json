@@ -1,25 +1,33 @@
 {
-    "name": "MARASSI Transport & Logistics",
-    "short_name": "MARASSI",
-    "description": "Professional logistics and transportation services",
+    "name": "مراسي التوصيل للخدمات اللوجستية",
+    "short_name": "مراسي التوصيل",
+    "description": "نقدّم حلول توصيل متكاملة للطلبات اليومية داخل المملكة العربية السعودية ، تجمع بين الاحترافية والدقة والسرعة.",
     "start_url": "/",
+    "scope": "/",
     "display": "standalone",
+    "id": "/",
     "background_color": "#ffffff",
     "theme_color": "#1e40af",
     "orientation": "portrait-primary",
     "icons": [
         {
-            "src": "assets/images/logo/favicon.png",
-            "sizes": "192x192",
-            "type": "image/png"
+            "src": "assets/images/logo/Marassi_logo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
         },
         {
-            "src": "assets/images/logo/favicon.png",
-            "sizes": "512x512",
-            "type": "image/png"
+            "src": "assets/images/logo/logo_vertical.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
         }
     ],
-    "categories": ["business", "logistics", "transportation"],
-    "lang": "en",
-    "dir": "ltr"
+    "categories": [
+        "business",
+        "logistics",
+        "transportation"
+    ],
+    "lang": "ar-SA",
+    "dir": "rtl"
 }
