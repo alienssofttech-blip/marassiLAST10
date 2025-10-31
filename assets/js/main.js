@@ -193,35 +193,82 @@
   
 // ========================== add active class to navbar menu current page Js Start =====================
   function dynamicActiveMenuClass(selector) {
-    let FileName = window.location.pathname.split("/").reverse()[0];
+    const menus = typeof selector === 'string' || selector instanceof String ? $(selector) : $(selector || []);
 
-    // If we are at the root path ("/" or no file name), keep the activePage class on the Home item
-    if (FileName === "" || FileName === "index.html") {
-      // Keep the activePage class on the Home link
-      selector.find("li.nav-menu__item.has-submenu").eq(0).addClass("activePage");
-    } else {
-      // Remove activePage class from all items first
-      selector.find("li").removeClass("activePage");
+    function normalizePath(path) {
+      const rawPath = (path || '').trim();
 
-      // Add activePage class to the correct li based on the current URL
-      selector.find("li").each(function () {
-        let anchor = $(this).find("a");
-        if ($(anchor).attr("href") == FileName) {
-          $(this).addClass("activePage");
-        }
-      });
+      if (!rawPath) {
+        return 'index.html';
+      }
 
-      // If any li has activePage element, add class to its parent li
-      selector.children("li").each(function () {
-        if ($(this).find(".activePage").length) {
-          $(this).addClass("activePage");
-        }
-      });
+      if (rawPath[0] === '#') {
+        return null;
+      }
+
+      // Ignore external links (mailto:, tel:, http(s) when pointing to other origins, etc.)
+      if (/^[a-zA-Z]+:/.test(rawPath) && rawPath.indexOf(window.location.origin) !== 0) {
+        return null;
+      }
+
+      let normalized = rawPath;
+
+      // Remove the current origin for absolute URLs pointing to this site
+      if (normalized.indexOf(window.location.origin) === 0) {
+        normalized = normalized.slice(window.location.origin.length);
+      }
+
+      normalized = normalized.split('?')[0].split('#')[0];
+      normalized = normalized.replace(/^\.+\//, '');
+      normalized = normalized.replace(/^\/+/, '').replace(/\/+$/, '');
+
+      if (!normalized) {
+        return 'index.html';
+      }
+
+      if (!normalized.endsWith('.html')) {
+        normalized += '.html';
+      }
+
+      return normalized;
     }
+
+    const currentPath = normalizePath(window.location.pathname) || 'index.html';
+
+    menus.each(function () {
+      const menu = $(this);
+
+      menu.find('li').removeClass('activePage');
+
+      menu.find('li').each(function () {
+        const anchor = $(this).find('a').first();
+
+        if (!anchor.length) {
+          return;
+        }
+
+        const normalizedHref = normalizePath(anchor.attr('href'));
+
+        if (normalizedHref && normalizedHref === currentPath) {
+          $(this).addClass('activePage');
+        }
+      });
+
+      menu.children('li').each(function () {
+        if ($(this).find('.activePage').length) {
+          $(this).addClass('activePage');
+        }
+      });
+
+      if (!menu.find('li.activePage').length && currentPath === 'index.html') {
+        menu.find('li.nav-menu__item').first().addClass('activePage');
+      }
+    });
   }
 
-  if ($('ul').length) {
-    dynamicActiveMenuClass($('ul'));
+  const navigationLists = '.header .nav-menu, .mobile-menu__menu .nav-menu';
+  if ($(navigationLists).length) {
+    dynamicActiveMenuClass(navigationLists);
   }
 // ========================== add active class to navbar menu current page Js End =====================
 
