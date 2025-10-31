@@ -5473,6 +5473,10 @@ input:focus, input:focus-visible {
 }
 
 /* Translate Y */
+.tw--translate-y-2-px {
+    transform: translateY(-2px);
+}
+
 .tw--translate-y-4-px {
     transform: translateY(-4px);
 }
