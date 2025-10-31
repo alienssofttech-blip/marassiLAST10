@@ -6,6 +6,8 @@
   let translations = {};
   const defaultLang = 'ar';
   const rtlStylesheetId = 'rtl-stylesheet';
+  const SUPPORT_EMAIL = 'support@dmarassils.com';
+  const CONTACT_PAGE_URL = 'contact.html';
 
   // Function to get nested translation
   function getNestedTranslation(key, langData) {
@@ -19,6 +21,150 @@
       }
     }
     return result;
+  }
+
+  function rerouteSupportEmail(root = document.body) {
+    if (!root) {
+      return;
+    }
+
+    const scope = root instanceof Node ? root : document.body;
+
+    scope.querySelectorAll(`a[href*="${SUPPORT_EMAIL}"]`).forEach(anchor => {
+      anchor.setAttribute('href', CONTACT_PAGE_URL);
+      anchor.setAttribute('data-email-link', 'contact');
+      if (!anchor.textContent.trim()) {
+        anchor.textContent = SUPPORT_EMAIL;
+      }
+    });
+
+    const walker = document.createTreeWalker(scope, NodeFilter.SHOW_TEXT, {
+      acceptNode(node) {
+        if (!node || !node.nodeValue || !node.nodeValue.includes(SUPPORT_EMAIL)) {
+          return NodeFilter.FILTER_REJECT;
+        }
+        const parentElement = node.parentElement;
+        if (!parentElement) {
+          return NodeFilter.FILTER_REJECT;
+        }
+        const parentTag = parentElement.tagName;
+        if (parentTag === 'SCRIPT' || parentTag === 'STYLE') {
+          return NodeFilter.FILTER_REJECT;
+        }
+        if (parentElement.closest('a')) {
+          return NodeFilter.FILTER_REJECT;
+        }
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+
+    const nodesToProcess = [];
+    while (walker.nextNode()) {
+      nodesToProcess.push(walker.currentNode);
+    }
+
+    nodesToProcess.forEach(textNode => {
+      const parent = textNode.parentNode;
+      if (!parent) {
+        return;
+      }
+
+      const fragments = textNode.nodeValue.split(SUPPORT_EMAIL);
+      const fragment = document.createDocumentFragment();
+
+      fragments.forEach((part, index) => {
+        if (part) {
+          fragment.appendChild(document.createTextNode(part));
+        }
+        if (index < fragments.length - 1) {
+          const emailAnchor = document.createElement('a');
+          emailAnchor.href = CONTACT_PAGE_URL;
+          emailAnchor.textContent = SUPPORT_EMAIL;
+          emailAnchor.classList.add('contact-email-link');
+          emailAnchor.setAttribute('data-email-link', 'contact');
+          fragment.appendChild(emailAnchor);
+        }
+      });
+
+      parent.replaceChild(fragment, textNode);
+    });
+  }
+
+  function setupSupportEmailObserver() {
+    if (!('MutationObserver' in window)) {
+      return;
+    }
+
+    const observer = new MutationObserver(mutations => {
+      let shouldProcess = false;
+
+      mutations.forEach(mutation => {
+        mutation.addedNodes.forEach(node => {
+          if (node.nodeType === Node.TEXT_NODE && node.nodeValue.includes(SUPPORT_EMAIL)) {
+            shouldProcess = true;
+            if (node.parentNode) {
+              rerouteSupportEmail(node.parentNode);
+            }
+          }
+
+          if (node.nodeType === Node.ELEMENT_NODE) {
+            const element = node;
+            if (element.querySelectorAll) {
+              if (element.textContent && element.textContent.includes(SUPPORT_EMAIL)) {
+                shouldProcess = true;
+                rerouteSupportEmail(element);
+              } else if (element.querySelector(`a[href*="${SUPPORT_EMAIL}"]`)) {
+                shouldProcess = true;
+                rerouteSupportEmail(element);
+              }
+            }
+          }
+        });
+      });
+
+      if (shouldProcess) {
+        rerouteSupportEmail();
+      }
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+  }
+
+  function setupFooterObserver() {
+    const footerContainer = document.getElementById('footer');
+    if (!footerContainer || !('MutationObserver' in window)) {
+      return;
+    }
+
+    const invokeFooterEnhancements = target => {
+      rerouteSupportEmail(target);
+      if (window.AOS) {
+        if (typeof window.AOS.refreshHard === 'function') {
+          window.AOS.refreshHard();
+        } else if (typeof window.AOS.refresh === 'function') {
+          window.AOS.refresh();
+        }
+      }
+    };
+
+    if (footerContainer.children.length > 0) {
+      invokeFooterEnhancements(footerContainer);
+    }
+
+    const observer = new MutationObserver(mutations => {
+      const hasAddedNodes = mutations.some(mutation => mutation.addedNodes && mutation.addedNodes.length > 0);
+      if (hasAddedNodes) {
+        invokeFooterEnhancements(footerContainer);
+      }
+    });
+
+    observer.observe(footerContainer, {
+      childList: true,
+      subtree: true
+    });
   }
 
   // Function to load translations and apply them
@@ -68,6 +214,8 @@
           element.setAttribute('content', translatedText);
         }
       });
+
+      rerouteSupportEmail();
 
       // Set HTML direction and language
       const htmlElement = document.documentElement;
@@ -1168,5 +1316,17 @@ const bannerFiveSlider = new Swiper('.banner-five-active', {
       }
     }); 
     // ========================= Header Sticky Js End===================
+
+  function initializeSupportEmailFeatures() {
+    rerouteSupportEmail();
+    setupSupportEmailObserver();
+    setupFooterObserver();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeSupportEmailFeatures);
+  } else {
+    initializeSupportEmailFeatures();
+  }
 
 })(jQuery);
