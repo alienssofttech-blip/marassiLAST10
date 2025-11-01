@@ -242,7 +242,7 @@
           rtlLink = document.createElement('link');
           rtlLink.id = rtlStylesheetId;
           rtlLink.rel = 'stylesheet';
-          rtlLink.href = 'assets/css/main.css';
+          rtlLink.href = 'assets/css/main.min.css';
           document.head.appendChild(rtlLink);
         }
       } else {

@@ -40,8 +40,8 @@
 
         preloadCriticalResources: function() {
             const criticalResources = [
-                { href: 'assets/css/main.css', as: 'style' },
-                { href: 'assets/js/main.js', as: 'script' },
+                { href: 'assets/css/main.min.css', as: 'style' },
+                { href: 'assets/js/main.min.js', as: 'script' },
                 { href: 'assets/images/logo/Marassi_logo.png', as: 'image' }
             ];
 
