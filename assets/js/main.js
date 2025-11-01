@@ -1,5 +1,18 @@
 (function ($) {
   "use strict";
+  document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('img:not([data-lazy="false"])');
+
+    images.forEach(image => {
+      if (!image.hasAttribute('loading')) {
+        image.setAttribute('loading', 'lazy');
+      }
+      if (!image.hasAttribute('decoding')) {
+        image.setAttribute('decoding', 'async');
+      }
+    });
+
+  });
    // ==========================================
   //      Language Switching Implementation
   // ==========================================

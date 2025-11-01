@@ -122,17 +122,24 @@
     </script>
 
     <script>
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading footer:', error));
+        window.addEventListener('DOMContentLoaded', () => {
+            const footerTarget = document.getElementById('footer');
+            if (!footerTarget) {
+                return;
+            }
+
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    footerTarget.innerHTML = data;
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        });
     </script>
 
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <script src="assets/js/phosphor-icon.js"></script>
-    <script src="assets/js/boostrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js" defer></script>
+    <script src="assets/js/phosphor-icon.js" defer></script>
+    <script src="assets/js/boostrap.bundle.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>
