@@ -22,7 +22,7 @@ class WebsiteOptimizer {
   async optimize() {
     console.log('🚀 Starting website optimization...\n');
 
-    await this.optimizeHTML();
+    // await this.optimizeHTML();
     await this.optimizeCSS();
     await this.optimizeJS();
     // await this.compressAssets();

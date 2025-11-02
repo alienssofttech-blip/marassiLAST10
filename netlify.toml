@@ -11,7 +11,7 @@
 ########################
 [[redirects]]
   from = "/*"
-  to = "/index.min.html"
+  to = "/index.html"
   status = 200
 
 ########################
@@ -54,8 +54,7 @@
 # ⚙️ Build Plugins
 ########################
 
-[[plugins]]
-  package = "netlify-plugin-minify-html"
+
 
 
 [[plugins]]

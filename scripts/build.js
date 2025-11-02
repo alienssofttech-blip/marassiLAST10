@@ -250,7 +250,7 @@ function copyHtmlFiles() {
 }
 
 function copyStaticAssets() {
-  const directories = ['assets', 'supabase'];
+  const directories = ['assets'];
   const files = [
     'manifest.json',
     'robots.txt',
