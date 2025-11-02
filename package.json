@@ -1,11 +1,12 @@
 {
-  "name": "مراسي التوصيل للخدمات اللوجستية",
+  "name": "marassi-logistics",
   "version": "1.0.0",
   "description": "مؤسسة مراسي التوصيل للخدمات اللوجستية تقدم حلول نقل وتوصيل متكاملة داخل المملكة العربية السعودية بخبرة واحترافية عالية. خدماتنا تشمل توصيل المطاعم والسوبرماركت والمتاجر للشركات والأفراد.",
   "main": "server.js",
   "engines": {
     "node": ">=18.x"
   },
+  "private": true,
   "scripts": {
     "start": "node server.js",
     "build": "node scripts/build.js",
