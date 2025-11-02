@@ -1313,11 +1313,11 @@ const bannerFiveSlider = new Swiper('.banner-five-active', {
   //      End Document Ready function
   // ==========================================
 
-  // ========================= Preloader Js Start =====================
-    $(window).on("load", function(){
-      $('.preloader').fadeOut(); 
-    })
-    // ========================= Preloader Js End=====================
+// ========================= Preloader Js Start =====================
+  $(document).ready(function() {
+    $('.preloader').fadeOut();
+  });
+// ========================= Preloader Js End ========================
 
     // ========================= Header Sticky Js Start ==============
     $(window).on('scroll', function() {
