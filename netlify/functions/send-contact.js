@@ -156,31 +156,31 @@ async function sendEmailNotification(name, email, message, messageId) {
         <body>
           <div class="container">
             <div class="header">
-              <h1 style="margin: 0;">New Contact Form Message</h1>
-              <p style="margin: 10px 0 0 0; opacity: 0.9;">MARASSI Transport & Logistics</p>
+              <h1 style="margin: 0;">رسالة جديدة من موقع مراسي  واصل معنا</h1>
+              <p style="margin: 10px 0 0 0; opacity: 0.9;">مؤسسة مراسي التوصيل للخدمات اللوجستية</p>
             </div>
             <div class="content">
               <div class="field">
-                <div class="label">Name:</div>
+                <div class="label">الاسم:</div>
                 <div class="value">${name}</div>
               </div>
               <div class="field">
-                <div class="label">Email:</div>
+                <div class="label">البريد الإلكتروني:</div>
                 <div class="value"><a href="mailto:${email}" style="color: #667eea;">${email}</a></div>
               </div>
               <div class="field">
-                <div class="label">Message:</div>
+                <div class="label">الرسالة:</div>
                 <div class="message-box">${message.replace(/\n/g, '<br>')}</div>
               </div>
               <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd;">
-                <p style="margin: 0 0 10px 0; color: #666;"><strong>Message ID:</strong> ${messageId}</p>
-                <p style="margin: 0 0 10px 0; color: #666;"><strong>Received:</strong> ${new Date().toLocaleString()}</p>
-                <a href="mailto:${email}?subject=Re: Your inquiry to MARASSI Logistics" style="color: #fffefeff; " class="button">Reply to ${name}</a>
+                <p style="margin: 0 0 10px 0; color: #666;"><strong>معرّف الرسالة:</strong> ${messageId}</p>
+                <p style="margin: 0 0 10px 0; color: #666;"><strong>تاريخ الاستلام:</strong> ${new Date().toLocaleString()}</p>
+                <a href="mailto:${email}?subject=Re: Your inquiry to MARASSI Logistics" style="color: #fffefeff; " class="button">الرد على ${name}</a>
               </div>
             </div>
             <div class="footer">
-              <p style="margin: 0;">This is an automated notification from your website contact form.</p>
-              <p style="margin: 5px 0 0 0;">To reply, click the button above or email directly to: ${email}</p>
+              <p style="margin: 0;">هذا إشعار تلقائي من تواصل معنا في موقع مراسي</p>
+              <p style="margin: 5px 0 0 0;">للرد، انقر على الزر أعلاه أو راسل مباشرة إلى: ${email}</p>
             </div>
           </div>
         </body>
