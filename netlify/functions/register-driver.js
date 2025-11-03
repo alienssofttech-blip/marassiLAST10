@@ -256,66 +256,63 @@ async function sendDriverEmailNotification(name, phone, email, message, registra
       to: ADMIN_EMAIL,
       subject: `New Driver Registration: ${name}`,
       reply_to: email,
-      html: `
-        <!DOCTYPE html>
-        <html>
-        <head>
-          <style>
-            body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-            .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-            .header { background: linear-gradient(135deg, #13164f 0%, #1e3a8a 100%); color: white; padding: 30px; text-align: center; border-radius: 8px 8px 0 0; }
-            .content { background: #f9f9f9; padding: 30px; border: 1px solid #ddd; }
-            .field { margin-bottom: 20px; }
-            .label { font-weight: bold; color: #13164f; margin-bottom: 5px; }
-            .value { background: white; padding: 10px; border-radius: 4px; border: 1px solid #e0e0e0; }
-            .message-box { background: white; padding: 15px; border-radius: 4px; border-left: 4px solid #13164f; min-height: 100px; }
-            .footer { background: #f0f0f0; padding: 15px; text-align: center; border-radius: 0 0 8px 8px; font-size: 12px; color: #666; }
-            .button { display: inline-block; background: #13164f; color: #FFFFFF; padding: 12px 24px; text-decoration: none; border-radius: 4px; margin-top: 10px; }
-            .highlight { background: #fef3c7; padding: 2px 6px; border-radius: 3px; }
-          </style>
-        </head>
-        <body>
-          <div class="container">
-            <div class="header">
-              <h1 style="margin: 0;">🚗 New Driver Registration</h1>
-              <p style="margin: 10px 0 0 0; opacity: 0.9;">MARASSI Transport & Logistics</p>
-            </div>
-            <div class="content">
-              <div class="field">
-                <div class="label">Driver Name:</div>
-                <div class="value"><strong>${name}</strong></div>
-              </div>
-              <div class="field">
-                <div class="label">Phone Number:</div>
-                <div class="value"><a href="tel:${phone}" style="color: #13164f;">${phone}</a></div>
-              </div>
-              <div class="field">
-                <div class="label">Email Address:</div>
-                <div class="value"><a href="mailto:${email}" style="color: #13164f;">${email}</a></div>
-              </div>
-              <div class="field">
-                <div class="label">Introduction / Why Join:</div>
-                <div class="message-box">${message.replace(/\n/g, '<br>')}</div>
-              </div>
-              <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd;">
-                <p style="margin: 0 0 10px 0; color: #666;"><strong>Registration ID:</strong> <span class="highlight">${registrationId}</span></p>
-                <p style="margin: 0 0 10px 0; color: #666;"><strong>Submitted:</strong> ${new Date().toLocaleString('en-US', { timeZone: 'Asia/Riyadh' })} (Riyadh Time)</p>
-                <div style="margin-top: 15px;">
-                  <a href="mailto:${email}?subject=Re: Your driver application with MARASSI Logistics" style="color: #fffefeff; " class="button">Replay To ${name}</a>
-                  <a href="tel:${phone}" class="button" style="background: #059669; margin-left: 10px; color: #fffefeff;">Call Driver</a>
-                </div>
-              </div>
-            </div>
-            <div class="footer">
-              <p style="margin: 0;"><strong>Driver Registration System</strong></p>
-              <p style="margin: 5px 0 0 0;">This driver wants to join the MARASSI team. Please review and contact them soon!</p>
-            </div>
-          </div>
-        </body>
-        </html>
-      `,
+      html: `<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+.container { max-width: 600px; margin: 0 auto; padding: 20px; }
+.header { background: linear-gradient(135deg, #13164f 0%, #1e3a8a 100%); color: white; padding: 30px; text-align: center; border-radius: 8px 8px 0 0; }
+.content { background: #f9f9f9; padding: 30px; border: 1px solid #ddd; }
+.field { margin-bottom: 20px; }
+.label { font-weight: bold; color: #13164f; margin-bottom: 5px; }
+.value { background: white; padding: 10px; border-radius: 4px; border: 1px solid #e0e0e0; }
+.message-box { background: white; padding: 15px; border-radius: 4px; border-left: 4px solid #13164f; min-height: 100px; }
+.footer { background: #f0f0f0; padding: 15px; text-align: center; border-radius: 0 0 8px 8px; font-size: 12px; color: #666; }
+.button { display: inline-block; background: #13164f; color: #FFFFFF; padding: 12px 24px; text-decoration: none; border-radius: 4px; margin-top: 10px; }
+.highlight { background: #fef3c7; padding: 2px 6px; border-radius: 3px; }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1 style="margin: 0;">🚗 تسجيل سائق جديد</h1>
+<p style="margin: 10px 0 0 0; opacity: 0.9;">مؤسسة مراسي التوصيل للخدمات اللوجستية</p>
+</div>
+<div class="content">
+<div class="field">
+<div class="label">اسم السائق:</div>
+<div class="value"><strong>${name}</strong></div>
+</div>
+<div class="field">
+<div class="label">رقم الجوال:</div>
+<div class="value"><a href="tel:${phone}" style="color: #13164f;">${phone}</a></div>
+</div>
+<div class="field">
+<div class="label">البريد الإلكتروني:</div>
+<div class="value"><a href="mailto:${email}" style="color: #13164f;">${email}</a></div>
+</div>
+<div class="field">
+<div class="label">مقدمة / سبب الانضمام:</div>
+<div class="message-box">${message.replace(/\n/g, '<br>')}</div>
+</div>
+<div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd;">
+<p style="margin: 0 0 10px 0; color: #666;"><strong>معرّف التسجيل:</strong> <span class="highlight">${registrationId}</span></p>
+<p style="margin: 0 0 10px 0; color: #666;"><strong>تاريخ الإرسال:</strong> ${new Date().toLocaleString('en-US', { timeZone: 'Asia/Riyadh' })} (توقيت الرياض)</p>
+<div style="margin-top: 15px;">
+<a href="mailto:${email}?subject=Re: Your driver application with MARASSI Logistics" style="color: #fffefeff; " class="button">الرد على ${name}</a>
+<a href="tel:${phone}" class="button" style="background: #059669; margin-left: 10px; color: #fffefeff;">اتصل بالسائق</a>
+</div>
+</div>
+</div>
+<div class="footer">
+<p style="margin: 0;"><strong>نظام تسجيل السائقين</strong></p>
+<p style="margin: 5px 0 0 0;">هذا السائق يرغب في الانضمام إلى فريق مراسي. يرجى مراجعة الطلب والتواصل معه في أقرب وقت ممكن!</p>
+</div>
+</div>
+</body>
+</html>`,
     };
-
     const response = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
