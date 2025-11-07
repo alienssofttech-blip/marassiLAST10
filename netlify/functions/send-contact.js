@@ -128,7 +128,7 @@ async function sendEmailNotification(name, email, message, messageId) {
       return false;
     }
 
-    const ADMIN_EMAIL = 'alienssoft.tech@gmail.com';
+    const ADMIN_EMAIL = 'support@dmarassils.com';
     const FROM_EMAIL = process.env.RESEND_FROM_EMAIL || 'MARASSI Logistics <onboarding@resend.dev>';
 
     const emailBody = {
